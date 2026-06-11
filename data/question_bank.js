@@ -9597,6 +9597,10 @@ window.QUESTION_BANK = [
       {
         "key": "C",
         "text": "Both"
+      },
+      {
+        "key": "D",
+        "text": "None of the above"
       }
     ],
     "answer": "B",
@@ -10473,7 +10477,7 @@ window.QUESTION_BANK = [
         "text": "<ref>"
       }
     ],
-    "answer": "<",
+    "answer": "B",
     "explanation": "Spring XML 中，<constructor-arg> 标签用于实现构造函数注入。",
     "noteQuote": "",
     "sourceFiles": [
@@ -28498,31 +28502,3 @@ window.QUESTION_BANK = [
     ]
   }
 ];
-window.QUIZ_META = {
-  "version": "2.0.0",
-  "generatedAt": "2026-06-11",
-  "description": "H5 quiz bank for MyBatis, Spring MVC, and NoSQL. MCPT are uploaded monthly/exam-style questions; prediction questions are generated from review notes.",
-  "courses": [
-    {
-      "key": "mybatis",
-      "name": "MyBatis"
-    },
-    {
-      "key": "springmvc",
-      "name": "Spring MVC / Spring"
-    },
-    {
-      "key": "nosql",
-      "name": "NoSQL / MongoDB / Redis"
-    }
-  ],
-  "counts": {
-    "mybatis_mcpt": 123,
-    "mybatis_prediction": 127,
-    "springmvc_mcpt": 90,
-    "springmvc_prediction": 151,
-    "nosql_mcpt": 106,
-    "nosql_prediction": 146
-  },
-  "total": 743
-};
