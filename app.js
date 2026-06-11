@@ -2,15 +2,19 @@ const BANK = window.QUESTION_BANK || [];
 const META = window.QUIZ_META || {};
 const WRONG_KEY = 'review_quiz_wrong_ids_v2';
 const MASTER_KEY = 'review_quiz_mastery_v2';
+const SESSION_KEY = 'review_quiz_session_v3';
+const VIEW_KEY = 'review_quiz_last_view_v3';
 
 const state = {
   courseKey: null,
   sourceGroup: null,
   mode: 'normal',
+  allCourses: false,
   pool: [],
   index: 0,
   current: null,
-  answered: false
+  answered: false,
+  selectedAnswer: null
 };
 
 const $ = (id) => document.getElementById(id);
@@ -18,8 +22,9 @@ const views = ['homeView','sourceView','quizView'];
 const courseNames = { mybatis: 'MyBatis', springmvc: 'Spring MVC / Spring', nosql: 'NoSQL / MongoDB / Redis' };
 const courseIcons = { mybatis: '🧩', springmvc: '🌱', nosql: '🍃' };
 
-function showView(id){
+function showView(id, persist=true){
   views.forEach(v => $(v).classList.toggle('active', v === id));
+  if(persist) localStorage.setItem(VIEW_KEY, id);
   window.scrollTo({top:0, behavior:'smooth'});
 }
 function getWrongIds(){
@@ -81,8 +86,10 @@ function renderHome(){
 }
 function chooseCourse(key){
   state.courseKey = key;
+  state.allCourses = false;
   $('selectedCourseTag').textContent = courseNames[key];
   renderSources();
+  saveSession();
   showView('sourceView');
 }
 function renderSources(){
@@ -112,22 +119,69 @@ function makePool(group, allCourses=false){
   if(group === 'wrong') pool = pool.filter(q=>wrong.has(q.id));
   return shuffle(pool);
 }
+function saveSession(){
+  try {
+    const payload = {
+      courseKey: state.courseKey,
+      sourceGroup: state.sourceGroup,
+      mode: state.mode,
+      allCourses: !!state.allCourses,
+      poolIds: state.pool.map(q => q.id),
+      index: state.index,
+      currentId: state.current?.id || null,
+      answered: !!state.answered,
+      selectedAnswer: state.selectedAnswer || null,
+      updatedAt: Date.now()
+    };
+    localStorage.setItem(SESSION_KEY, JSON.stringify(payload));
+  } catch (e) {
+    console.warn('Failed to save quiz session', e);
+  }
+}
+function restoreSession(){
+  try {
+    const raw = localStorage.getItem(SESSION_KEY);
+    if(!raw) return false;
+    const saved = JSON.parse(raw);
+    const idMap = new Map(BANK.map(q => [q.id, q]));
+    const restoredPool = (saved.poolIds || []).map(id => idMap.get(id)).filter(Boolean);
+    if(!restoredPool.length) return false;
+    state.courseKey = saved.courseKey || null;
+    state.sourceGroup = saved.sourceGroup || 'mixed';
+    state.mode = saved.mode || (state.sourceGroup === 'wrong' ? 'wrong' : 'normal');
+    state.allCourses = !!saved.allCourses;
+    state.pool = restoredPool;
+    state.index = Math.min(Math.max(Number(saved.index) || 0, 0), restoredPool.length - 1);
+    state.current = restoredPool[state.index];
+    state.answered = !!saved.answered;
+    state.selectedAnswer = saved.selectedAnswer || null;
+    return true;
+  } catch (e) {
+    console.warn('Failed to restore quiz session', e);
+    return false;
+  }
+}
 function startQuiz(group, allCourses=false){
   state.sourceGroup = group;
   state.mode = group === 'wrong' ? 'wrong' : 'normal';
+  state.allCourses = !!allCourses;
   state.pool = makePool(group, allCourses);
   state.index = 0;
+  state.answered = false;
+  state.selectedAnswer = null;
   if(!state.pool.length){
     alert(group === 'wrong' ? '目前还没有错题，先去刷几道题吧。' : '这个分类暂时没有题。');
     return;
   }
   showView('quizView');
   renderQuestion();
+  saveSession();
 }
 function renderQuestion(){
   state.current = state.pool[state.index % state.pool.length];
-  state.answered = false;
   const q = state.current;
+  const selectedForThisQuestion = state.answered && state.selectedAnswer ? state.selectedAnswer : null;
+
   $('quizCourseBadge').textContent = q.course;
   $('quizSourceBadge').textContent = state.sourceGroup === 'wrong' ? '错题本' : state.sourceGroup === 'mixed' ? '混合刷题' : q.sourceLabel;
   $('quizCountBadge').textContent = `${state.index + 1} / ${state.pool.length}`;
@@ -145,15 +199,16 @@ function renderQuestion(){
     btn.addEventListener('click', (e)=>answer(opt.key, e));
     box.appendChild(btn);
   });
+
+  if(selectedForThisQuestion){
+    applyAnswerUI(selectedForThisQuestion, selectedForThisQuestion === q.answer, null);
+  } else {
+    state.answered = false;
+    state.selectedAnswer = null;
+  }
 }
-function answer(key, event){
-  if(state.answered) return;
-  state.answered = true;
+function applyAnswerUI(key, ok, event){
   const q = state.current;
-  const ok = key === q.answer;
-  markAnswer(q.id, ok);
-  const wrong = getWrongIds();
-  if(!ok){ wrong.add(q.id); setWrongIds(wrong); }
   document.querySelectorAll('.option-btn').forEach(btn => {
     const k = btn.querySelector('.option-key').textContent;
     btn.classList.add('locked');
@@ -170,7 +225,19 @@ function answer(key, event){
     ${q.noteQuote ? `<div class="quote"><strong>复习资料原句：</strong>${escapeHtml(q.noteQuote)}</div>` : ''}
   `;
   $('removeWrongBtn').style.display = getWrongIds().has(q.id) ? 'inline-flex' : 'none';
-  if(ok) sparkle(event?.clientX || innerWidth/2, event?.clientY || innerHeight/2);
+  if(ok && event) sparkle(event?.clientX || innerWidth/2, event?.clientY || innerHeight/2);
+}
+function answer(key, event){
+  if(state.answered) return;
+  state.answered = true;
+  state.selectedAnswer = key;
+  const q = state.current;
+  const ok = key === q.answer;
+  markAnswer(q.id, ok);
+  const wrong = getWrongIds();
+  if(!ok){ wrong.add(q.id); setWrongIds(wrong); }
+  applyAnswerUI(key, ok, event);
+  saveSession();
 }
 function sparkle(x,y){
   ['✨','🌟','💫','✅'].forEach((s,i)=>{
@@ -183,13 +250,26 @@ function escapeHtml(s){
   return String(s ?? '').replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
 }
 
-$('backHomeBtn').addEventListener('click',()=>{renderHome(); showView('homeView');});
-$('backSourceBtn').addEventListener('click',()=>{renderSources(); showView('sourceView');});
-$('nextBtn').addEventListener('click',()=>{state.index = (state.index + 1) % state.pool.length; renderQuestion();});
-$('randomBtn').addEventListener('click',()=>{state.index = Math.floor(Math.random()*state.pool.length); renderQuestion();});
-$('removeWrongBtn').addEventListener('click',()=>{ const w=getWrongIds(); w.delete(state.current.id); setWrongIds(w); $('removeWrongBtn').style.display='none'; if(state.mode==='wrong'){ state.pool = state.pool.filter(q=>q.id!==state.current.id); if(!state.pool.length){ alert('这个错题分类已经清空了。'); renderHome(); showView('homeView'); return; } state.index = state.index % state.pool.length; renderQuestion(); } });
-$('clearWrongBtn').addEventListener('click',()=>{ if(confirm('确定清空本地错题本吗？')){ setWrongIds(new Set()); renderHome(); if(state.mode==='wrong'){showView('homeView');} } });
+$('backHomeBtn').addEventListener('click',()=>{renderHome(); saveSession(); showView('homeView');});
+$('backSourceBtn').addEventListener('click',()=>{renderSources(); saveSession(); showView('sourceView');});
+$('nextBtn').addEventListener('click',()=>{state.index = (state.index + 1) % state.pool.length; state.answered = false; state.selectedAnswer = null; renderQuestion(); saveSession();});
+$('randomBtn').addEventListener('click',()=>{state.index = Math.floor(Math.random()*state.pool.length); state.answered = false; state.selectedAnswer = null; renderQuestion(); saveSession();});
+$('removeWrongBtn').addEventListener('click',()=>{ const w=getWrongIds(); w.delete(state.current.id); setWrongIds(w); $('removeWrongBtn').style.display='none'; if(state.mode==='wrong'){ state.pool = state.pool.filter(q=>q.id!==state.current.id); if(!state.pool.length){ alert('这个错题分类已经清空了。'); renderHome(); showView('homeView'); saveSession(); return; } state.index = state.index % state.pool.length; state.answered = false; state.selectedAnswer = null; renderQuestion(); } saveSession(); });
+$('clearWrongBtn').addEventListener('click',()=>{ if(confirm('确定清空本地错题本吗？')){ setWrongIds(new Set()); renderHome(); if(state.mode==='wrong'){showView('homeView');} saveSession(); } });
 $('allWrongBtn').addEventListener('click',()=>{ state.courseKey = null; startQuiz('wrong', true); });
 
 renderMastery();
 renderHome();
+
+const restored = restoreSession();
+const lastView = localStorage.getItem(VIEW_KEY);
+if(restored && lastView === 'quizView'){
+  showView('quizView', false);
+  renderQuestion();
+} else if(restored && lastView === 'sourceView' && state.courseKey){
+  $('selectedCourseTag').textContent = courseNames[state.courseKey];
+  renderSources();
+  showView('sourceView', false);
+} else {
+  showView('homeView', false);
+}
