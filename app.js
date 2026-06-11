@@ -121,6 +121,7 @@ function makePool(group, allCourses=false){
 }
 function saveSession(){
   try {
+    if($('quizView') && $('quizView').classList.contains('active')) localStorage.setItem(VIEW_KEY, 'quizView');
     const payload = {
       courseKey: state.courseKey,
       sourceGroup: state.sourceGroup,
@@ -258,14 +259,18 @@ $('removeWrongBtn').addEventListener('click',()=>{ const w=getWrongIds(); w.dele
 $('clearWrongBtn').addEventListener('click',()=>{ if(confirm('确定清空本地错题本吗？')){ setWrongIds(new Set()); renderHome(); if(state.mode==='wrong'){showView('homeView');} saveSession(); } });
 $('allWrongBtn').addEventListener('click',()=>{ state.courseKey = null; startQuiz('wrong', true); });
 
+window.addEventListener('beforeunload', saveSession);
+document.addEventListener('visibilitychange', () => { if(document.hidden) saveSession(); });
+
 renderMastery();
 renderHome();
 
 const restored = restoreSession();
 const lastView = localStorage.getItem(VIEW_KEY);
-if(restored && lastView === 'quizView'){
+if(restored && (lastView === 'quizView' || !lastView)){
   showView('quizView', false);
   renderQuestion();
+  saveSession();
 } else if(restored && lastView === 'sourceView' && state.courseKey){
   $('selectedCourseTag').textContent = courseNames[state.courseKey];
   renderSources();
