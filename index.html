@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>三科刷题宇宙｜MyBatis · SpringMVC · NoSQL</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-orb orb-a"></div>
+  <div class="bg-orb orb-b"></div>
+  <div class="bg-grid"></div>
+
+  <main class="app-shell">
+    <header class="hero">
+      <div>
+        <p class="eyebrow">MCPT 月考题 · 预测题 · 自动错题本</p>
+        <h1>三科刷题宇宙</h1>
+        <p class="hero-subtitle">选择课程，选择题源，开刷。答题后立即显示正误和解析，错题会自动进入你的本地错题本。</p>
+      </div>
+      <div class="hero-panel">
+        <div class="ring" id="masterRing"><span id="masterPercent">0%</span></div>
+        <p>今日掌握度</p>
+      </div>
+    </header>
+
+    <section id="homeView" class="view active">
+      <div class="toolbar glass-card">
+        <div>
+          <h2>选择你要刷的科目</h2>
+          <p id="bankSummary">题库加载中...</p>
+        </div>
+        <button class="ghost-btn" id="allWrongBtn">刷全部错题</button>
+      </div>
+      <div class="course-grid" id="courseGrid"></div>
+      <div class="glass-card tips-card">
+        <h3>刷题规则</h3>
+        <p>进入题目后只显示题干和选项；点击选项后会锁定答案，显示正确/错误、解析和复习资料原句。答错会自动加入错题本。</p>
+      </div>
+    </section>
+
+    <section id="sourceView" class="view">
+      <button class="back-btn" id="backHomeBtn">← 返回科目</button>
+      <div class="source-head">
+        <p class="eyebrow" id="selectedCourseTag">Course</p>
+        <h2>选择题源</h2>
+      </div>
+      <div class="source-grid" id="sourceGrid"></div>
+    </section>
+
+    <section id="quizView" class="view">
+      <div class="quiz-topbar glass-card">
+        <button class="back-btn" id="backSourceBtn">← 返回</button>
+        <div class="quiz-info">
+          <span id="quizCourseBadge" class="pill"></span>
+          <span id="quizSourceBadge" class="pill warm"></span>
+          <span id="quizCountBadge" class="pill soft"></span>
+        </div>
+        <button class="ghost-btn danger" id="clearWrongBtn">清空错题</button>
+      </div>
+
+      <article class="question-card glass-card" id="questionCard">
+        <div class="question-meta">
+          <span id="topicBadge" class="topic-badge"></span>
+          <span id="progressText"></span>
+        </div>
+        <h2 id="questionText"></h2>
+        <div id="optionsBox" class="options-box"></div>
+        <div id="resultBox" class="result-box hidden"></div>
+        <div class="action-row">
+          <button class="primary-btn" id="nextBtn">下一题 →</button>
+          <button class="ghost-btn" id="randomBtn">随机一题</button>
+          <button class="ghost-btn" id="removeWrongBtn">从错题移除</button>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <template id="courseCardTpl">
+    <button class="course-card glass-card">
+      <span class="course-icon"></span>
+      <strong></strong>
+      <small></small>
+      <div class="mini-stats"></div>
+    </button>
+  </template>
+
+  <template id="sourceCardTpl">
+    <button class="source-card glass-card">
+      <span class="source-kicker"></span>
+      <strong></strong>
+      <small></small>
+    </button>
+  </template>
+
+  <script src="data/question_bank.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
