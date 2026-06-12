@@ -28500,5 +28500,6485 @@ window.QUESTION_BANK = [
       "Redis Security",
       "review-generated"
     ]
+  },
+  {
+    "id": "OS-T-001",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第1章 操作系统基本概念",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "考研真题改编",
+    "difficulty": "medium",
+    "question": "下列关于操作系统的说法中，最准确的是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "操作系统只负责运行用户程序"
+      },
+      {
+        "key": "B",
+        "text": "操作系统是管理计算机资源并为用户和应用程序提供服务的软件"
+      },
+      {
+        "key": "C",
+        "text": "操作系统等同于计算机硬件"
+      },
+      {
+        "key": "D",
+        "text": "操作系统只负责文件管理"
+      }
+    ],
+    "answer": "B",
+    "explanation": "操作系统的核心作用是管理处理机、存储器、设备、文件等资源，并向上提供用户接口和系统调用服务。",
+    "noteQuote": "对应范围：汤小丹教材第1章《操作系统引论》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch1",
+      "操作系统基本概念"
+    ]
+  },
+  {
+    "id": "OS-T-002",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第1章 操作系统特征",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "考研真题改编",
+    "difficulty": "medium",
+    "question": "并发与并行的区别是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "并发强调同一时刻多个事件同时发生，并行强调宏观上同时推进"
+      },
+      {
+        "key": "B",
+        "text": "并发强调宏观上多个事件交替推进，并行强调同一时刻真正同时执行"
+      },
+      {
+        "key": "C",
+        "text": "并发只能出现在单处理机系统，并行只能出现在单道系统"
+      },
+      {
+        "key": "D",
+        "text": "二者没有区别"
+      }
+    ],
+    "answer": "B",
+    "explanation": "并发是宏观同时、微观交替；并行要求多个处理单元在同一时刻真正同时执行。",
+    "noteQuote": "对应范围：汤小丹教材第1章《操作系统引论》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch1",
+      "操作系统特征"
+    ]
+  },
+  {
+    "id": "OS-T-003",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第1章 中断与异常",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "考研真题改编",
+    "difficulty": "medium",
+    "question": "用户程序请求操作系统服务通常通过（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "中断隐指令"
+      },
+      {
+        "key": "B",
+        "text": "系统调用"
+      },
+      {
+        "key": "C",
+        "text": "进程调度"
+      },
+      {
+        "key": "D",
+        "text": "设备驱动程序"
+      }
+    ],
+    "answer": "B",
+    "explanation": "系统调用是用户程序进入内核、请求操作系统服务的接口。",
+    "noteQuote": "对应范围：汤小丹教材第1章《操作系统引论》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch1",
+      "中断与异常"
+    ]
+  },
+  {
+    "id": "OS-T-004",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第1章 运行环境",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "考研真题改编",
+    "difficulty": "medium",
+    "question": "下列操作中一般必须在核心态执行的是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "普通整数加法"
+      },
+      {
+        "key": "B",
+        "text": "读写用户态变量"
+      },
+      {
+        "key": "C",
+        "text": "修改页表或中断向量表"
+      },
+      {
+        "key": "D",
+        "text": "调用普通函数"
+      }
+    ],
+    "answer": "C",
+    "explanation": "涉及系统资源保护和硬件状态修改的操作必须在核心态执行。",
+    "noteQuote": "对应范围：汤小丹教材第1章《操作系统引论》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch1",
+      "运行环境"
+    ]
+  },
+  {
+    "id": "OS-T-005",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第1章 操作系统功能",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "考研真题改编",
+    "difficulty": "medium",
+    "question": "处理机管理功能主要包括（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "文件命名和目录查询"
+      },
+      {
+        "key": "B",
+        "text": "进程控制、进程同步和处理机调度"
+      },
+      {
+        "key": "C",
+        "text": "磁盘空闲块管理"
+      },
+      {
+        "key": "D",
+        "text": "设备驱动程序编译"
+      }
+    ],
+    "answer": "B",
+    "explanation": "处理机管理围绕进程/线程展开，包括创建、撤销、同步、通信和调度。",
+    "noteQuote": "对应范围：汤小丹教材第1章《操作系统引论》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch1",
+      "操作系统功能"
+    ]
+  },
+  {
+    "id": "OS-T-006",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第1章 系统结构",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "考研真题改编",
+    "difficulty": "medium",
+    "question": "微内核结构的主要思想是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "把所有功能都放入内核以减少通信"
+      },
+      {
+        "key": "B",
+        "text": "把尽可能多的服务移出内核，只保留基本机制"
+      },
+      {
+        "key": "C",
+        "text": "取消用户态和核心态"
+      },
+      {
+        "key": "D",
+        "text": "只支持单用户单任务"
+      }
+    ],
+    "answer": "B",
+    "explanation": "微内核将进程管理、内存管理的基本机制留在内核，把文件系统、设备驱动等尽量放到用户态服务中。",
+    "noteQuote": "对应范围：汤小丹教材第1章《操作系统引论》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch1",
+      "系统结构"
+    ]
+  },
+  {
+    "id": "OS-T-007",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第1章 系统调用",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "考研真题改编",
+    "difficulty": "medium",
+    "question": "系统调用与普通函数调用的主要区别是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "系统调用不需要参数"
+      },
+      {
+        "key": "B",
+        "text": "系统调用会引起处理机状态由用户态转入核心态"
+      },
+      {
+        "key": "C",
+        "text": "普通函数调用一定更慢"
+      },
+      {
+        "key": "D",
+        "text": "系统调用只能由内核主动发起"
+      }
+    ],
+    "answer": "B",
+    "explanation": "系统调用通过陷入/访管指令进入内核态，普通函数调用通常仍在用户态完成。",
+    "noteQuote": "对应范围：汤小丹教材第1章《操作系统引论》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch1",
+      "系统调用"
+    ]
+  },
+  {
+    "id": "OS-T-008",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第1章 操作系统发展",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "考研真题改编",
+    "difficulty": "medium",
+    "question": "分时系统最突出的目标是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "提高批处理作业吞吐量"
+      },
+      {
+        "key": "B",
+        "text": "提供交互性和及时响应"
+      },
+      {
+        "key": "C",
+        "text": "完全避免中断"
+      },
+      {
+        "key": "D",
+        "text": "只运行实时任务"
+      }
+    ],
+    "answer": "B",
+    "explanation": "分时系统通过时间片轮转等技术让多个用户交互式共享计算机，强调响应时间。",
+    "noteQuote": "对应范围：汤小丹教材第1章《操作系统引论》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch1",
+      "操作系统发展"
+    ]
+  },
+  {
+    "id": "OS-T-009",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第1章 资源管理",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "考研真题改编",
+    "difficulty": "medium",
+    "question": "虚拟性在操作系统中的含义是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "把一个物理资源抽象成多个逻辑资源"
+      },
+      {
+        "key": "B",
+        "text": "所有资源都不存在"
+      },
+      {
+        "key": "C",
+        "text": "只能在虚拟机中运行"
+      },
+      {
+        "key": "D",
+        "text": "只表示虚拟内存"
+      }
+    ],
+    "answer": "A",
+    "explanation": "虚拟性通过时分复用、空分复用等方式把物理资源抽象成多个逻辑资源。",
+    "noteQuote": "对应范围：汤小丹教材第1章《操作系统引论》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch1",
+      "资源管理"
+    ]
+  },
+  {
+    "id": "OS-P-010",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第1章 操作系统目标",
+    "sourceGroup": "prediction",
+    "sourceLabel": "预测题",
+    "difficulty": "medium",
+    "question": "操作系统设计中“方便性”的含义最接近（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "让硬件成本最低"
+      },
+      {
+        "key": "B",
+        "text": "让用户和程序更容易使用计算机资源"
+      },
+      {
+        "key": "C",
+        "text": "让所有程序都以核心态运行"
+      },
+      {
+        "key": "D",
+        "text": "让所有资源都静态分配"
+      }
+    ],
+    "answer": "B",
+    "explanation": "方便性指OS向用户和程序提供友好接口，屏蔽硬件细节。",
+    "noteQuote": "对应范围：汤小丹教材第1章《操作系统引论》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch1",
+      "操作系统目标"
+    ]
+  },
+  {
+    "id": "OS-P-011",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第1章 中断处理",
+    "sourceGroup": "prediction",
+    "sourceLabel": "预测题",
+    "difficulty": "medium",
+    "question": "外部设备完成I/O后通知CPU，通常依靠（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "时钟周期"
+      },
+      {
+        "key": "B",
+        "text": "中断机制"
+      },
+      {
+        "key": "C",
+        "text": "文件目录"
+      },
+      {
+        "key": "D",
+        "text": "作业调度"
+      }
+    ],
+    "answer": "B",
+    "explanation": "I/O完成后设备控制器通过中断向CPU报告事件，OS再转入相应中断处理程序。",
+    "noteQuote": "对应范围：汤小丹教材第1章《操作系统引论》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch1",
+      "中断处理"
+    ]
+  },
+  {
+    "id": "OS-P-012",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第1章 用户接口",
+    "sourceGroup": "prediction",
+    "sourceLabel": "预测题",
+    "difficulty": "medium",
+    "question": "命令解释程序属于操作系统提供的（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "程序接口"
+      },
+      {
+        "key": "B",
+        "text": "用户接口"
+      },
+      {
+        "key": "C",
+        "text": "硬件接口"
+      },
+      {
+        "key": "D",
+        "text": "内存接口"
+      }
+    ],
+    "answer": "B",
+    "explanation": "命令解释程序/Shell面向用户，属于用户接口；系统调用面向程序，属于程序接口。",
+    "noteQuote": "对应范围：汤小丹教材第1章《操作系统引论》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch1",
+      "用户接口"
+    ]
+  },
+  {
+    "id": "OS-P-013",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第1章 内核",
+    "sourceGroup": "prediction",
+    "sourceLabel": "预测题",
+    "difficulty": "medium",
+    "question": "下列最能体现操作系统内核作用的是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "提供网页样式"
+      },
+      {
+        "key": "B",
+        "text": "管理硬件资源并执行特权操作"
+      },
+      {
+        "key": "C",
+        "text": "生成高级语言源代码"
+      },
+      {
+        "key": "D",
+        "text": "替代所有应用程序"
+      }
+    ],
+    "answer": "B",
+    "explanation": "内核处于硬件和应用之间，负责资源管理和特权控制。",
+    "noteQuote": "对应范围：汤小丹教材第1章《操作系统引论》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch1",
+      "内核"
+    ]
+  },
+  {
+    "id": "OS-P-014",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第1章 操作系统类型",
+    "sourceGroup": "prediction",
+    "sourceLabel": "预测题",
+    "difficulty": "medium",
+    "question": "实时系统最重要的评价指标通常是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "平均周转时间最短"
+      },
+      {
+        "key": "B",
+        "text": "能否在规定时间内响应外部事件"
+      },
+      {
+        "key": "C",
+        "text": "目录层次最多"
+      },
+      {
+        "key": "D",
+        "text": "文件名最长"
+      }
+    ],
+    "answer": "B",
+    "explanation": "实时系统强调时限约束，正确性不仅取决于结果，还取决于完成时间。",
+    "noteQuote": "对应范围：汤小丹教材第1章《操作系统引论》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch1",
+      "操作系统类型"
+    ]
+  },
+  {
+    "id": "OS-P-015",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第1章 系统结构",
+    "sourceGroup": "prediction",
+    "sourceLabel": "预测题",
+    "difficulty": "medium",
+    "question": "模块化结构相对于无结构系统的优点是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "更容易维护和扩展"
+      },
+      {
+        "key": "B",
+        "text": "一定运行速度最慢"
+      },
+      {
+        "key": "C",
+        "text": "不需要接口"
+      },
+      {
+        "key": "D",
+        "text": "不能分层"
+      }
+    ],
+    "answer": "A",
+    "explanation": "模块化通过清晰接口划分功能，便于开发、维护和替换。",
+    "noteQuote": "对应范围：汤小丹教材第1章《操作系统引论》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch1",
+      "系统结构"
+    ]
+  },
+  {
+    "id": "OS-P-016",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第1章 保护机制",
+    "sourceGroup": "prediction",
+    "sourceLabel": "预测题",
+    "difficulty": "medium",
+    "question": "用户态和核心态划分的主要目的在于（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "提高显示效果"
+      },
+      {
+        "key": "B",
+        "text": "保护系统资源，防止用户程序随意执行特权指令"
+      },
+      {
+        "key": "C",
+        "text": "减少文件数量"
+      },
+      {
+        "key": "D",
+        "text": "取消中断"
+      }
+    ],
+    "answer": "B",
+    "explanation": "状态划分可限制用户程序对特权指令和关键资源的直接访问。",
+    "noteQuote": "对应范围：汤小丹教材第1章《操作系统引论》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch1",
+      "保护机制"
+    ]
+  },
+  {
+    "id": "OS-P-017",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第1章 系统调用类型",
+    "sourceGroup": "prediction",
+    "sourceLabel": "预测题",
+    "difficulty": "medium",
+    "question": "open、read、write等通常属于哪类系统调用？（ ）",
+    "options": [
+      {
+        "key": "A",
+        "text": "进程控制类"
+      },
+      {
+        "key": "B",
+        "text": "文件操作类"
+      },
+      {
+        "key": "C",
+        "text": "设备独立性取消类"
+      },
+      {
+        "key": "D",
+        "text": "内存条检测类"
+      }
+    ],
+    "answer": "B",
+    "explanation": "open/read/write直接面向文件或I/O对象，是典型文件操作类系统调用。",
+    "noteQuote": "对应范围：汤小丹教材第1章《操作系统引论》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch1",
+      "系统调用类型"
+    ]
+  },
+  {
+    "id": "OS-P-018",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第1章 操作系统特征",
+    "sourceGroup": "prediction",
+    "sourceLabel": "预测题",
+    "difficulty": "medium",
+    "question": "共享性与并发性之间的关系是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "没有关系"
+      },
+      {
+        "key": "B",
+        "text": "并发导致多个活动共享资源，共享又要求并发控制"
+      },
+      {
+        "key": "C",
+        "text": "共享只能出现在单道系统"
+      },
+      {
+        "key": "D",
+        "text": "并发必然消除共享"
+      }
+    ],
+    "answer": "B",
+    "explanation": "多程序并发执行会共同使用处理机、内存、设备和文件，因此必须解决共享和互斥问题。",
+    "noteQuote": "对应范围：汤小丹教材第1章《操作系统引论》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch1",
+      "操作系统特征"
+    ]
+  },
+  {
+    "id": "OS-T-019",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第2章 进程定义",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "考研真题改编",
+    "difficulty": "medium",
+    "question": "进程与程序的根本区别是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "程序可以并发，进程不可以"
+      },
+      {
+        "key": "B",
+        "text": "进程是程序的一次执行过程，具有动态性"
+      },
+      {
+        "key": "C",
+        "text": "程序有PCB，进程没有PCB"
+      },
+      {
+        "key": "D",
+        "text": "进程只存放在磁盘上"
+      }
+    ],
+    "answer": "B",
+    "explanation": "程序是静态指令集合，进程是程序在数据集合上的一次运行活动，具有动态性和独立性。",
+    "noteQuote": "对应范围：汤小丹教材第2章《进程的描述与控制》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch2",
+      "进程定义"
+    ]
+  },
+  {
+    "id": "OS-T-020",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第2章 进程状态",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "考研真题改编",
+    "difficulty": "medium",
+    "question": "一个进程等待键盘输入时通常处于（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "运行态"
+      },
+      {
+        "key": "B",
+        "text": "就绪态"
+      },
+      {
+        "key": "C",
+        "text": "阻塞态"
+      },
+      {
+        "key": "D",
+        "text": "创建态"
+      }
+    ],
+    "answer": "C",
+    "explanation": "等待I/O或事件完成时，进程不能继续执行，应进入阻塞态。",
+    "noteQuote": "对应范围：汤小丹教材第2章《进程的描述与控制》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch2",
+      "进程状态"
+    ]
+  },
+  {
+    "id": "OS-T-021",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第2章 PCB",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "考研真题改编",
+    "difficulty": "medium",
+    "question": "PCB中通常不包括（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "进程标识符"
+      },
+      {
+        "key": "B",
+        "text": "处理机现场信息"
+      },
+      {
+        "key": "C",
+        "text": "进程调度信息"
+      },
+      {
+        "key": "D",
+        "text": "源程序全部文本"
+      }
+    ],
+    "answer": "D",
+    "explanation": "PCB保存OS管理进程所需的信息，不保存完整源程序文本。",
+    "noteQuote": "对应范围：汤小丹教材第2章《进程的描述与控制》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch2",
+      "PCB"
+    ]
+  },
+  {
+    "id": "OS-T-022",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第2章 状态转换",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "考研真题改编",
+    "difficulty": "medium",
+    "question": "下列状态转换中，一般不能直接发生的是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "运行态→阻塞态"
+      },
+      {
+        "key": "B",
+        "text": "运行态→就绪态"
+      },
+      {
+        "key": "C",
+        "text": "阻塞态→运行态"
+      },
+      {
+        "key": "D",
+        "text": "就绪态→运行态"
+      }
+    ],
+    "answer": "C",
+    "explanation": "阻塞事件完成后先进入就绪态，必须再经调度才能进入运行态。",
+    "noteQuote": "对应范围：汤小丹教材第2章《进程的描述与控制》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch2",
+      "状态转换"
+    ]
+  },
+  {
+    "id": "OS-T-023",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第2章 进程创建",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "考研真题改编",
+    "difficulty": "medium",
+    "question": "创建进程时操作系统必须完成的工作通常包括（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "为进程建立PCB"
+      },
+      {
+        "key": "B",
+        "text": "删除父进程PCB"
+      },
+      {
+        "key": "C",
+        "text": "立即执行全部程序"
+      },
+      {
+        "key": "D",
+        "text": "关闭所有设备"
+      }
+    ],
+    "answer": "A",
+    "explanation": "创建进程的关键步骤包括申请空白PCB、分配资源、初始化PCB并插入就绪队列。",
+    "noteQuote": "对应范围：汤小丹教材第2章《进程的描述与控制》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch2",
+      "进程创建"
+    ]
+  },
+  {
+    "id": "OS-T-024",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第2章 线程",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "考研真题改编",
+    "difficulty": "medium",
+    "question": "同一进程内多个线程通常共享的是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "程序计数器"
+      },
+      {
+        "key": "B",
+        "text": "栈"
+      },
+      {
+        "key": "C",
+        "text": "寄存器现场"
+      },
+      {
+        "key": "D",
+        "text": "进程地址空间和打开文件"
+      }
+    ],
+    "answer": "D",
+    "explanation": "线程拥有自己的运行现场，但共享所属进程的地址空间、全局变量和打开文件等资源。",
+    "noteQuote": "对应范围：汤小丹教材第2章《进程的描述与控制》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch2",
+      "线程"
+    ]
+  },
+  {
+    "id": "OS-T-025",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第2章 线程实现",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "考研真题改编",
+    "difficulty": "medium",
+    "question": "用户级线程的主要缺点是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "创建切换开销一定最大"
+      },
+      {
+        "key": "B",
+        "text": "一个线程阻塞可能导致整个进程阻塞"
+      },
+      {
+        "key": "C",
+        "text": "不能在用户态管理"
+      },
+      {
+        "key": "D",
+        "text": "不能有线程库"
+      }
+    ],
+    "answer": "B",
+    "explanation": "若内核不知道用户级线程，一个线程执行阻塞系统调用时，内核可能阻塞整个进程。",
+    "noteQuote": "对应范围：汤小丹教材第2章《进程的描述与控制》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch2",
+      "线程实现"
+    ]
+  },
+  {
+    "id": "OS-T-026",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第2章 进程通信",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "考研真题改编",
+    "difficulty": "medium",
+    "question": "消息传递通信适合解决的问题是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "只能共享内存变量"
+      },
+      {
+        "key": "B",
+        "text": "进程间通过send/receive交换信息"
+      },
+      {
+        "key": "C",
+        "text": "完全不需要内核参与"
+      },
+      {
+        "key": "D",
+        "text": "只能在同一进程内使用"
+      }
+    ],
+    "answer": "B",
+    "explanation": "消息传递通过发送和接收原语实现进程间通信，可直接或间接寻址。",
+    "noteQuote": "对应范围：汤小丹教材第2章《进程的描述与控制》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch2",
+      "进程通信"
+    ]
+  },
+  {
+    "id": "OS-T-027",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第2章 上下文切换",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "考研真题改编",
+    "difficulty": "medium",
+    "question": "进程上下文切换时一般需要保存和恢复的是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "CPU寄存器、程序计数器等现场信息"
+      },
+      {
+        "key": "B",
+        "text": "显示器颜色配置"
+      },
+      {
+        "key": "C",
+        "text": "编译器版本"
+      },
+      {
+        "key": "D",
+        "text": "源代码注释"
+      }
+    ],
+    "answer": "A",
+    "explanation": "上下文切换要保存当前进程现场并恢复新进程现场，包括通用寄存器、PC、PSW等。",
+    "noteQuote": "对应范围：汤小丹教材第2章《进程的描述与控制》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch2",
+      "上下文切换"
+    ]
+  },
+  {
+    "id": "OS-P-028",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第2章 挂起状态",
+    "sourceGroup": "prediction",
+    "sourceLabel": "预测题",
+    "difficulty": "medium",
+    "question": "引入挂起状态的主要目的通常是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "增强交换和系统负载调节能力"
+      },
+      {
+        "key": "B",
+        "text": "消除所有就绪队列"
+      },
+      {
+        "key": "C",
+        "text": "让进程永不运行"
+      },
+      {
+        "key": "D",
+        "text": "取消外存"
+      }
+    ],
+    "answer": "A",
+    "explanation": "挂起可把暂不运行的进程移至外存，配合交换技术调节内存和系统负载。",
+    "noteQuote": "对应范围：汤小丹教材第2章《进程的描述与控制》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch2",
+      "挂起状态"
+    ]
+  },
+  {
+    "id": "OS-P-029",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第2章 进程终止",
+    "sourceGroup": "prediction",
+    "sourceLabel": "预测题",
+    "difficulty": "medium",
+    "question": "进程正常结束或异常结束时，操作系统最终应（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "回收其占有的资源并撤销PCB"
+      },
+      {
+        "key": "B",
+        "text": "永久保留全部内存"
+      },
+      {
+        "key": "C",
+        "text": "把其变成设备驱动"
+      },
+      {
+        "key": "D",
+        "text": "禁止父进程运行"
+      }
+    ],
+    "answer": "A",
+    "explanation": "进程终止需要释放内存、文件、I/O等资源，并从相应队列中移除PCB。",
+    "noteQuote": "对应范围：汤小丹教材第2章《进程的描述与控制》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch2",
+      "进程终止"
+    ]
+  },
+  {
+    "id": "OS-P-030",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第2章 进程阻塞",
+    "sourceGroup": "prediction",
+    "sourceLabel": "预测题",
+    "difficulty": "medium",
+    "question": "阻塞原语的作用对象通常是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "当前运行进程"
+      },
+      {
+        "key": "B",
+        "text": "任意磁盘块"
+      },
+      {
+        "key": "C",
+        "text": "空闲文件目录项"
+      },
+      {
+        "key": "D",
+        "text": "编译器"
+      }
+    ],
+    "answer": "A",
+    "explanation": "阻塞通常由当前运行进程主动因等待事件而进入阻塞队列。",
+    "noteQuote": "对应范围：汤小丹教材第2章《进程的描述与控制》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch2",
+      "进程阻塞"
+    ]
+  },
+  {
+    "id": "OS-P-031",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第2章 进程唤醒",
+    "sourceGroup": "prediction",
+    "sourceLabel": "预测题",
+    "difficulty": "medium",
+    "question": "唤醒原语通常把进程从阻塞队列移入（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "运行队列"
+      },
+      {
+        "key": "B",
+        "text": "就绪队列"
+      },
+      {
+        "key": "C",
+        "text": "后备队列"
+      },
+      {
+        "key": "D",
+        "text": "空闲块链"
+      }
+    ],
+    "answer": "B",
+    "explanation": "等待事件完成后，进程具备运行条件，但还需等待CPU调度，所以进入就绪队列。",
+    "noteQuote": "对应范围：汤小丹教材第2章《进程的描述与控制》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch2",
+      "进程唤醒"
+    ]
+  },
+  {
+    "id": "OS-P-032",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第2章 进程通信",
+    "sourceGroup": "prediction",
+    "sourceLabel": "预测题",
+    "difficulty": "medium",
+    "question": "共享存储通信的特点是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "通信速度通常较快，但需要同步互斥控制"
+      },
+      {
+        "key": "B",
+        "text": "一定不需要内存"
+      },
+      {
+        "key": "C",
+        "text": "只能传递一个字符"
+      },
+      {
+        "key": "D",
+        "text": "不允许两个进程访问同一区域"
+      }
+    ],
+    "answer": "A",
+    "explanation": "共享存储区可直接读写，效率高，但必须用同步机制保证一致性。",
+    "noteQuote": "对应范围：汤小丹教材第2章《进程的描述与控制》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch2",
+      "进程通信"
+    ]
+  },
+  {
+    "id": "OS-P-033",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第2章 管道通信",
+    "sourceGroup": "prediction",
+    "sourceLabel": "预测题",
+    "difficulty": "medium",
+    "question": "匿名管道通常更适合（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "无亲缘关系的任意网络主机"
+      },
+      {
+        "key": "B",
+        "text": "具有亲缘关系进程间的单向字节流通信"
+      },
+      {
+        "key": "C",
+        "text": "替代页表"
+      },
+      {
+        "key": "D",
+        "text": "保存磁盘分区表"
+      }
+    ],
+    "answer": "B",
+    "explanation": "传统匿名管道常用于父子进程等相关进程间的半双工/单向字节流通信。",
+    "noteQuote": "对应范围：汤小丹教材第2章《进程的描述与控制》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch2",
+      "管道通信"
+    ]
+  },
+  {
+    "id": "OS-P-034",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第2章 线程调度",
+    "sourceGroup": "prediction",
+    "sourceLabel": "预测题",
+    "difficulty": "medium",
+    "question": "内核级线程相对于用户级线程的优势是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "线程切换永远不需内核"
+      },
+      {
+        "key": "B",
+        "text": "一个线程阻塞时同进程其他线程仍可能运行"
+      },
+      {
+        "key": "C",
+        "text": "无法利用多处理器"
+      },
+      {
+        "key": "D",
+        "text": "不能被OS调度"
+      }
+    ],
+    "answer": "B",
+    "explanation": "内核能感知和调度内核级线程，某线程阻塞不必阻塞整个进程。",
+    "noteQuote": "对应范围：汤小丹教材第2章《进程的描述与控制》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch2",
+      "线程调度"
+    ]
+  },
+  {
+    "id": "OS-P-035",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第2章 进程映像",
+    "sourceGroup": "prediction",
+    "sourceLabel": "预测题",
+    "difficulty": "medium",
+    "question": "进程映像通常包括程序、数据、栈和（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "PCB"
+      },
+      {
+        "key": "B",
+        "text": "键盘"
+      },
+      {
+        "key": "C",
+        "text": "显示器"
+      },
+      {
+        "key": "D",
+        "text": "网线"
+      }
+    ],
+    "answer": "A",
+    "explanation": "进程映像由程序段、数据段、栈和进程控制块等组成。",
+    "noteQuote": "对应范围：汤小丹教材第2章《进程的描述与控制》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch2",
+      "进程映像"
+    ]
+  },
+  {
+    "id": "OS-P-036",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第2章 调度时机",
+    "sourceGroup": "prediction",
+    "sourceLabel": "预测题",
+    "difficulty": "medium",
+    "question": "进程从运行态转为阻塞态时，处理机调度程序通常应（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "选择另一个就绪进程运行"
+      },
+      {
+        "key": "B",
+        "text": "立即关闭系统"
+      },
+      {
+        "key": "C",
+        "text": "删除全部就绪进程"
+      },
+      {
+        "key": "D",
+        "text": "停止时钟中断"
+      }
+    ],
+    "answer": "A",
+    "explanation": "当前运行进程阻塞后CPU空闲，OS应从就绪队列中选择新进程。",
+    "noteQuote": "对应范围：汤小丹教材第2章《进程的描述与控制》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch2",
+      "调度时机"
+    ]
+  },
+  {
+    "id": "OS-T-037",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第3章 调度层次",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "考研真题改编",
+    "difficulty": "medium",
+    "question": "从外存后备队列选择作业装入内存的调度称为（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "高级调度"
+      },
+      {
+        "key": "B",
+        "text": "低级调度"
+      },
+      {
+        "key": "C",
+        "text": "中级调度"
+      },
+      {
+        "key": "D",
+        "text": "磁盘调度"
+      }
+    ],
+    "answer": "A",
+    "explanation": "高级调度也叫作业调度，决定哪些后备作业进入内存成为进程。",
+    "noteQuote": "对应范围：汤小丹教材第3章《处理机调度》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch3",
+      "调度层次"
+    ]
+  },
+  {
+    "id": "OS-T-038",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第3章 周转时间",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "考研真题改编",
+    "difficulty": "medium",
+    "question": "作业周转时间等于（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "完成时间-提交时间"
+      },
+      {
+        "key": "B",
+        "text": "开始运行时间-提交时间"
+      },
+      {
+        "key": "C",
+        "text": "等待时间-运行时间"
+      },
+      {
+        "key": "D",
+        "text": "响应时间+页故障时间"
+      }
+    ],
+    "answer": "A",
+    "explanation": "周转时间是作业从提交到完成经历的总时间。",
+    "noteQuote": "对应范围：汤小丹教材第3章《处理机调度》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch3",
+      "周转时间"
+    ]
+  },
+  {
+    "id": "OS-T-039",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第3章 FCFS",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "考研真题改编",
+    "difficulty": "medium",
+    "question": "先来先服务调度算法的主要缺点是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "实现复杂"
+      },
+      {
+        "key": "B",
+        "text": "短作业可能长期等待，平均等待时间可能较大"
+      },
+      {
+        "key": "C",
+        "text": "一定不能用于批处理"
+      },
+      {
+        "key": "D",
+        "text": "不会产生队列"
+      }
+    ],
+    "answer": "B",
+    "explanation": "FCFS按到达先后服务，若长作业先到，会使后续短作业等待很久。",
+    "noteQuote": "对应范围：汤小丹教材第3章《处理机调度》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch3",
+      "FCFS"
+    ]
+  },
+  {
+    "id": "OS-T-040",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第3章 短作业优先",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "考研真题改编",
+    "difficulty": "medium",
+    "question": "短作业优先调度算法可能导致（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "长作业饥饿"
+      },
+      {
+        "key": "B",
+        "text": "短作业饥饿"
+      },
+      {
+        "key": "C",
+        "text": "不能计算周转时间"
+      },
+      {
+        "key": "D",
+        "text": "不能用于单处理机"
+      }
+    ],
+    "answer": "A",
+    "explanation": "不断到来的短作业可能使长作业长期得不到服务。",
+    "noteQuote": "对应范围：汤小丹教材第3章《处理机调度》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch3",
+      "短作业优先"
+    ]
+  },
+  {
+    "id": "OS-T-041",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第3章 响应比",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "考研真题改编",
+    "difficulty": "medium",
+    "question": "高响应比优先算法的响应比公式是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "(等待时间+服务时间)/服务时间"
+      },
+      {
+        "key": "B",
+        "text": "服务时间/等待时间"
+      },
+      {
+        "key": "C",
+        "text": "等待时间/完成时间"
+      },
+      {
+        "key": "D",
+        "text": "完成时间/提交时间"
+      }
+    ],
+    "answer": "A",
+    "explanation": "响应比=响应时间/服务时间=(等待时间+服务时间)/服务时间，兼顾等待时间和服务时间。",
+    "noteQuote": "对应范围：汤小丹教材第3章《处理机调度》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch3",
+      "响应比"
+    ]
+  },
+  {
+    "id": "OS-T-042",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第3章 时间片轮转",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "考研真题改编",
+    "difficulty": "medium",
+    "question": "时间片轮转调度主要适合（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "分时系统"
+      },
+      {
+        "key": "B",
+        "text": "单道批处理系统"
+      },
+      {
+        "key": "C",
+        "text": "只读文件系统"
+      },
+      {
+        "key": "D",
+        "text": "设备分配系统"
+      }
+    ],
+    "answer": "A",
+    "explanation": "RR通过时间片轮流分配CPU，保证交互用户较短响应时间。",
+    "noteQuote": "对应范围：汤小丹教材第3章《处理机调度》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch3",
+      "时间片轮转"
+    ]
+  },
+  {
+    "id": "OS-T-043",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第3章 抢占调度",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "考研真题改编",
+    "difficulty": "medium",
+    "question": "下列算法中典型的抢占式算法是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "非抢占式FCFS"
+      },
+      {
+        "key": "B",
+        "text": "时间片轮转"
+      },
+      {
+        "key": "C",
+        "text": "非抢占式短作业优先"
+      },
+      {
+        "key": "D",
+        "text": "静态作业调度"
+      }
+    ],
+    "answer": "B",
+    "explanation": "时间片用完会强制剥夺CPU，因此RR属于抢占式调度。",
+    "noteQuote": "对应范围：汤小丹教材第3章《处理机调度》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch3",
+      "抢占调度"
+    ]
+  },
+  {
+    "id": "OS-T-044",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第3章 实时调度",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "考研真题改编",
+    "difficulty": "medium",
+    "question": "最早截止时间优先算法优先选择（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "运行时间最长的任务"
+      },
+      {
+        "key": "B",
+        "text": "截止时间最早的任务"
+      },
+      {
+        "key": "C",
+        "text": "优先数最小的一定是空闲进程"
+      },
+      {
+        "key": "D",
+        "text": "提交时间最晚的任务"
+      }
+    ],
+    "answer": "B",
+    "explanation": "EDF按绝对截止时间排序，截止时间越早优先级越高。",
+    "noteQuote": "对应范围：汤小丹教材第3章《处理机调度》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch3",
+      "实时调度"
+    ]
+  },
+  {
+    "id": "OS-T-045",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第3章 多级反馈队列",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "考研真题改编",
+    "difficulty": "medium",
+    "question": "多级反馈队列调度算法通常会（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "高优先级队列时间片较短，低优先级队列时间片较长"
+      },
+      {
+        "key": "B",
+        "text": "所有队列时间片必须相同"
+      },
+      {
+        "key": "C",
+        "text": "只允许一个队列"
+      },
+      {
+        "key": "D",
+        "text": "禁止新进程进入高优先级队列"
+      }
+    ],
+    "answer": "A",
+    "explanation": "多级反馈队列常使新进程先进入高优先级短时间片队列，未完成则逐级下降。",
+    "noteQuote": "对应范围：汤小丹教材第3章《处理机调度》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch3",
+      "多级反馈队列"
+    ]
+  },
+  {
+    "id": "OS-P-046",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第3章 响应时间",
+    "sourceGroup": "prediction",
+    "sourceLabel": "预测题",
+    "difficulty": "medium",
+    "question": "交互式系统最关注的调度性能指标通常是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "响应时间"
+      },
+      {
+        "key": "B",
+        "text": "磁盘容量"
+      },
+      {
+        "key": "C",
+        "text": "文件目录深度"
+      },
+      {
+        "key": "D",
+        "text": "作业提交数量"
+      }
+    ],
+    "answer": "A",
+    "explanation": "交互式系统强调用户发出请求到首次响应之间的时间。",
+    "noteQuote": "对应范围：汤小丹教材第3章《处理机调度》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch3",
+      "响应时间"
+    ]
+  },
+  {
+    "id": "OS-P-047",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第3章 吞吐量",
+    "sourceGroup": "prediction",
+    "sourceLabel": "预测题",
+    "difficulty": "medium",
+    "question": "批处理系统提高吞吐量意味着（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "单位时间完成更多作业"
+      },
+      {
+        "key": "B",
+        "text": "每个文件更大"
+      },
+      {
+        "key": "C",
+        "text": "进程永不阻塞"
+      },
+      {
+        "key": "D",
+        "text": "不需要作业调度"
+      }
+    ],
+    "answer": "A",
+    "explanation": "吞吐量指单位时间内系统完成的作业数。",
+    "noteQuote": "对应范围：汤小丹教材第3章《处理机调度》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch3",
+      "吞吐量"
+    ]
+  },
+  {
+    "id": "OS-P-048",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第3章 优先级调度",
+    "sourceGroup": "prediction",
+    "sourceLabel": "预测题",
+    "difficulty": "medium",
+    "question": "动态优先级调度相对于静态优先级调度的优点是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "可根据等待时间等因素调整优先级，缓解饥饿"
+      },
+      {
+        "key": "B",
+        "text": "实现一定更简单"
+      },
+      {
+        "key": "C",
+        "text": "不需要就绪队列"
+      },
+      {
+        "key": "D",
+        "text": "只能用于磁盘"
+      }
+    ],
+    "answer": "A",
+    "explanation": "动态优先级可随等待时间、运行情况变化，提高调度灵活性。",
+    "noteQuote": "对应范围：汤小丹教材第3章《处理机调度》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch3",
+      "优先级调度"
+    ]
+  },
+  {
+    "id": "OS-P-049",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第3章 RR时间片",
+    "sourceGroup": "prediction",
+    "sourceLabel": "预测题",
+    "difficulty": "medium",
+    "question": "时间片过大时，RR算法会逐渐退化为（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "FCFS"
+      },
+      {
+        "key": "B",
+        "text": "SCAN"
+      },
+      {
+        "key": "C",
+        "text": "LRU"
+      },
+      {
+        "key": "D",
+        "text": "银行家算法"
+      }
+    ],
+    "answer": "A",
+    "explanation": "若时间片大到进程几乎都能一次运行完，RR接近按到达顺序执行的FCFS。",
+    "noteQuote": "对应范围：汤小丹教材第3章《处理机调度》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch3",
+      "RR时间片"
+    ]
+  },
+  {
+    "id": "OS-P-050",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第3章 RR时间片",
+    "sourceGroup": "prediction",
+    "sourceLabel": "预测题",
+    "difficulty": "medium",
+    "question": "时间片过小时，系统主要问题是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "上下文切换开销过大"
+      },
+      {
+        "key": "B",
+        "text": "无法产生中断"
+      },
+      {
+        "key": "C",
+        "text": "文件不能打开"
+      },
+      {
+        "key": "D",
+        "text": "磁盘无法寻道"
+      }
+    ],
+    "answer": "A",
+    "explanation": "时间片太短会导致频繁切换，CPU用于上下文切换的比例增大。",
+    "noteQuote": "对应范围：汤小丹教材第3章《处理机调度》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch3",
+      "RR时间片"
+    ]
+  },
+  {
+    "id": "OS-P-051",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第3章 调度方式",
+    "sourceGroup": "prediction",
+    "sourceLabel": "预测题",
+    "difficulty": "medium",
+    "question": "非抢占式调度中，运行进程通常让出CPU的情形不包括（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "进程主动阻塞"
+      },
+      {
+        "key": "B",
+        "text": "进程结束"
+      },
+      {
+        "key": "C",
+        "text": "时间片到强制剥夺"
+      },
+      {
+        "key": "D",
+        "text": "进程请求I/O"
+      }
+    ],
+    "answer": "C",
+    "explanation": "非抢占式调度不会因时间片到而强制剥夺CPU。",
+    "noteQuote": "对应范围：汤小丹教材第3章《处理机调度》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch3",
+      "调度方式"
+    ]
+  },
+  {
+    "id": "OS-P-052",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第3章 负载均衡",
+    "sourceGroup": "prediction",
+    "sourceLabel": "预测题",
+    "difficulty": "medium",
+    "question": "多处理机系统中负载均衡的目标是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "使处理器工作量尽量均衡，提高利用率"
+      },
+      {
+        "key": "B",
+        "text": "只让一个处理器工作"
+      },
+      {
+        "key": "C",
+        "text": "禁止进程迁移"
+      },
+      {
+        "key": "D",
+        "text": "取消高速缓存"
+      }
+    ],
+    "answer": "A",
+    "explanation": "多处理机调度需要兼顾负载均衡和处理器亲和性。",
+    "noteQuote": "对应范围：汤小丹教材第3章《处理机调度》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch3",
+      "负载均衡"
+    ]
+  },
+  {
+    "id": "OS-P-053",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第3章 处理器亲和性",
+    "sourceGroup": "prediction",
+    "sourceLabel": "预测题",
+    "difficulty": "medium",
+    "question": "处理器亲和性的主要意义是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "提高缓存命中率，减少迁移开销"
+      },
+      {
+        "key": "B",
+        "text": "让进程永远阻塞"
+      },
+      {
+        "key": "C",
+        "text": "删除页表"
+      },
+      {
+        "key": "D",
+        "text": "扩大文件名长度"
+      }
+    ],
+    "answer": "A",
+    "explanation": "进程尽量在曾运行过的CPU上继续运行，有利于利用缓存状态。",
+    "noteQuote": "对应范围：汤小丹教材第3章《处理机调度》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch3",
+      "处理器亲和性"
+    ]
+  },
+  {
+    "id": "OS-P-054",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第3章 调度目标",
+    "sourceGroup": "prediction",
+    "sourceLabel": "预测题",
+    "difficulty": "medium",
+    "question": "短作业优先算法能使哪一指标通常较优？（ ）",
+    "options": [
+      {
+        "key": "A",
+        "text": "平均等待时间"
+      },
+      {
+        "key": "B",
+        "text": "磁盘可靠性"
+      },
+      {
+        "key": "C",
+        "text": "文件共享度"
+      },
+      {
+        "key": "D",
+        "text": "内存碎片数量"
+      }
+    ],
+    "answer": "A",
+    "explanation": "在已知运行时间的情况下，SJF通常能获得较小平均等待/周转时间。",
+    "noteQuote": "对应范围：汤小丹教材第3章《处理机调度》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch3",
+      "调度目标"
+    ]
+  },
+  {
+    "id": "OS-T-055",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第4章 临界区",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "考研真题改编",
+    "difficulty": "medium",
+    "question": "临界区是指（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "访问临界资源的一段程序代码"
+      },
+      {
+        "key": "B",
+        "text": "内核全部代码"
+      },
+      {
+        "key": "C",
+        "text": "用户程序的注释区"
+      },
+      {
+        "key": "D",
+        "text": "磁盘目录区"
+      }
+    ],
+    "answer": "A",
+    "explanation": "临界区是进程中访问共享变量、共享设备等临界资源的代码段。",
+    "noteQuote": "对应范围：汤小丹教材第4章《进程同步与死锁》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch4",
+      "临界区"
+    ]
+  },
+  {
+    "id": "OS-T-056",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第4章 同步准则",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "考研真题改编",
+    "difficulty": "medium",
+    "question": "临界区管理原则“不让权等待”的含义是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "进程不能等待"
+      },
+      {
+        "key": "B",
+        "text": "不能进入临界区的进程应释放处理机"
+      },
+      {
+        "key": "C",
+        "text": "进入临界区后立即释放资源"
+      },
+      {
+        "key": "D",
+        "text": "所有进程同时进入临界区"
+      }
+    ],
+    "answer": "B",
+    "explanation": "不让权等待要求申请失败的进程不应忙等占用CPU，而应阻塞让出处理机。",
+    "noteQuote": "对应范围：汤小丹教材第4章《进程同步与死锁》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch4",
+      "同步准则"
+    ]
+  },
+  {
+    "id": "OS-T-057",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第4章 信号量",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "考研真题改编",
+    "difficulty": "medium",
+    "question": "P操作对信号量S的基本作用是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "S加1，必要时唤醒进程"
+      },
+      {
+        "key": "B",
+        "text": "S减1，若结果小于0则阻塞当前进程"
+      },
+      {
+        "key": "C",
+        "text": "删除信号量"
+      },
+      {
+        "key": "D",
+        "text": "把S置为0"
+      }
+    ],
+    "answer": "B",
+    "explanation": "P/wait操作表示申请资源，S--，若资源不足则进入等待队列。",
+    "noteQuote": "对应范围：汤小丹教材第4章《进程同步与死锁》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch4",
+      "信号量"
+    ]
+  },
+  {
+    "id": "OS-T-058",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第4章 生产者消费者",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "考研真题改编",
+    "difficulty": "medium",
+    "question": "有界缓冲区问题中，empty信号量通常表示（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "已装满的缓冲区数量"
+      },
+      {
+        "key": "B",
+        "text": "空缓冲区数量"
+      },
+      {
+        "key": "C",
+        "text": "消费者数量"
+      },
+      {
+        "key": "D",
+        "text": "生产者数量"
+      }
+    ],
+    "answer": "B",
+    "explanation": "empty用于记录可用空缓冲区个数，full记录已有产品个数。",
+    "noteQuote": "对应范围：汤小丹教材第4章《进程同步与死锁》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch4",
+      "生产者消费者"
+    ]
+  },
+  {
+    "id": "OS-T-059",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第4章 读者写者",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "考研真题改编",
+    "difficulty": "medium",
+    "question": "读者-写者问题中，写者互斥的原因是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "多个写者同时写会破坏数据一致性"
+      },
+      {
+        "key": "B",
+        "text": "读者不能并发读"
+      },
+      {
+        "key": "C",
+        "text": "写者不访问共享数据"
+      },
+      {
+        "key": "D",
+        "text": "写者只读文件"
+      }
+    ],
+    "answer": "A",
+    "explanation": "写操作会改变共享对象，多个写者或读写同时进行都可能造成不一致。",
+    "noteQuote": "对应范围：汤小丹教材第4章《进程同步与死锁》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch4",
+      "读者写者"
+    ]
+  },
+  {
+    "id": "OS-T-060",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第4章 死锁条件",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "考研真题改编",
+    "difficulty": "medium",
+    "question": "死锁产生的四个必要条件不包括（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "互斥条件"
+      },
+      {
+        "key": "B",
+        "text": "请求和保持条件"
+      },
+      {
+        "key": "C",
+        "text": "不可剥夺条件"
+      },
+      {
+        "key": "D",
+        "text": "优先级最高条件"
+      }
+    ],
+    "answer": "D",
+    "explanation": "死锁必要条件是互斥、请求保持、不可剥夺和循环等待。",
+    "noteQuote": "对应范围：汤小丹教材第4章《进程同步与死锁》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch4",
+      "死锁条件"
+    ]
+  },
+  {
+    "id": "OS-T-061",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第4章 死锁预防",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "考研真题改编",
+    "difficulty": "medium",
+    "question": "一次性申请所有资源主要破坏的是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "请求和保持条件"
+      },
+      {
+        "key": "B",
+        "text": "互斥条件"
+      },
+      {
+        "key": "C",
+        "text": "不可剥夺条件"
+      },
+      {
+        "key": "D",
+        "text": "进程并发条件"
+      }
+    ],
+    "answer": "A",
+    "explanation": "进程运行前一次申请所需资源，得不到则不占有任何资源，可破坏请求保持条件。",
+    "noteQuote": "对应范围：汤小丹教材第4章《进程同步与死锁》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch4",
+      "死锁预防"
+    ]
+  },
+  {
+    "id": "OS-T-062",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第4章 银行家算法",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "考研真题改编",
+    "difficulty": "medium",
+    "question": "银行家算法属于（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "死锁预防"
+      },
+      {
+        "key": "B",
+        "text": "死锁避免"
+      },
+      {
+        "key": "C",
+        "text": "死锁检测"
+      },
+      {
+        "key": "D",
+        "text": "死锁解除"
+      }
+    ],
+    "answer": "B",
+    "explanation": "银行家算法在分配前进行安全性检查，使系统保持在安全状态，属于死锁避免。",
+    "noteQuote": "对应范围：汤小丹教材第4章《进程同步与死锁》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch4",
+      "银行家算法"
+    ]
+  },
+  {
+    "id": "OS-T-063",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第4章 安全状态",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "考研真题改编",
+    "difficulty": "medium",
+    "question": "系统处于安全状态意味着（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "一定不会发生死锁"
+      },
+      {
+        "key": "B",
+        "text": "已经发生死锁"
+      },
+      {
+        "key": "C",
+        "text": "所有资源均空闲"
+      },
+      {
+        "key": "D",
+        "text": "所有进程都运行态"
+      }
+    ],
+    "answer": "A",
+    "explanation": "安全状态存在一个安全序列，按该序列可使所有进程顺利完成，因此不会进入死锁。",
+    "noteQuote": "对应范围：汤小丹教材第4章《进程同步与死锁》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch4",
+      "安全状态"
+    ]
+  },
+  {
+    "id": "OS-P-064",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第4章 硬件同步",
+    "sourceGroup": "prediction",
+    "sourceLabel": "预测题",
+    "difficulty": "medium",
+    "question": "Test-and-Set指令可用于实现互斥，是因为它（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "能原子地测试并修改共享变量"
+      },
+      {
+        "key": "B",
+        "text": "能自动分配磁盘块"
+      },
+      {
+        "key": "C",
+        "text": "能替代文件目录"
+      },
+      {
+        "key": "D",
+        "text": "能计算响应比"
+      }
+    ],
+    "answer": "A",
+    "explanation": "TS/Swap等硬件指令保证读改写不可分割，从而构造锁。",
+    "noteQuote": "对应范围：汤小丹教材第4章《进程同步与死锁》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch4",
+      "硬件同步"
+    ]
+  },
+  {
+    "id": "OS-P-065",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第4章 管程",
+    "sourceGroup": "prediction",
+    "sourceLabel": "预测题",
+    "difficulty": "medium",
+    "question": "管程机制的核心思想是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "把共享数据及其操作封装起来，并保证互斥进入"
+      },
+      {
+        "key": "B",
+        "text": "让所有进程忙等"
+      },
+      {
+        "key": "C",
+        "text": "完全取消条件变量"
+      },
+      {
+        "key": "D",
+        "text": "只用于磁盘调度"
+      }
+    ],
+    "answer": "A",
+    "explanation": "管程是抽象数据类型，将共享变量和操作封装，并由编译器/系统保证互斥。",
+    "noteQuote": "对应范围：汤小丹教材第4章《进程同步与死锁》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch4",
+      "管程"
+    ]
+  },
+  {
+    "id": "OS-P-066",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第4章 条件变量",
+    "sourceGroup": "prediction",
+    "sourceLabel": "预测题",
+    "difficulty": "medium",
+    "question": "管程中的条件变量通常用于（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "进程因条件不满足而等待和被唤醒"
+      },
+      {
+        "key": "B",
+        "text": "保存文件名"
+      },
+      {
+        "key": "C",
+        "text": "记录磁盘柱面号"
+      },
+      {
+        "key": "D",
+        "text": "表示页表长度"
+      }
+    ],
+    "answer": "A",
+    "explanation": "条件变量配合wait/signal实现管程内部的条件同步。",
+    "noteQuote": "对应范围：汤小丹教材第4章《进程同步与死锁》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch4",
+      "条件变量"
+    ]
+  },
+  {
+    "id": "OS-P-067",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第4章 哲学家进餐",
+    "sourceGroup": "prediction",
+    "sourceLabel": "预测题",
+    "difficulty": "medium",
+    "question": "哲学家进餐问题主要反映的是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "进程同步与死锁问题"
+      },
+      {
+        "key": "B",
+        "text": "文件索引问题"
+      },
+      {
+        "key": "C",
+        "text": "页表访问问题"
+      },
+      {
+        "key": "D",
+        "text": "磁盘格式化问题"
+      }
+    ],
+    "answer": "A",
+    "explanation": "该问题体现多个进程竞争有限资源时的互斥、同步和死锁风险。",
+    "noteQuote": "对应范围：汤小丹教材第4章《进程同步与死锁》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch4",
+      "哲学家进餐"
+    ]
+  },
+  {
+    "id": "OS-P-068",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第4章 死锁检测",
+    "sourceGroup": "prediction",
+    "sourceLabel": "预测题",
+    "difficulty": "medium",
+    "question": "资源分配图中若每类资源只有一个实例，出现环路表示（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "一定死锁"
+      },
+      {
+        "key": "B",
+        "text": "一定安全"
+      },
+      {
+        "key": "C",
+        "text": "一定没有死锁"
+      },
+      {
+        "key": "D",
+        "text": "一定需要分页"
+      }
+    ],
+    "answer": "A",
+    "explanation": "每类资源只有一个实例时，资源分配图中存在环路是死锁的充分必要条件。",
+    "noteQuote": "对应范围：汤小丹教材第4章《进程同步与死锁》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch4",
+      "死锁检测"
+    ]
+  },
+  {
+    "id": "OS-P-069",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第4章 死锁解除",
+    "sourceGroup": "prediction",
+    "sourceLabel": "预测题",
+    "difficulty": "medium",
+    "question": "撤销进程解除死锁时应优先考虑（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "代价较小、已运行时间短或优先级低的进程"
+      },
+      {
+        "key": "B",
+        "text": "占用资源最多且优先级最高的核心进程"
+      },
+      {
+        "key": "C",
+        "text": "所有系统进程"
+      },
+      {
+        "key": "D",
+        "text": "空闲进程"
+      }
+    ],
+    "answer": "A",
+    "explanation": "撤销进程应综合代价、优先级、已运行时间和占有资源等，尽量降低损失。",
+    "noteQuote": "对应范围：汤小丹教材第4章《进程同步与死锁》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch4",
+      "死锁解除"
+    ]
+  },
+  {
+    "id": "OS-P-070",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第4章 资源分配",
+    "sourceGroup": "prediction",
+    "sourceLabel": "预测题",
+    "difficulty": "medium",
+    "question": "可剥夺资源和不可剥夺资源的区别是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "可剥夺资源可被强制收回而不破坏计算正确性"
+      },
+      {
+        "key": "B",
+        "text": "不可剥夺资源永远不能使用"
+      },
+      {
+        "key": "C",
+        "text": "可剥夺资源只能是文件名"
+      },
+      {
+        "key": "D",
+        "text": "二者没有区别"
+      }
+    ],
+    "answer": "A",
+    "explanation": "CPU、内存可相对容易剥夺，打印机等输出设备通常不可剥夺。",
+    "noteQuote": "对应范围：汤小丹教材第4章《进程同步与死锁》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch4",
+      "资源分配"
+    ]
+  },
+  {
+    "id": "OS-P-071",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第4章 同步关系",
+    "sourceGroup": "prediction",
+    "sourceLabel": "预测题",
+    "difficulty": "medium",
+    "question": "两个进程A、B要求A的某步骤必须先于B的某步骤，应使用（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "同步信号量"
+      },
+      {
+        "key": "B",
+        "text": "磁盘位示图"
+      },
+      {
+        "key": "C",
+        "text": "页面置换算法"
+      },
+      {
+        "key": "D",
+        "text": "文件哈希"
+      }
+    ],
+    "answer": "A",
+    "explanation": "前趋关系可用初值为0的同步信号量控制，先完成者V，后执行者P。",
+    "noteQuote": "对应范围：汤小丹教材第4章《进程同步与死锁》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch4",
+      "同步关系"
+    ]
+  },
+  {
+    "id": "OS-P-072",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第4章 互斥信号量",
+    "sourceGroup": "prediction",
+    "sourceLabel": "预测题",
+    "difficulty": "medium",
+    "question": "用于保护单个临界资源的互斥信号量初值通常为（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "0"
+      },
+      {
+        "key": "B",
+        "text": "1"
+      },
+      {
+        "key": "C",
+        "text": "-1"
+      },
+      {
+        "key": "D",
+        "text": "进程数+1"
+      }
+    ],
+    "answer": "B",
+    "explanation": "互斥信号量表示一个可用的临界资源，初值一般为1。",
+    "noteQuote": "对应范围：汤小丹教材第4章《进程同步与死锁》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch4",
+      "互斥信号量"
+    ]
+  },
+  {
+    "id": "OS-T-073",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第5章 装入链接",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "考研真题改编",
+    "difficulty": "medium",
+    "question": "静态重定位发生在（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "程序装入内存时"
+      },
+      {
+        "key": "B",
+        "text": "每次访问内存时"
+      },
+      {
+        "key": "C",
+        "text": "文件删除时"
+      },
+      {
+        "key": "D",
+        "text": "磁盘寻道时"
+      }
+    ],
+    "answer": "A",
+    "explanation": "静态重定位由装入程序在装入时一次性修改地址，运行时地址不再改变。",
+    "noteQuote": "对应范围：汤小丹教材第5章《存储器管理》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch5",
+      "装入链接"
+    ]
+  },
+  {
+    "id": "OS-T-074",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第5章 动态重定位",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "考研真题改编",
+    "difficulty": "medium",
+    "question": "动态重定位需要硬件支持，通常依靠（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "基址寄存器/重定位寄存器"
+      },
+      {
+        "key": "B",
+        "text": "文件目录项"
+      },
+      {
+        "key": "C",
+        "text": "磁盘臂"
+      },
+      {
+        "key": "D",
+        "text": "打印机缓冲区"
+      }
+    ],
+    "answer": "A",
+    "explanation": "动态重定位在运行时把逻辑地址加上重定位寄存器形成物理地址。",
+    "noteQuote": "对应范围：汤小丹教材第5章《存储器管理》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch5",
+      "动态重定位"
+    ]
+  },
+  {
+    "id": "OS-T-075",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第5章 交换",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "考研真题改编",
+    "difficulty": "medium",
+    "question": "交换技术的主要作用是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "把暂不运行的进程移出内存以提高内存利用"
+      },
+      {
+        "key": "B",
+        "text": "提高CPU主频"
+      },
+      {
+        "key": "C",
+        "text": "替代文件系统"
+      },
+      {
+        "key": "D",
+        "text": "取消进程状态"
+      }
+    ],
+    "answer": "A",
+    "explanation": "交换在内存与外存之间移动进程，为更多进程进入内存创造空间。",
+    "noteQuote": "对应范围：汤小丹教材第5章《存储器管理》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch5",
+      "交换"
+    ]
+  },
+  {
+    "id": "OS-T-076",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第5章 连续分配",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "考研真题改编",
+    "difficulty": "medium",
+    "question": "首次适应算法分配空闲分区时从（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "空闲分区链表首部开始查找第一个足够大的分区"
+      },
+      {
+        "key": "B",
+        "text": "最大分区开始"
+      },
+      {
+        "key": "C",
+        "text": "最小分区开始"
+      },
+      {
+        "key": "D",
+        "text": "随机分区开始"
+      }
+    ],
+    "answer": "A",
+    "explanation": "首次适应按地址顺序查找第一个满足大小要求的空闲分区。",
+    "noteQuote": "对应范围：汤小丹教材第5章《存储器管理》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch5",
+      "连续分配"
+    ]
+  },
+  {
+    "id": "OS-T-077",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第5章 动态分区",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "考研真题改编",
+    "difficulty": "medium",
+    "question": "动态分区分配中，紧凑技术主要用于解决（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "外部碎片"
+      },
+      {
+        "key": "B",
+        "text": "内部碎片"
+      },
+      {
+        "key": "C",
+        "text": "文件共享"
+      },
+      {
+        "key": "D",
+        "text": "磁盘坏块"
+      }
+    ],
+    "answer": "A",
+    "explanation": "动态分区会产生许多不连续小空闲区，紧凑通过移动进程合并外部碎片。",
+    "noteQuote": "对应范围：汤小丹教材第5章《存储器管理》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch5",
+      "动态分区"
+    ]
+  },
+  {
+    "id": "OS-T-078",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第5章 分页",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "考研真题改编",
+    "difficulty": "medium",
+    "question": "分页存储管理中，逻辑地址通常分为（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "页号和页内偏移"
+      },
+      {
+        "key": "B",
+        "text": "段号和段长"
+      },
+      {
+        "key": "C",
+        "text": "柱面号和磁头号"
+      },
+      {
+        "key": "D",
+        "text": "文件号和目录号"
+      }
+    ],
+    "answer": "A",
+    "explanation": "分页地址由页号p和页内位移d组成，页号查页表得到块号。",
+    "noteQuote": "对应范围：汤小丹教材第5章《存储器管理》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch5",
+      "分页"
+    ]
+  },
+  {
+    "id": "OS-T-079",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第5章 页表",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "考研真题改编",
+    "difficulty": "medium",
+    "question": "页表项的主要作用是记录（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "页号到物理块号的映射及控制位"
+      },
+      {
+        "key": "B",
+        "text": "文件名到目录名"
+      },
+      {
+        "key": "C",
+        "text": "设备号到驱动程序源代码"
+      },
+      {
+        "key": "D",
+        "text": "进程优先级到响应比"
+      }
+    ],
+    "answer": "A",
+    "explanation": "页表项包含物理块号以及有效位、访问位、修改位等控制信息。",
+    "noteQuote": "对应范围：汤小丹教材第5章《存储器管理》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch5",
+      "页表"
+    ]
+  },
+  {
+    "id": "OS-T-080",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第5章 快表",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "考研真题改编",
+    "difficulty": "medium",
+    "question": "引入快表TLB的主要目的是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "加快地址转换速度"
+      },
+      {
+        "key": "B",
+        "text": "增加磁盘容量"
+      },
+      {
+        "key": "C",
+        "text": "减少文件名长度"
+      },
+      {
+        "key": "D",
+        "text": "替代CPU调度"
+      }
+    ],
+    "answer": "A",
+    "explanation": "TLB缓存最近使用的页表项，减少访问页表的内存访问次数。",
+    "noteQuote": "对应范围：汤小丹教材第5章《存储器管理》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch5",
+      "快表"
+    ]
+  },
+  {
+    "id": "OS-T-081",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第5章 分段",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "考研真题改编",
+    "difficulty": "medium",
+    "question": "分段管理相比分页管理更能体现（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "用户程序的逻辑结构"
+      },
+      {
+        "key": "B",
+        "text": "固定大小划分"
+      },
+      {
+        "key": "C",
+        "text": "只产生内部碎片"
+      },
+      {
+        "key": "D",
+        "text": "无需地址保护"
+      }
+    ],
+    "answer": "A",
+    "explanation": "分段按程序逻辑单位划分，如代码段、数据段、栈段，便于共享和保护。",
+    "noteQuote": "对应范围：汤小丹教材第5章《存储器管理》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch5",
+      "分段"
+    ]
+  },
+  {
+    "id": "OS-P-082",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第5章 段页式",
+    "sourceGroup": "prediction",
+    "sourceLabel": "预测题",
+    "difficulty": "medium",
+    "question": "段页式管理的地址结构通常包括（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "段号、页号、页内位移"
+      },
+      {
+        "key": "B",
+        "text": "页号、柱面号、扇区号"
+      },
+      {
+        "key": "C",
+        "text": "文件名、扩展名、权限位"
+      },
+      {
+        "key": "D",
+        "text": "进程号、设备号、信号量"
+      }
+    ],
+    "answer": "A",
+    "explanation": "段页式先按段划分，每段内部再分页，地址由段号、段内页号和页内位移组成。",
+    "noteQuote": "对应范围：汤小丹教材第5章《存储器管理》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch5",
+      "段页式"
+    ]
+  },
+  {
+    "id": "OS-P-083",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第5章 内部碎片",
+    "sourceGroup": "prediction",
+    "sourceLabel": "预测题",
+    "difficulty": "medium",
+    "question": "固定分区分配容易产生（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "内部碎片"
+      },
+      {
+        "key": "B",
+        "text": "目录碎片"
+      },
+      {
+        "key": "C",
+        "text": "死锁检测错误"
+      },
+      {
+        "key": "D",
+        "text": "设备中断"
+      }
+    ],
+    "answer": "A",
+    "explanation": "进程占用固定分区后，分区内未用部分不能分给其他进程，形成内部碎片。",
+    "noteQuote": "对应范围：汤小丹教材第5章《存储器管理》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch5",
+      "内部碎片"
+    ]
+  },
+  {
+    "id": "OS-P-084",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第5章 外部碎片",
+    "sourceGroup": "prediction",
+    "sourceLabel": "预测题",
+    "difficulty": "medium",
+    "question": "分页管理一般不会产生外部碎片，是因为（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "进程页面可装入任意空闲物理块"
+      },
+      {
+        "key": "B",
+        "text": "每个进程必须连续装入"
+      },
+      {
+        "key": "C",
+        "text": "页大小可无限变小"
+      },
+      {
+        "key": "D",
+        "text": "不需要内存"
+      }
+    ],
+    "answer": "A",
+    "explanation": "分页以固定大小块为单位，逻辑页面可放入任意物理块，不要求连续。",
+    "noteQuote": "对应范围：汤小丹教材第5章《存储器管理》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch5",
+      "外部碎片"
+    ]
+  },
+  {
+    "id": "OS-P-085",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第5章 地址变换",
+    "sourceGroup": "prediction",
+    "sourceLabel": "预测题",
+    "difficulty": "medium",
+    "question": "某页式系统页大小为1KB，逻辑地址2500对应的页号和页内偏移是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "页号2，偏移452"
+      },
+      {
+        "key": "B",
+        "text": "页号1，偏移1476"
+      },
+      {
+        "key": "C",
+        "text": "页号3，偏移500"
+      },
+      {
+        "key": "D",
+        "text": "页号0，偏移2500"
+      }
+    ],
+    "answer": "A",
+    "explanation": "1KB=1024B，2500/1024=2余452，所以页号2、页内偏移452。",
+    "noteQuote": "对应范围：汤小丹教材第5章《存储器管理》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch5",
+      "地址变换"
+    ]
+  },
+  {
+    "id": "OS-P-086",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第5章 多级页表",
+    "sourceGroup": "prediction",
+    "sourceLabel": "预测题",
+    "difficulty": "medium",
+    "question": "多级页表的主要作用是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "减少连续存放页表所需的内存空间"
+      },
+      {
+        "key": "B",
+        "text": "消除所有页故障"
+      },
+      {
+        "key": "C",
+        "text": "替代文件目录"
+      },
+      {
+        "key": "D",
+        "text": "使页大小可变"
+      }
+    ],
+    "answer": "A",
+    "explanation": "多级页表只为实际使用的虚拟地址空间建立低级页表，可节省页表空间。",
+    "noteQuote": "对应范围：汤小丹教材第5章《存储器管理》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch5",
+      "多级页表"
+    ]
+  },
+  {
+    "id": "OS-P-087",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第5章 反置页表",
+    "sourceGroup": "prediction",
+    "sourceLabel": "预测题",
+    "difficulty": "medium",
+    "question": "反置页表的表项数通常取决于（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "物理块数"
+      },
+      {
+        "key": "B",
+        "text": "虚拟页数"
+      },
+      {
+        "key": "C",
+        "text": "文件个数"
+      },
+      {
+        "key": "D",
+        "text": "进程优先级数"
+      }
+    ],
+    "answer": "A",
+    "explanation": "反置页表按物理块建立表项，因此表项数与物理内存块数相关。",
+    "noteQuote": "对应范围：汤小丹教材第5章《存储器管理》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch5",
+      "反置页表"
+    ]
+  },
+  {
+    "id": "OS-P-088",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第5章 保护",
+    "sourceGroup": "prediction",
+    "sourceLabel": "预测题",
+    "difficulty": "medium",
+    "question": "分段管理中越界检查通常比较（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "段内偏移是否小于段长"
+      },
+      {
+        "key": "B",
+        "text": "文件名是否为空"
+      },
+      {
+        "key": "C",
+        "text": "柱面号是否递增"
+      },
+      {
+        "key": "D",
+        "text": "信号量是否为1"
+      }
+    ],
+    "answer": "A",
+    "explanation": "段表项含段长，地址转换时需要检查段内地址是否越界。",
+    "noteQuote": "对应范围：汤小丹教材第5章《存储器管理》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch5",
+      "保护"
+    ]
+  },
+  {
+    "id": "OS-P-089",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第5章 共享",
+    "sourceGroup": "prediction",
+    "sourceLabel": "预测题",
+    "difficulty": "medium",
+    "question": "分段系统便于共享的主要原因是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "段是有意义的逻辑单位，可让多个进程段表项指向同一段"
+      },
+      {
+        "key": "B",
+        "text": "所有段大小完全相同"
+      },
+      {
+        "key": "C",
+        "text": "段号等于物理块号"
+      },
+      {
+        "key": "D",
+        "text": "没有地址转换"
+      }
+    ],
+    "answer": "A",
+    "explanation": "代码段、库函数段等可作为独立逻辑单位被多个进程共享。",
+    "noteQuote": "对应范围：汤小丹教材第5章《存储器管理》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch5",
+      "共享"
+    ]
+  },
+  {
+    "id": "OS-P-090",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第5章 页面大小",
+    "sourceGroup": "prediction",
+    "sourceLabel": "预测题",
+    "difficulty": "medium",
+    "question": "页面过小可能带来的问题是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "页表过大、管理开销增加"
+      },
+      {
+        "key": "B",
+        "text": "内部碎片必然最大"
+      },
+      {
+        "key": "C",
+        "text": "无法实现虚拟内存"
+      },
+      {
+        "key": "D",
+        "text": "进程不能运行"
+      }
+    ],
+    "answer": "A",
+    "explanation": "页面越小，页数越多，页表长度和管理开销越大。",
+    "noteQuote": "对应范围：汤小丹教材第5章《存储器管理》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch5",
+      "页面大小"
+    ]
+  },
+  {
+    "id": "OS-T-091",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第6章 虚拟存储器",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "考研真题改编",
+    "difficulty": "medium",
+    "question": "虚拟存储器的理论基础是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "程序局部性原理"
+      },
+      {
+        "key": "B",
+        "text": "死锁四条件"
+      },
+      {
+        "key": "C",
+        "text": "文件目录树"
+      },
+      {
+        "key": "D",
+        "text": "磁盘扇区编号"
+      }
+    ],
+    "answer": "A",
+    "explanation": "时间局部性和空间局部性说明程序在一段时间内只访问部分代码和数据。",
+    "noteQuote": "对应范围：汤小丹教材第6章《虚拟存储器》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch6",
+      "虚拟存储器"
+    ]
+  },
+  {
+    "id": "OS-T-092",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第6章 请求分页",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "考研真题改编",
+    "difficulty": "medium",
+    "question": "请求分页系统中，缺页中断发生于（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "访问的页面不在内存时"
+      },
+      {
+        "key": "B",
+        "text": "每次访问TLB命中时"
+      },
+      {
+        "key": "C",
+        "text": "文件关闭时"
+      },
+      {
+        "key": "D",
+        "text": "进程创建PCB时"
+      }
+    ],
+    "answer": "A",
+    "explanation": "若页表项有效位表明页面不在内存，访问该页会产生缺页中断。",
+    "noteQuote": "对应范围：汤小丹教材第6章《虚拟存储器》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch6",
+      "请求分页"
+    ]
+  },
+  {
+    "id": "OS-T-093",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第6章 页面置换",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "考研真题改编",
+    "difficulty": "medium",
+    "question": "OPT页面置换算法选择淘汰（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "未来最长时间不再访问的页面"
+      },
+      {
+        "key": "B",
+        "text": "最早进入内存的页面"
+      },
+      {
+        "key": "C",
+        "text": "最近最久未使用页面"
+      },
+      {
+        "key": "D",
+        "text": "访问次数最多页面"
+      }
+    ],
+    "answer": "A",
+    "explanation": "最佳置换选择未来最久不使用页，理论上缺页率最低但实际无法精确实现。",
+    "noteQuote": "对应范围：汤小丹教材第6章《虚拟存储器》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch6",
+      "页面置换"
+    ]
+  },
+  {
+    "id": "OS-T-094",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第6章 FIFO",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "考研真题改编",
+    "difficulty": "medium",
+    "question": "FIFO页面置换算法可能出现（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "Belady异常"
+      },
+      {
+        "key": "B",
+        "text": "总是最优"
+      },
+      {
+        "key": "C",
+        "text": "永不缺页"
+      },
+      {
+        "key": "D",
+        "text": "不需要页表"
+      }
+    ],
+    "answer": "A",
+    "explanation": "FIFO可能随着分配页框数增加反而缺页次数增加，即Belady异常。",
+    "noteQuote": "对应范围：汤小丹教材第6章《虚拟存储器》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch6",
+      "FIFO"
+    ]
+  },
+  {
+    "id": "OS-T-095",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第6章 LRU",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "考研真题改编",
+    "difficulty": "medium",
+    "question": "LRU算法依据的是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "最近最久未使用的页面将来也可能较少使用"
+      },
+      {
+        "key": "B",
+        "text": "先进先出原则"
+      },
+      {
+        "key": "C",
+        "text": "页面大小最大原则"
+      },
+      {
+        "key": "D",
+        "text": "磁道距离最短原则"
+      }
+    ],
+    "answer": "A",
+    "explanation": "LRU利用时间局部性，淘汰最近最长时间未被访问的页面。",
+    "noteQuote": "对应范围：汤小丹教材第6章《虚拟存储器》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch6",
+      "LRU"
+    ]
+  },
+  {
+    "id": "OS-T-096",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第6章 Clock",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "考研真题改编",
+    "difficulty": "medium",
+    "question": "Clock算法中的访问位为1时，通常处理为（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "清0并给该页第二次机会"
+      },
+      {
+        "key": "B",
+        "text": "立即淘汰"
+      },
+      {
+        "key": "C",
+        "text": "把页写入目录"
+      },
+      {
+        "key": "D",
+        "text": "终止进程"
+      }
+    ],
+    "answer": "A",
+    "explanation": "简单Clock扫描时若访问位为1，清零并跳过，给该页第二次机会。",
+    "noteQuote": "对应范围：汤小丹教材第6章《虚拟存储器》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch6",
+      "Clock"
+    ]
+  },
+  {
+    "id": "OS-T-097",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第6章 抖动",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "考研真题改编",
+    "difficulty": "medium",
+    "question": "抖动产生的主要原因是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "进程频繁缺页，系统大部分时间用于页面换入换出"
+      },
+      {
+        "key": "B",
+        "text": "CPU主频过高"
+      },
+      {
+        "key": "C",
+        "text": "文件名过短"
+      },
+      {
+        "key": "D",
+        "text": "目录项太多"
+      }
+    ],
+    "answer": "A",
+    "explanation": "内存驻留集小于工作集时会频繁缺页，导致抖动。",
+    "noteQuote": "对应范围：汤小丹教材第6章《虚拟存储器》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch6",
+      "抖动"
+    ]
+  },
+  {
+    "id": "OS-T-098",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第6章 工作集",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "考研真题改编",
+    "difficulty": "medium",
+    "question": "工作集模型用于（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "估计进程在一段时间内实际需要的页面集合"
+      },
+      {
+        "key": "B",
+        "text": "计算磁盘柱面号"
+      },
+      {
+        "key": "C",
+        "text": "统计文件名长度"
+      },
+      {
+        "key": "D",
+        "text": "决定打印机数量"
+      }
+    ],
+    "answer": "A",
+    "explanation": "工作集是最近一段时间窗口内进程访问过的页面集合，用于控制驻留集和防止抖动。",
+    "noteQuote": "对应范围：汤小丹教材第6章《虚拟存储器》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch6",
+      "工作集"
+    ]
+  },
+  {
+    "id": "OS-T-099",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第6章 内存映射文件",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "考研真题改编",
+    "difficulty": "medium",
+    "question": "关于内存映射文件，下列说法正确的是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "可把文件映射到进程虚拟地址空间"
+      },
+      {
+        "key": "B",
+        "text": "只能映射到物理地址空间"
+      },
+      {
+        "key": "C",
+        "text": "不能用于进程间共享"
+      },
+      {
+        "key": "D",
+        "text": "与虚拟存储无关"
+      }
+    ],
+    "answer": "A",
+    "explanation": "内存映射文件把文件内容映射到进程虚拟地址空间，可通过内存访问方式读写文件，也可支持共享。",
+    "noteQuote": "对应范围：汤小丹教材第6章《虚拟存储器》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch6",
+      "内存映射文件"
+    ]
+  },
+  {
+    "id": "OS-P-100",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第6章 页故障处理",
+    "sourceGroup": "prediction",
+    "sourceLabel": "预测题",
+    "difficulty": "medium",
+    "question": "缺页中断处理过程中，若内存没有空闲页框，操作系统需要（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "选择牺牲页进行页面置换"
+      },
+      {
+        "key": "B",
+        "text": "直接删除进程PCB"
+      },
+      {
+        "key": "C",
+        "text": "关闭所有文件"
+      },
+      {
+        "key": "D",
+        "text": "取消页表"
+      }
+    ],
+    "answer": "A",
+    "explanation": "无空闲页框时需按置换算法淘汰某页，必要时写回外存。",
+    "noteQuote": "对应范围：汤小丹教材第6章《虚拟存储器》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch6",
+      "页故障处理"
+    ]
+  },
+  {
+    "id": "OS-P-101",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第6章 有效访问时间",
+    "sourceGroup": "prediction",
+    "sourceLabel": "预测题",
+    "difficulty": "medium",
+    "question": "若快表命中率提高，页式系统有效访问时间通常会（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "降低"
+      },
+      {
+        "key": "B",
+        "text": "升高"
+      },
+      {
+        "key": "C",
+        "text": "不变"
+      },
+      {
+        "key": "D",
+        "text": "变为无穷大"
+      }
+    ],
+    "answer": "A",
+    "explanation": "TLB命中可减少访问页表的内存次数，命中率越高平均地址转换越快。",
+    "noteQuote": "对应范围：汤小丹教材第6章《虚拟存储器》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch6",
+      "有效访问时间"
+    ]
+  },
+  {
+    "id": "OS-P-102",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第6章 局部置换",
+    "sourceGroup": "prediction",
+    "sourceLabel": "预测题",
+    "difficulty": "medium",
+    "question": "局部置换算法的特点是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "只在本进程驻留集内选择淘汰页"
+      },
+      {
+        "key": "B",
+        "text": "可淘汰任意进程页面"
+      },
+      {
+        "key": "C",
+        "text": "不产生缺页"
+      },
+      {
+        "key": "D",
+        "text": "不需要页框"
+      }
+    ],
+    "answer": "A",
+    "explanation": "局部置换限制牺牲页来自当前进程，便于控制各进程驻留集。",
+    "noteQuote": "对应范围：汤小丹教材第6章《虚拟存储器》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch6",
+      "局部置换"
+    ]
+  },
+  {
+    "id": "OS-P-103",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第6章 全局置换",
+    "sourceGroup": "prediction",
+    "sourceLabel": "预测题",
+    "difficulty": "medium",
+    "question": "全局置换算法可能导致的问题是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "一个进程频繁缺页会影响其他进程的页框数量"
+      },
+      {
+        "key": "B",
+        "text": "永远不需要调度"
+      },
+      {
+        "key": "C",
+        "text": "无法访问外存"
+      },
+      {
+        "key": "D",
+        "text": "不会发生抖动"
+      }
+    ],
+    "answer": "A",
+    "explanation": "全局置换在所有进程页框中选择牺牲页，进程之间会相互影响。",
+    "noteQuote": "对应范围：汤小丹教材第6章《虚拟存储器》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch6",
+      "全局置换"
+    ]
+  },
+  {
+    "id": "OS-P-104",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第6章 修改位",
+    "sourceGroup": "prediction",
+    "sourceLabel": "预测题",
+    "difficulty": "medium",
+    "question": "页面置换时，修改位为0的页面被淘汰通常（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "不必写回外存"
+      },
+      {
+        "key": "B",
+        "text": "必须写回外存"
+      },
+      {
+        "key": "C",
+        "text": "不能淘汰"
+      },
+      {
+        "key": "D",
+        "text": "要删除页表"
+      }
+    ],
+    "answer": "A",
+    "explanation": "未被修改的页面与外存副本一致，可直接丢弃，节省I/O。",
+    "noteQuote": "对应范围：汤小丹教材第6章《虚拟存储器》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch6",
+      "修改位"
+    ]
+  },
+  {
+    "id": "OS-P-105",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第6章 请求分页性能",
+    "sourceGroup": "prediction",
+    "sourceLabel": "预测题",
+    "difficulty": "medium",
+    "question": "降低缺页率的直接效果通常是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "减少外存I/O，提高有效访问速度"
+      },
+      {
+        "key": "B",
+        "text": "增加死锁概率"
+      },
+      {
+        "key": "C",
+        "text": "缩短文件名"
+      },
+      {
+        "key": "D",
+        "text": "减少目录层次"
+      }
+    ],
+    "answer": "A",
+    "explanation": "缺页中断需要磁盘I/O，代价远高于内存访问，降低缺页率可显著提升性能。",
+    "noteQuote": "对应范围：汤小丹教材第6章《虚拟存储器》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch6",
+      "请求分页性能"
+    ]
+  },
+  {
+    "id": "OS-P-106",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第6章 页面缓冲",
+    "sourceGroup": "prediction",
+    "sourceLabel": "预测题",
+    "difficulty": "medium",
+    "question": "页面缓冲算法设置空闲页面链表的目的之一是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "加快缺页时获得空闲页框"
+      },
+      {
+        "key": "B",
+        "text": "取消页面置换"
+      },
+      {
+        "key": "C",
+        "text": "禁止写回磁盘"
+      },
+      {
+        "key": "D",
+        "text": "替代进程调度"
+      }
+    ],
+    "answer": "A",
+    "explanation": "保持一定空闲页框可减少缺页处理等待，提高响应速度。",
+    "noteQuote": "对应范围：汤小丹教材第6章《虚拟存储器》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch6",
+      "页面缓冲"
+    ]
+  },
+  {
+    "id": "OS-P-107",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第6章 驻留集",
+    "sourceGroup": "prediction",
+    "sourceLabel": "预测题",
+    "difficulty": "medium",
+    "question": "驻留集是指（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "某进程当前实际驻留在内存中的页面集合"
+      },
+      {
+        "key": "B",
+        "text": "磁盘上所有文件集合"
+      },
+      {
+        "key": "C",
+        "text": "所有阻塞进程集合"
+      },
+      {
+        "key": "D",
+        "text": "CPU寄存器集合"
+      }
+    ],
+    "answer": "A",
+    "explanation": "驻留集是分配给进程并当前在内存中的页面集合。",
+    "noteQuote": "对应范围：汤小丹教材第6章《虚拟存储器》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch6",
+      "驻留集"
+    ]
+  },
+  {
+    "id": "OS-P-108",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第6章 虚拟地址空间",
+    "sourceGroup": "prediction",
+    "sourceLabel": "预测题",
+    "difficulty": "medium",
+    "question": "虚拟地址空间大小主要由（ ）决定。",
+    "options": [
+      {
+        "key": "A",
+        "text": "逻辑地址位数"
+      },
+      {
+        "key": "B",
+        "text": "实际内存大小唯一决定"
+      },
+      {
+        "key": "C",
+        "text": "磁盘转速"
+      },
+      {
+        "key": "D",
+        "text": "文件目录项长度"
+      }
+    ],
+    "answer": "A",
+    "explanation": "虚拟地址空间由CPU地址结构/逻辑地址位数决定，可大于物理内存。",
+    "noteQuote": "对应范围：汤小丹教材第6章《虚拟存储器》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch6",
+      "虚拟地址空间"
+    ]
+  },
+  {
+    "id": "OS-T-109",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第7章 I/O层次",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "考研真题改编",
+    "difficulty": "medium",
+    "question": "设备独立性软件的主要作用是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "屏蔽具体设备差异，向上提供统一接口"
+      },
+      {
+        "key": "B",
+        "text": "直接焊接硬件"
+      },
+      {
+        "key": "C",
+        "text": "替代所有用户程序"
+      },
+      {
+        "key": "D",
+        "text": "负责进程调度"
+      }
+    ],
+    "answer": "A",
+    "explanation": "设备独立性软件位于驱动程序之上，提供统一命名、保护、缓冲和分配等功能。",
+    "noteQuote": "对应范围：汤小丹教材第7章《输入/输出系统》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch7",
+      "I/O层次"
+    ]
+  },
+  {
+    "id": "OS-T-110",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第7章 设备控制器",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "考研真题改编",
+    "difficulty": "medium",
+    "question": "CPU与外设之间通常通过（ ）交换控制信息和数据。",
+    "options": [
+      {
+        "key": "A",
+        "text": "设备控制器"
+      },
+      {
+        "key": "B",
+        "text": "文件目录"
+      },
+      {
+        "key": "C",
+        "text": "页表"
+      },
+      {
+        "key": "D",
+        "text": "信号量"
+      }
+    ],
+    "answer": "A",
+    "explanation": "设备控制器连接CPU/内存和具体设备，包含控制寄存器、状态寄存器和数据缓冲。",
+    "noteQuote": "对应范围：汤小丹教材第7章《输入/输出系统》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch7",
+      "设备控制器"
+    ]
+  },
+  {
+    "id": "OS-T-111",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第7章 DMA",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "考研真题改编",
+    "difficulty": "medium",
+    "question": "DMA方式的主要优点是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "大块数据传送时减少CPU逐字节干预"
+      },
+      {
+        "key": "B",
+        "text": "完全不需要内存"
+      },
+      {
+        "key": "C",
+        "text": "不能产生中断"
+      },
+      {
+        "key": "D",
+        "text": "只适用于键盘输入"
+      }
+    ],
+    "answer": "A",
+    "explanation": "DMA由DMA控制器直接在内存和设备之间传送数据，CPU只在开始和结束时参与。",
+    "noteQuote": "对应范围：汤小丹教材第7章《输入/输出系统》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch7",
+      "DMA"
+    ]
+  },
+  {
+    "id": "OS-T-112",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第7章 中断I/O",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "考研真题改编",
+    "difficulty": "medium",
+    "question": "中断驱动I/O相对于程序查询I/O的优点是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "减少CPU忙等，提高利用率"
+      },
+      {
+        "key": "B",
+        "text": "必须一直轮询状态位"
+      },
+      {
+        "key": "C",
+        "text": "不能并发"
+      },
+      {
+        "key": "D",
+        "text": "只能用于磁盘格式化"
+      }
+    ],
+    "answer": "A",
+    "explanation": "中断方式下CPU发出I/O请求后可执行其他任务，设备完成后再中断通知。",
+    "noteQuote": "对应范围：汤小丹教材第7章《输入/输出系统》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch7",
+      "中断I/O"
+    ]
+  },
+  {
+    "id": "OS-T-113",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第7章 缓冲",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "考研真题改编",
+    "difficulty": "medium",
+    "question": "缓冲技术的主要目的不包括（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "匹配CPU和设备速度差异"
+      },
+      {
+        "key": "B",
+        "text": "减少中断次数"
+      },
+      {
+        "key": "C",
+        "text": "提高并发性"
+      },
+      {
+        "key": "D",
+        "text": "取消所有I/O设备"
+      }
+    ],
+    "answer": "D",
+    "explanation": "缓冲用于协调速度差、减少频繁中断、提高CPU与设备并行程度，不是取消设备。",
+    "noteQuote": "对应范围：汤小丹教材第7章《输入/输出系统》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch7",
+      "缓冲"
+    ]
+  },
+  {
+    "id": "OS-T-114",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第7章 SPOOLing",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "考研真题改编",
+    "difficulty": "medium",
+    "question": "SPOOLing技术把独占设备改造成（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "逻辑上的共享设备"
+      },
+      {
+        "key": "B",
+        "text": "只能由一个进程永远占用"
+      },
+      {
+        "key": "C",
+        "text": "内存页表"
+      },
+      {
+        "key": "D",
+        "text": "文件索引节点"
+      }
+    ],
+    "answer": "A",
+    "explanation": "SPOOLing利用磁盘输入井/输出井和守护进程，将独占设备虚拟为共享设备。",
+    "noteQuote": "对应范围：汤小丹教材第7章《输入/输出系统》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch7",
+      "SPOOLing"
+    ]
+  },
+  {
+    "id": "OS-T-115",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第7章 设备分配",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "考研真题改编",
+    "difficulty": "medium",
+    "question": "设备分配中需要考虑的数据结构通常包括（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "设备控制表、控制器控制表、通道控制表和系统设备表"
+      },
+      {
+        "key": "B",
+        "text": "页表和段表"
+      },
+      {
+        "key": "C",
+        "text": "文件目录树和位示图"
+      },
+      {
+        "key": "D",
+        "text": "就绪队列和后备队列"
+      }
+    ],
+    "answer": "A",
+    "explanation": "设备管理常用DCT、COCT、CHCT、SDT等表记录设备、控制器、通道及系统设备信息。",
+    "noteQuote": "对应范围：汤小丹教材第7章《输入/输出系统》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch7",
+      "设备分配"
+    ]
+  },
+  {
+    "id": "OS-T-116",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第7章 磁盘调度",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "考研真题改编",
+    "difficulty": "medium",
+    "question": "SSTF磁盘调度算法选择（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "距离当前磁头位置最近的请求"
+      },
+      {
+        "key": "B",
+        "text": "柱面号最大的请求"
+      },
+      {
+        "key": "C",
+        "text": "最早到达的请求"
+      },
+      {
+        "key": "D",
+        "text": "随机请求"
+      }
+    ],
+    "answer": "A",
+    "explanation": "最短寻道时间优先选择与当前磁头距离最近的磁道请求。",
+    "noteQuote": "对应范围：汤小丹教材第7章《输入/输出系统》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch7",
+      "磁盘调度"
+    ]
+  },
+  {
+    "id": "OS-T-117",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第7章 SCAN",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "考研真题改编",
+    "difficulty": "medium",
+    "question": "SCAN算法又称电梯算法，是因为它（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "沿一个方向服务请求，到端点后再反向"
+      },
+      {
+        "key": "B",
+        "text": "总是随机选择请求"
+      },
+      {
+        "key": "C",
+        "text": "只服务当前柱面"
+      },
+      {
+        "key": "D",
+        "text": "不考虑方向"
+      }
+    ],
+    "answer": "A",
+    "explanation": "SCAN像电梯一样按当前方向移动服务沿途请求，再改变方向。",
+    "noteQuote": "对应范围：汤小丹教材第7章《输入/输出系统》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch7",
+      "SCAN"
+    ]
+  },
+  {
+    "id": "OS-P-118",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第7章 I/O通道",
+    "sourceGroup": "prediction",
+    "sourceLabel": "预测题",
+    "difficulty": "medium",
+    "question": "通道的主要作用是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "承担部分I/O控制工作，减轻CPU负担"
+      },
+      {
+        "key": "B",
+        "text": "保存文件目录"
+      },
+      {
+        "key": "C",
+        "text": "计算响应比"
+      },
+      {
+        "key": "D",
+        "text": "替代进程PCB"
+      }
+    ],
+    "answer": "A",
+    "explanation": "通道是一种专门负责I/O控制的处理部件，可执行通道程序。",
+    "noteQuote": "对应范围：汤小丹教材第7章《输入/输出系统》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch7",
+      "I/O通道"
+    ]
+  },
+  {
+    "id": "OS-P-119",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第7章 驱动程序",
+    "sourceGroup": "prediction",
+    "sourceLabel": "预测题",
+    "difficulty": "medium",
+    "question": "设备驱动程序通常位于（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "设备独立性软件和设备控制器之间"
+      },
+      {
+        "key": "B",
+        "text": "用户应用和编译器之间"
+      },
+      {
+        "key": "C",
+        "text": "文件名和扩展名之间"
+      },
+      {
+        "key": "D",
+        "text": "页号和页内偏移之间"
+      }
+    ],
+    "answer": "A",
+    "explanation": "驱动程序接收上层抽象请求，转换为对设备控制器的具体命令。",
+    "noteQuote": "对应范围：汤小丹教材第7章《输入/输出系统》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch7",
+      "驱动程序"
+    ]
+  },
+  {
+    "id": "OS-P-120",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第7章 单缓冲",
+    "sourceGroup": "prediction",
+    "sourceLabel": "预测题",
+    "difficulty": "medium",
+    "question": "单缓冲区的作用是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "在输入/输出设备和用户进程之间暂存数据"
+      },
+      {
+        "key": "B",
+        "text": "保存进程PCB"
+      },
+      {
+        "key": "C",
+        "text": "替代页表"
+      },
+      {
+        "key": "D",
+        "text": "防止所有死锁"
+      }
+    ],
+    "answer": "A",
+    "explanation": "缓冲区用于暂存I/O数据，协调生产和消费速度。",
+    "noteQuote": "对应范围：汤小丹教材第7章《输入/输出系统》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch7",
+      "单缓冲"
+    ]
+  },
+  {
+    "id": "OS-P-121",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第7章 双缓冲",
+    "sourceGroup": "prediction",
+    "sourceLabel": "预测题",
+    "difficulty": "medium",
+    "question": "双缓冲相对于单缓冲的主要优势是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "可使设备输入和进程处理更好地重叠"
+      },
+      {
+        "key": "B",
+        "text": "一定减少磁盘容量"
+      },
+      {
+        "key": "C",
+        "text": "禁止中断"
+      },
+      {
+        "key": "D",
+        "text": "取消驱动程序"
+      }
+    ],
+    "answer": "A",
+    "explanation": "一个缓冲区被处理时，另一个可继续输入/输出，提高并行度。",
+    "noteQuote": "对应范围：汤小丹教材第7章《输入/输出系统》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch7",
+      "双缓冲"
+    ]
+  },
+  {
+    "id": "OS-P-122",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第7章 循环缓冲",
+    "sourceGroup": "prediction",
+    "sourceLabel": "预测题",
+    "difficulty": "medium",
+    "question": "循环缓冲适合（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "连续的生产者-消费者式数据流"
+      },
+      {
+        "key": "B",
+        "text": "一次性只处理一个字符且不排队"
+      },
+      {
+        "key": "C",
+        "text": "替代文件目录"
+      },
+      {
+        "key": "D",
+        "text": "计算页号"
+      }
+    ],
+    "answer": "A",
+    "explanation": "循环缓冲用多个缓冲区循环使用，适合流式输入输出。",
+    "noteQuote": "对应范围：汤小丹教材第7章《输入/输出系统》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch7",
+      "循环缓冲"
+    ]
+  },
+  {
+    "id": "OS-P-123",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第7章 C-SCAN",
+    "sourceGroup": "prediction",
+    "sourceLabel": "预测题",
+    "difficulty": "medium",
+    "question": "C-SCAN算法相对于SCAN的特点是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "只在一个方向上服务请求，返回时通常不服务"
+      },
+      {
+        "key": "B",
+        "text": "到端点后立即反向服务"
+      },
+      {
+        "key": "C",
+        "text": "完全按到达顺序"
+      },
+      {
+        "key": "D",
+        "text": "总是选择最近请求"
+      }
+    ],
+    "answer": "A",
+    "explanation": "循环扫描只在单向移动时服务请求，到末端后快速返回起点，提高等待时间均匀性。",
+    "noteQuote": "对应范围：汤小丹教材第7章《输入/输出系统》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch7",
+      "C-SCAN"
+    ]
+  },
+  {
+    "id": "OS-P-124",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第7章 磁盘访问时间",
+    "sourceGroup": "prediction",
+    "sourceLabel": "预测题",
+    "difficulty": "medium",
+    "question": "磁盘访问时间通常主要包括（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "寻道时间、旋转延迟和传输时间"
+      },
+      {
+        "key": "B",
+        "text": "编译时间、链接时间、装入时间"
+      },
+      {
+        "key": "C",
+        "text": "响应比和周转时间"
+      },
+      {
+        "key": "D",
+        "text": "页表时间和目录时间"
+      }
+    ],
+    "answer": "A",
+    "explanation": "磁盘一次访问要移动磁臂、等待扇区旋转到位并传输数据。",
+    "noteQuote": "对应范围：汤小丹教材第7章《输入/输出系统》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch7",
+      "磁盘访问时间"
+    ]
+  },
+  {
+    "id": "OS-P-125",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第7章 设备无关性",
+    "sourceGroup": "prediction",
+    "sourceLabel": "预测题",
+    "difficulty": "medium",
+    "question": "设备无关性的表现之一是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "用户使用逻辑设备名而非具体物理设备名"
+      },
+      {
+        "key": "B",
+        "text": "用户必须知道设备控制器寄存器地址"
+      },
+      {
+        "key": "C",
+        "text": "所有设备只能独占"
+      },
+      {
+        "key": "D",
+        "text": "所有设备不能共享"
+      }
+    ],
+    "answer": "A",
+    "explanation": "逻辑设备名由系统映射到物理设备，便于重定向和统一管理。",
+    "noteQuote": "对应范围：汤小丹教材第7章《输入/输出系统》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch7",
+      "设备无关性"
+    ]
+  },
+  {
+    "id": "OS-P-126",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第7章 假脱机",
+    "sourceGroup": "prediction",
+    "sourceLabel": "预测题",
+    "difficulty": "medium",
+    "question": "打印机常用SPOOLing的原因是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "打印机是慢速独占设备，适合通过输出井排队共享"
+      },
+      {
+        "key": "B",
+        "text": "打印机是CPU寄存器"
+      },
+      {
+        "key": "C",
+        "text": "打印机不需要驱动"
+      },
+      {
+        "key": "D",
+        "text": "打印机只能存储页表"
+      }
+    ],
+    "answer": "A",
+    "explanation": "多个进程的打印输出可先写入磁盘输出井，由后台进程顺序打印。",
+    "noteQuote": "对应范围：汤小丹教材第7章《输入/输出系统》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch7",
+      "假脱机"
+    ]
+  },
+  {
+    "id": "OS-T-127",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第8章 文件概念",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "考研真题改编",
+    "difficulty": "medium",
+    "question": "文件系统按名存取的含义是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "用户通过文件名访问文件，系统完成到物理位置的映射"
+      },
+      {
+        "key": "B",
+        "text": "用户必须输入磁盘块号"
+      },
+      {
+        "key": "C",
+        "text": "只能按inode号访问"
+      },
+      {
+        "key": "D",
+        "text": "只能顺序扫描整盘"
+      }
+    ],
+    "answer": "A",
+    "explanation": "文件系统提供按名存取，目录把文件名映射到FCB/inode等控制信息。",
+    "noteQuote": "对应范围：汤小丹教材第8章《文件管理》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch8",
+      "文件概念"
+    ]
+  },
+  {
+    "id": "OS-T-128",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第8章 文件逻辑结构",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "考研真题改编",
+    "difficulty": "medium",
+    "question": "适合按关键字快速查找的文件逻辑结构是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "索引文件"
+      },
+      {
+        "key": "B",
+        "text": "无结构流式文件"
+      },
+      {
+        "key": "C",
+        "text": "只读顺序文件"
+      },
+      {
+        "key": "D",
+        "text": "空文件"
+      }
+    ],
+    "answer": "A",
+    "explanation": "索引文件为记录关键字建立索引表，可提高随机检索效率。",
+    "noteQuote": "对应范围：汤小丹教材第8章《文件管理》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch8",
+      "文件逻辑结构"
+    ]
+  },
+  {
+    "id": "OS-T-129",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第8章 文件访问",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "考研真题改编",
+    "difficulty": "medium",
+    "question": "顺序访问文件最适合（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "按记录先后依次处理"
+      },
+      {
+        "key": "B",
+        "text": "任意位置频繁随机更新"
+      },
+      {
+        "key": "C",
+        "text": "只存放页表"
+      },
+      {
+        "key": "D",
+        "text": "实现PV操作"
+      }
+    ],
+    "answer": "A",
+    "explanation": "顺序访问从文件开头按顺序读写，适合批量连续处理。",
+    "noteQuote": "对应范围：汤小丹教材第8章《文件管理》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch8",
+      "文件访问"
+    ]
+  },
+  {
+    "id": "OS-T-130",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第8章 目录",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "考研真题改编",
+    "difficulty": "medium",
+    "question": "树形目录结构的主要优点是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "允许不同目录下出现相同文件名并便于分类管理"
+      },
+      {
+        "key": "B",
+        "text": "所有文件必须同名"
+      },
+      {
+        "key": "C",
+        "text": "不能建立子目录"
+      },
+      {
+        "key": "D",
+        "text": "不支持路径名"
+      }
+    ],
+    "answer": "A",
+    "explanation": "树形目录可层次组织文件，路径唯一定位，允许不同目录中重名。",
+    "noteQuote": "对应范围：汤小丹教材第8章《文件管理》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch8",
+      "目录"
+    ]
+  },
+  {
+    "id": "OS-T-131",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第8章 FCB",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "考研真题改编",
+    "difficulty": "medium",
+    "question": "文件控制块FCB中通常保存（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "文件名、物理位置、属性、保护信息等"
+      },
+      {
+        "key": "B",
+        "text": "CPU通用寄存器"
+      },
+      {
+        "key": "C",
+        "text": "进程就绪队列"
+      },
+      {
+        "key": "D",
+        "text": "信号量等待队列"
+      }
+    ],
+    "answer": "A",
+    "explanation": "FCB是文件存在的标志，记录管理文件所需的控制信息。",
+    "noteQuote": "对应范围：汤小丹教材第8章《文件管理》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch8",
+      "FCB"
+    ]
+  },
+  {
+    "id": "OS-T-132",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第8章 硬链接",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "考研真题改编",
+    "difficulty": "medium",
+    "question": "硬链接实现文件共享时，多个目录项通常指向同一个（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "索引节点/inode"
+      },
+      {
+        "key": "B",
+        "text": "用户栈"
+      },
+      {
+        "key": "C",
+        "text": "页表基址寄存器"
+      },
+      {
+        "key": "D",
+        "text": "设备控制器"
+      }
+    ],
+    "answer": "A",
+    "explanation": "硬链接让不同目录项引用同一inode/FCB，引用计数记录链接数。",
+    "noteQuote": "对应范围：汤小丹教材第8章《文件管理》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch8",
+      "硬链接"
+    ]
+  },
+  {
+    "id": "OS-T-133",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第8章 符号链接",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "考研真题改编",
+    "difficulty": "medium",
+    "question": "符号链接文件中保存的通常是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "被链接文件的路径名"
+      },
+      {
+        "key": "B",
+        "text": "被链接文件的全部物理块副本"
+      },
+      {
+        "key": "C",
+        "text": "CPU现场"
+      },
+      {
+        "key": "D",
+        "text": "磁盘转速"
+      }
+    ],
+    "answer": "A",
+    "explanation": "符号链接是一个特殊文件，内容是目标文件路径，访问时再解析路径。",
+    "noteQuote": "对应范围：汤小丹教材第8章《文件管理》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch8",
+      "符号链接"
+    ]
+  },
+  {
+    "id": "OS-T-134",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第8章 文件保护",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "考研真题改编",
+    "difficulty": "medium",
+    "question": "访问控制表ACL的基本思想是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "为对象列出哪些主体具有哪些访问权限"
+      },
+      {
+        "key": "B",
+        "text": "只记录空闲块"
+      },
+      {
+        "key": "C",
+        "text": "替代进程PCB"
+      },
+      {
+        "key": "D",
+        "text": "只保存磁盘柱面"
+      }
+    ],
+    "answer": "A",
+    "explanation": "ACL以文件/对象为中心列出用户或用户组及其权限。",
+    "noteQuote": "对应范围：汤小丹教材第8章《文件管理》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch8",
+      "文件保护"
+    ]
+  },
+  {
+    "id": "OS-T-135",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第8章 打开文件",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "考研真题改编",
+    "difficulty": "medium",
+    "question": "打开文件操作的主要意义是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "把文件控制信息调入内存并建立打开文件表项"
+      },
+      {
+        "key": "B",
+        "text": "立即删除文件"
+      },
+      {
+        "key": "C",
+        "text": "把文件名改为路径名"
+      },
+      {
+        "key": "D",
+        "text": "关闭设备"
+      }
+    ],
+    "answer": "A",
+    "explanation": "open会检查权限、定位FCB/inode，并在系统/进程打开文件表中登记，后续读写通过文件描述符进行。",
+    "noteQuote": "对应范围：汤小丹教材第8章《文件管理》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch8",
+      "打开文件"
+    ]
+  },
+  {
+    "id": "OS-P-136",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第8章 文件类型",
+    "sourceGroup": "prediction",
+    "sourceLabel": "预测题",
+    "difficulty": "medium",
+    "question": "按用途分类，源程序文件、目标文件、可执行文件属于（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "普通文件"
+      },
+      {
+        "key": "B",
+        "text": "目录文件"
+      },
+      {
+        "key": "C",
+        "text": "特殊设备文件"
+      },
+      {
+        "key": "D",
+        "text": "空闲块文件"
+      }
+    ],
+    "answer": "A",
+    "explanation": "它们保存普通数据或程序内容，属于普通文件。",
+    "noteQuote": "对应范围：汤小丹教材第8章《文件管理》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch8",
+      "文件类型"
+    ]
+  },
+  {
+    "id": "OS-P-137",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第8章 物理结构",
+    "sourceGroup": "prediction",
+    "sourceLabel": "预测题",
+    "difficulty": "medium",
+    "question": "连续分配文件的主要优点是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "顺序和随机访问速度快"
+      },
+      {
+        "key": "B",
+        "text": "不需要知道文件长度"
+      },
+      {
+        "key": "C",
+        "text": "扩展特别容易且无碎片"
+      },
+      {
+        "key": "D",
+        "text": "一定没有外部碎片"
+      }
+    ],
+    "answer": "A",
+    "explanation": "连续分配块号连续，定位和顺序读写效率高，但扩展困难且有外部碎片。",
+    "noteQuote": "对应范围：汤小丹教材第8章《文件管理》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch8",
+      "物理结构"
+    ]
+  },
+  {
+    "id": "OS-P-138",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第8章 物理结构",
+    "sourceGroup": "prediction",
+    "sourceLabel": "预测题",
+    "difficulty": "medium",
+    "question": "链接分配文件的主要缺点是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "随机访问效率低"
+      },
+      {
+        "key": "B",
+        "text": "顺序访问不可能"
+      },
+      {
+        "key": "C",
+        "text": "不支持文件扩展"
+      },
+      {
+        "key": "D",
+        "text": "必须连续分配"
+      }
+    ],
+    "answer": "A",
+    "explanation": "链接分配需沿链查找第k块，随机访问慢，但文件扩展方便。",
+    "noteQuote": "对应范围：汤小丹教材第8章《文件管理》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch8",
+      "物理结构"
+    ]
+  },
+  {
+    "id": "OS-P-139",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第8章 索引分配",
+    "sourceGroup": "prediction",
+    "sourceLabel": "预测题",
+    "difficulty": "medium",
+    "question": "索引分配的主要优点是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "既支持随机访问，又避免文件块必须连续"
+      },
+      {
+        "key": "B",
+        "text": "必须为每个文件分配连续空间"
+      },
+      {
+        "key": "C",
+        "text": "不需要任何索引块"
+      },
+      {
+        "key": "D",
+        "text": "只能顺序访问"
+      }
+    ],
+    "answer": "A",
+    "explanation": "索引块记录文件各数据块地址，可直接定位第i块且数据块不必连续。",
+    "noteQuote": "对应范围：汤小丹教材第8章《文件管理》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch8",
+      "索引分配"
+    ]
+  },
+  {
+    "id": "OS-P-140",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第8章 目录查询",
+    "sourceGroup": "prediction",
+    "sourceLabel": "预测题",
+    "difficulty": "medium",
+    "question": "目录项分解法把文件名与文件描述信息分离的好处是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "目录项更短，减少目录检索时读入的信息量"
+      },
+      {
+        "key": "B",
+        "text": "文件不能共享"
+      },
+      {
+        "key": "C",
+        "text": "必须删除inode"
+      },
+      {
+        "key": "D",
+        "text": "不允许重名"
+      }
+    ],
+    "answer": "A",
+    "explanation": "UNIX类系统目录项只含文件名和inode号，详细属性在inode中，可提高目录检索效率。",
+    "noteQuote": "对应范围：汤小丹教材第8章《文件管理》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch8",
+      "目录查询"
+    ]
+  },
+  {
+    "id": "OS-P-141",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第8章 路径名",
+    "sourceGroup": "prediction",
+    "sourceLabel": "预测题",
+    "difficulty": "medium",
+    "question": "绝对路径是指（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "从根目录开始给出的路径"
+      },
+      {
+        "key": "B",
+        "text": "从当前目录开始给出的路径"
+      },
+      {
+        "key": "C",
+        "text": "只含文件扩展名"
+      },
+      {
+        "key": "D",
+        "text": "只含磁盘块号"
+      }
+    ],
+    "answer": "A",
+    "explanation": "绝对路径以根目录为起点，唯一定位文件或目录。",
+    "noteQuote": "对应范围：汤小丹教材第8章《文件管理》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch8",
+      "路径名"
+    ]
+  },
+  {
+    "id": "OS-P-142",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第8章 文件共享",
+    "sourceGroup": "prediction",
+    "sourceLabel": "预测题",
+    "difficulty": "medium",
+    "question": "硬链接不能轻易跨文件系统的主要原因是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "inode号只在本文件系统内有意义"
+      },
+      {
+        "key": "B",
+        "text": "路径名太长"
+      },
+      {
+        "key": "C",
+        "text": "硬链接必须复制所有数据块"
+      },
+      {
+        "key": "D",
+        "text": "硬链接只能指向目录"
+      }
+    ],
+    "answer": "A",
+    "explanation": "不同文件系统的inode编号空间独立，硬链接通常只能在同一文件系统内建立。",
+    "noteQuote": "对应范围：汤小丹教材第8章《文件管理》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch8",
+      "文件共享"
+    ]
+  },
+  {
+    "id": "OS-P-143",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第8章 文件保护",
+    "sourceGroup": "prediction",
+    "sourceLabel": "预测题",
+    "difficulty": "medium",
+    "question": "口令保护文件的主要缺点是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "口令容易泄露且不便细粒度区分权限"
+      },
+      {
+        "key": "B",
+        "text": "不能实现任何保护"
+      },
+      {
+        "key": "C",
+        "text": "必须使用页表"
+      },
+      {
+        "key": "D",
+        "text": "一定导致死锁"
+      }
+    ],
+    "answer": "A",
+    "explanation": "口令机制简单但安全性和权限细分能力弱。",
+    "noteQuote": "对应范围：汤小丹教材第8章《文件管理》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch8",
+      "文件保护"
+    ]
+  },
+  {
+    "id": "OS-P-144",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第8章 一致性",
+    "sourceGroup": "prediction",
+    "sourceLabel": "预测题",
+    "difficulty": "medium",
+    "question": "文件系统一致性检查通常用于发现（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "空闲块表与实际文件占用块之间的不一致"
+      },
+      {
+        "key": "B",
+        "text": "CPU优先级错误"
+      },
+      {
+        "key": "C",
+        "text": "进程状态转换错误"
+      },
+      {
+        "key": "D",
+        "text": "时间片大小错误"
+      }
+    ],
+    "answer": "A",
+    "explanation": "异常断电等可能造成目录、inode、位图/空闲表不一致，需要检查和恢复。",
+    "noteQuote": "对应范围：汤小丹教材第8章《文件管理》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch8",
+      "一致性"
+    ]
+  },
+  {
+    "id": "OS-T-145",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第9章 外存组织",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "考研真题改编",
+    "difficulty": "medium",
+    "question": "文件连续组织方式的缺点是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "文件增长困难且可能产生外部碎片"
+      },
+      {
+        "key": "B",
+        "text": "顺序访问速度慢"
+      },
+      {
+        "key": "C",
+        "text": "无法随机访问"
+      },
+      {
+        "key": "D",
+        "text": "不需要起始块号"
+      }
+    ],
+    "answer": "A",
+    "explanation": "连续分配要求文件占用连续磁盘块，便于访问但扩展困难并产生外部碎片。",
+    "noteQuote": "对应范围：汤小丹教材第9章《磁盘存储器管理》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch9",
+      "外存组织"
+    ]
+  },
+  {
+    "id": "OS-T-146",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第9章 链接组织",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "考研真题改编",
+    "difficulty": "medium",
+    "question": "FAT文件系统中，FAT表的作用是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "记录文件各磁盘块之间的链接关系和空闲状态"
+      },
+      {
+        "key": "B",
+        "text": "保存进程PCB"
+      },
+      {
+        "key": "C",
+        "text": "实现PV操作"
+      },
+      {
+        "key": "D",
+        "text": "存放页表项"
+      }
+    ],
+    "answer": "A",
+    "explanation": "FAT用表项记录下一块号或特殊标记，既支持链式组织也可反映空闲/坏块。",
+    "noteQuote": "对应范围：汤小丹教材第9章《磁盘存储器管理》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch9",
+      "链接组织"
+    ]
+  },
+  {
+    "id": "OS-T-147",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第9章 索引组织",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "考研真题改编",
+    "difficulty": "medium",
+    "question": "索引组织方式中，索引块保存的是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "文件数据块的地址"
+      },
+      {
+        "key": "B",
+        "text": "文件数据本身的全部副本"
+      },
+      {
+        "key": "C",
+        "text": "进程寄存器"
+      },
+      {
+        "key": "D",
+        "text": "信号量值"
+      }
+    ],
+    "answer": "A",
+    "explanation": "索引块由若干磁盘块号组成，指向文件数据块。",
+    "noteQuote": "对应范围：汤小丹教材第9章《磁盘存储器管理》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch9",
+      "索引组织"
+    ]
+  },
+  {
+    "id": "OS-T-148",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第9章 空闲区管理",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "考研真题改编",
+    "difficulty": "medium",
+    "question": "位示图法中，通常每一位表示（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "一个磁盘块是否空闲"
+      },
+      {
+        "key": "B",
+        "text": "一个进程是否运行"
+      },
+      {
+        "key": "C",
+        "text": "一个用户是否登录"
+      },
+      {
+        "key": "D",
+        "text": "一个文件名长度"
+      }
+    ],
+    "answer": "A",
+    "explanation": "位示图用0/1表示对应磁盘块的空闲或占用状态。",
+    "noteQuote": "对应范围：汤小丹教材第9章《磁盘存储器管理》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch9",
+      "空闲区管理"
+    ]
+  },
+  {
+    "id": "OS-T-149",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第9章 成组链接",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "考研真题改编",
+    "difficulty": "medium",
+    "question": "成组链接法适合管理（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "大量空闲磁盘块"
+      },
+      {
+        "key": "B",
+        "text": "CPU时间片"
+      },
+      {
+        "key": "C",
+        "text": "进程优先级"
+      },
+      {
+        "key": "D",
+        "text": "内存页表"
+      }
+    ],
+    "answer": "A",
+    "explanation": "成组链接把空闲块地址分组保存，结合链式结构提高空闲块分配回收效率。",
+    "noteQuote": "对应范围：汤小丹教材第9章《磁盘存储器管理》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch9",
+      "成组链接"
+    ]
+  },
+  {
+    "id": "OS-T-150",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第9章 磁盘高速缓存",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "考研真题改编",
+    "difficulty": "medium",
+    "question": "磁盘高速缓存的主要作用是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "减少实际磁盘I/O次数，提高访问速度"
+      },
+      {
+        "key": "B",
+        "text": "增加磁盘物理柱面数"
+      },
+      {
+        "key": "C",
+        "text": "替代文件名"
+      },
+      {
+        "key": "D",
+        "text": "防止进程同步"
+      }
+    ],
+    "answer": "A",
+    "explanation": "缓存保存近期访问磁盘块，命中时可直接从内存返回，降低磁盘访问开销。",
+    "noteQuote": "对应范围：汤小丹教材第9章《磁盘存储器管理》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch9",
+      "磁盘高速缓存"
+    ]
+  },
+  {
+    "id": "OS-T-151",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第9章 RAID",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "考研真题改编",
+    "difficulty": "medium",
+    "question": "RAID 1的基本特点是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "镜像存储，提高可靠性但空间利用率较低"
+      },
+      {
+        "key": "B",
+        "text": "只做条带化无冗余"
+      },
+      {
+        "key": "C",
+        "text": "只保存校验块没有数据块"
+      },
+      {
+        "key": "D",
+        "text": "完全不需要磁盘"
+      }
+    ],
+    "answer": "A",
+    "explanation": "RAID 1把数据写入镜像盘，读可靠性高，但通常需要双倍空间。",
+    "noteQuote": "对应范围：汤小丹教材第9章《磁盘存储器管理》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch9",
+      "RAID"
+    ]
+  },
+  {
+    "id": "OS-T-152",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第9章 RAID",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "考研真题改编",
+    "difficulty": "medium",
+    "question": "RAID 5相对于单独校验盘方案的特点是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "校验信息分布在各磁盘上，避免单校验盘瓶颈"
+      },
+      {
+        "key": "B",
+        "text": "没有任何校验信息"
+      },
+      {
+        "key": "C",
+        "text": "所有数据完整复制一份"
+      },
+      {
+        "key": "D",
+        "text": "只适用于磁带"
+      }
+    ],
+    "answer": "A",
+    "explanation": "RAID 5采用分布式奇偶校验，兼顾容量、性能和容错能力。",
+    "noteQuote": "对应范围：汤小丹教材第9章《磁盘存储器管理》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch9",
+      "RAID"
+    ]
+  },
+  {
+    "id": "OS-T-153",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第9章 数据一致性",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "考研真题改编",
+    "difficulty": "medium",
+    "question": "日志文件系统提高一致性的基本思想是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "先记录即将执行的元数据操作日志，再真正修改文件系统"
+      },
+      {
+        "key": "B",
+        "text": "关闭所有缓存"
+      },
+      {
+        "key": "C",
+        "text": "禁止写文件"
+      },
+      {
+        "key": "D",
+        "text": "把所有文件变成只读"
+      }
+    ],
+    "answer": "A",
+    "explanation": "日志可在系统崩溃后根据日志重做或撤销操作，恢复一致状态。",
+    "noteQuote": "对应范围：汤小丹教材第9章《磁盘存储器管理》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch9",
+      "数据一致性"
+    ]
+  },
+  {
+    "id": "OS-P-154",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第9章 空闲链表",
+    "sourceGroup": "prediction",
+    "sourceLabel": "预测题",
+    "difficulty": "medium",
+    "question": "空闲链表法的一个缺点是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "分配连续空闲块时查找效率可能较低"
+      },
+      {
+        "key": "B",
+        "text": "不能表示任何空闲块"
+      },
+      {
+        "key": "C",
+        "text": "必须使用页表"
+      },
+      {
+        "key": "D",
+        "text": "无法回收空间"
+      }
+    ],
+    "answer": "A",
+    "explanation": "空闲链表以链方式组织空闲块，查找一段连续空间可能需要遍历。",
+    "noteQuote": "对应范围：汤小丹教材第9章《磁盘存储器管理》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch9",
+      "空闲链表"
+    ]
+  },
+  {
+    "id": "OS-P-155",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第9章 位示图计算",
+    "sourceGroup": "prediction",
+    "sourceLabel": "预测题",
+    "difficulty": "medium",
+    "question": "若磁盘块号从0开始，位示图每个字含32位，则第100号块对应的字号和位号是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "字号3，位号4"
+      },
+      {
+        "key": "B",
+        "text": "字号4，位号3"
+      },
+      {
+        "key": "C",
+        "text": "字号2，位号36"
+      },
+      {
+        "key": "D",
+        "text": "字号100，位号0"
+      }
+    ],
+    "answer": "A",
+    "explanation": "100/32=3余4，所以在第3个字的第4位（从0开始计）。",
+    "noteQuote": "对应范围：汤小丹教材第9章《磁盘存储器管理》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch9",
+      "位示图计算"
+    ]
+  },
+  {
+    "id": "OS-P-156",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第9章 索引多级",
+    "sourceGroup": "prediction",
+    "sourceLabel": "预测题",
+    "difficulty": "medium",
+    "question": "多级索引组织的主要作用是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "支持大文件，同时兼顾小文件的索引开销"
+      },
+      {
+        "key": "B",
+        "text": "强制所有文件连续存放"
+      },
+      {
+        "key": "C",
+        "text": "取消空闲块管理"
+      },
+      {
+        "key": "D",
+        "text": "替代磁盘调度"
+      }
+    ],
+    "answer": "A",
+    "explanation": "多级索引通过直接、一级间接、二级间接等指针支持不同大小文件。",
+    "noteQuote": "对应范围：汤小丹教材第9章《磁盘存储器管理》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch9",
+      "索引多级"
+    ]
+  },
+  {
+    "id": "OS-P-157",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第9章 磁盘可靠性",
+    "sourceGroup": "prediction",
+    "sourceLabel": "预测题",
+    "difficulty": "medium",
+    "question": "坏块管理的主要目的在于（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "避免文件系统把数据分配到有故障的磁盘块"
+      },
+      {
+        "key": "B",
+        "text": "提高CPU响应比"
+      },
+      {
+        "key": "C",
+        "text": "实现进程同步"
+      },
+      {
+        "key": "D",
+        "text": "扩大逻辑地址空间"
+      }
+    ],
+    "answer": "A",
+    "explanation": "系统需要标记并隔离坏块，防止把文件数据写入不可靠区域。",
+    "noteQuote": "对应范围：汤小丹教材第9章《磁盘存储器管理》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch9",
+      "磁盘可靠性"
+    ]
+  },
+  {
+    "id": "OS-P-158",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第9章 廉价磁盘冗余阵列",
+    "sourceGroup": "prediction",
+    "sourceLabel": "预测题",
+    "difficulty": "medium",
+    "question": "RAID的核心目标通常包括（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "提高性能和可靠性"
+      },
+      {
+        "key": "B",
+        "text": "减少进程数"
+      },
+      {
+        "key": "C",
+        "text": "消除临界区"
+      },
+      {
+        "key": "D",
+        "text": "取消文件目录"
+      }
+    ],
+    "answer": "A",
+    "explanation": "RAID通过条带化提高并行访问性能，通过镜像或校验提高可靠性。",
+    "noteQuote": "对应范围：汤小丹教材第9章《磁盘存储器管理》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch9",
+      "廉价磁盘冗余阵列"
+    ]
+  },
+  {
+    "id": "OS-P-159",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第9章 缓存一致性",
+    "sourceGroup": "prediction",
+    "sourceLabel": "预测题",
+    "difficulty": "medium",
+    "question": "写回缓存策略的风险是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "系统崩溃时尚未写回磁盘的数据可能丢失"
+      },
+      {
+        "key": "B",
+        "text": "每次写都必须同步落盘"
+      },
+      {
+        "key": "C",
+        "text": "读命中率必为0"
+      },
+      {
+        "key": "D",
+        "text": "不能使用内存"
+      }
+    ],
+    "answer": "A",
+    "explanation": "写回先改缓存，延迟写盘，性能好但断电崩溃时存在数据丢失风险。",
+    "noteQuote": "对应范围：汤小丹教材第9章《磁盘存储器管理》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch9",
+      "缓存一致性"
+    ]
+  },
+  {
+    "id": "OS-P-160",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第9章 写直达",
+    "sourceGroup": "prediction",
+    "sourceLabel": "预测题",
+    "difficulty": "medium",
+    "question": "写直达策略的特点是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "写缓存的同时写入磁盘，可靠性较好但写性能较低"
+      },
+      {
+        "key": "B",
+        "text": "只写缓存永不写盘"
+      },
+      {
+        "key": "C",
+        "text": "不能保证一致性"
+      },
+      {
+        "key": "D",
+        "text": "必须删除文件"
+      }
+    ],
+    "answer": "A",
+    "explanation": "写直达每次写都同步更新磁盘，减少丢失风险，但增加磁盘I/O。",
+    "noteQuote": "对应范围：汤小丹教材第9章《磁盘存储器管理》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch9",
+      "写直达"
+    ]
+  },
+  {
+    "id": "OS-P-161",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第9章 外存空间管理",
+    "sourceGroup": "prediction",
+    "sourceLabel": "预测题",
+    "difficulty": "medium",
+    "question": "空闲表法适合的场景是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "空闲区较少且连续区明显的场景"
+      },
+      {
+        "key": "B",
+        "text": "每个块都随机离散且数量巨大"
+      },
+      {
+        "key": "C",
+        "text": "不需要知道起始块号"
+      },
+      {
+        "key": "D",
+        "text": "不能合并空闲区"
+      }
+    ],
+    "answer": "A",
+    "explanation": "空闲表记录每个空闲区的起始块号和长度，适合连续空闲区管理。",
+    "noteQuote": "对应范围：汤小丹教材第9章《磁盘存储器管理》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch9",
+      "外存空间管理"
+    ]
+  },
+  {
+    "id": "OS-P-162",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第9章 文件分配",
+    "sourceGroup": "prediction",
+    "sourceLabel": "预测题",
+    "difficulty": "medium",
+    "question": "若系统频繁进行文件随机访问，较适合的物理结构是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "索引分配"
+      },
+      {
+        "key": "B",
+        "text": "纯链式分配"
+      },
+      {
+        "key": "C",
+        "text": "只顺序磁带存储"
+      },
+      {
+        "key": "D",
+        "text": "无结构分配"
+      }
+    ],
+    "answer": "A",
+    "explanation": "索引分配可根据索引直接定位任一数据块，随机访问效率较好。",
+    "noteQuote": "对应范围：汤小丹教材第9章《磁盘存储器管理》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "近年408/名校考研真题考点改编"
+    ],
+    "tags": [
+      "os",
+      "ch9",
+      "文件分配"
+    ]
   }
 ];
