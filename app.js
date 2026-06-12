@@ -19,8 +19,8 @@ const state = {
 
 const $ = (id) => document.getElementById(id);
 const views = ['homeView','sourceView','quizView'];
-const courseNames = { mybatis: 'MyBatis', springmvc: 'Spring MVC / Spring', nosql: 'NoSQL / MongoDB / Redis' };
-const courseIcons = { mybatis: '🧩', springmvc: '🌱', nosql: '🍃' };
+const courseNames = { mybatis: 'MyBatis', springmvc: 'Spring MVC / Spring', nosql: 'NoSQL / MongoDB / Redis', os: '操作系统 / OS' };
+const courseIcons = { mybatis: '🧩', springmvc: '🌱', nosql: '🍃', os: '💻' };
 
 function showView(id, persist=true){
   views.forEach(v => $(v).classList.toggle('active', v === id));
@@ -70,16 +70,16 @@ function renderHome(){
   const total = BANK.length;
   const mcpt = BANK.filter(q=>q.sourceGroup==='mcpt').length;
   const pred = BANK.filter(q=>q.sourceGroup==='prediction').length;
-  $('bankSummary').textContent = `共 ${total} 题｜MCPT/月考题 ${mcpt}｜预测题 ${pred}｜当前错题 ${wrongCount()} 题`;
+  $('bankSummary').textContent = `共 ${total} 题｜MCPT/月考/考研 ${mcpt}｜预测题 ${pred}｜当前错题 ${wrongCount()} 题`;
   const grid = $('courseGrid');
   grid.innerHTML = '';
-  ['mybatis','springmvc','nosql'].forEach(key => {
+  ['mybatis','springmvc','nosql','os'].forEach(key => {
     const tpl = $('courseCardTpl').content.cloneNode(true);
     const btn = tpl.querySelector('button');
     tpl.querySelector('.course-icon').textContent = courseIcons[key];
     tpl.querySelector('strong').textContent = courseNames[key];
-    tpl.querySelector('small').textContent = key === 'mybatis' ? '配置、Mapper、动态 SQL、MBG、分页、事务与缓存' : key === 'springmvc' ? 'IoC/DI、AOP、MVC、JSON/AJAX、异常、REST' : 'MongoDB、索引、聚合、副本集、Java CRUD、Redis';
-    tpl.querySelector('.mini-stats').innerHTML = `<span>MCPT ${final_course_count(key,'mcpt')}</span><span>预测 ${final_course_count(key,'prediction')}</span><span>错题 ${wrongCount(key)}</span>`;
+    tpl.querySelector('small').textContent = key === 'mybatis' ? '配置、Mapper、动态 SQL、MBG、分页、事务与缓存' : key === 'springmvc' ? 'IoC/DI、AOP、MVC、JSON/AJAX、异常、REST' : key === 'nosql' ? 'MongoDB、索引、聚合、副本集、Java CRUD、Redis' : '汤小丹前九章、进程/内存/文件/I-O/磁盘考研题';
+    tpl.querySelector('.mini-stats').innerHTML = `<span>${key === 'os' ? '考研' : 'MCPT'} ${final_course_count(key,'mcpt')}</span><span>预测 ${final_course_count(key,'prediction')}</span><span>错题 ${wrongCount(key)}</span>`;
     btn.addEventListener('click', () => chooseCourse(key));
     grid.appendChild(tpl);
   });
@@ -94,10 +94,11 @@ function chooseCourse(key){
 }
 function renderSources(){
   const key = state.courseKey;
+  const isOS = key === 'os';
   const sources = [
-    {group:'mcpt', title:'MCPT / 月考题', kicker:'原题优先', desc:`来自你发的月考/考试题库，共 ${final_course_count(key,'mcpt')} 题。`},
-    {group:'prediction', title:'预测题', kicker:'复习资料覆盖', desc:`根据复习资料和出题风格生成，共 ${final_course_count(key,'prediction')} 题。`},
-    {group:'mixed', title:'混合刷题', kicker:'考前乱序', desc:`MCPT + 预测题混合，共 ${final_course_count(key)} 题。`},
+    {group:'mcpt', title:isOS ? '考研真题改编' : 'MCPT / 月考题', kicker:isOS ? '408/名校方向' : '原题优先', desc:isOS ? `按汤小丹前九章筛选的考研真题考点改编，共 ${final_course_count(key,'mcpt')} 题。` : `来自你发的月考/考试题库，共 ${final_course_count(key,'mcpt')} 题。`},
+    {group:'prediction', title:isOS ? '强化预测题' : '预测题', kicker:isOS ? '教材覆盖' : '复习资料覆盖', desc:isOS ? `根据前九章知识点生成，共 ${final_course_count(key,'prediction')} 题。` : `根据复习资料和出题风格生成，共 ${final_course_count(key,'prediction')} 题。`},
+    {group:'mixed', title:'混合刷题', kicker:'考前乱序', desc:isOS ? `真题改编 + 强化预测混合，共 ${final_course_count(key)} 题。` : `MCPT + 预测题混合，共 ${final_course_count(key)} 题。`},
     {group:'wrong', title:'只刷错题', kicker:'精准回炉', desc:`当前科目错题 ${wrongCount(key)} 题，会从本地错题本读取。`}
   ];
   const grid = $('sourceGrid'); grid.innerHTML='';
