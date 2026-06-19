@@ -34980,5 +34980,4845 @@ window.QUESTION_BANK = [
       "ch9",
       "文件分配"
     ]
+  },
+  {
+    "id": "OS-T-163",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第2章 进程通信",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "考研真题改编",
+    "difficulty": "medium",
+    "question": "关于进程间通信中的“信号”，下列说法最合理的是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "信号是一种通知进程发生某事件的异步通信机制"
+      },
+      {
+        "key": "B",
+        "text": "信号只能传递大块数据文件"
+      },
+      {
+        "key": "C",
+        "text": "信号等同于页表项"
+      },
+      {
+        "key": "D",
+        "text": "信号只用于磁盘调度"
+      }
+    ],
+    "answer": "A",
+    "explanation": "信号是一种轻量级异步通知机制，常用于告知进程某类事件发生；大块数据交换更适合共享内存或消息传递。",
+    "noteQuote": "对应范围：汤小丹教材第2章《进程的描述与控制》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "2025考研408大纲新增进程间通信信号考点"
+    ],
+    "tags": [
+      "os",
+      "ch2",
+      "进程通信",
+      "signal"
+    ]
+  },
+  {
+    "id": "OS-P-164",
+    "courseKey": "os",
+    "course": "操作系统 / OS",
+    "topic": "第2章 进程通信",
+    "sourceGroup": "prediction",
+    "sourceLabel": "预测题",
+    "difficulty": "medium",
+    "question": "与共享内存相比，信号通信更适合用于（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "通知某事件发生"
+      },
+      {
+        "key": "B",
+        "text": "传输大量连续数据"
+      },
+      {
+        "key": "C",
+        "text": "保存文件目录"
+      },
+      {
+        "key": "D",
+        "text": "实现页面置换"
+      }
+    ],
+    "answer": "A",
+    "explanation": "信号适合事件通知和控制，不适合承载大量数据内容。",
+    "noteQuote": "对应范围：汤小丹教材第2章《进程的描述与控制》；题目按近年408/名校考研常考问法改编。",
+    "sourceFiles": [
+      "汤小丹教材目录截图",
+      "2025考研408大纲新增进程间通信信号考点"
+    ],
+    "tags": [
+      "os",
+      "ch2",
+      "进程通信",
+      "signal"
+    ]
+  },
+  {
+    "id": "MB-MCPT-PDF-001",
+    "courseKey": "mybatis",
+    "course": "MyBatis",
+    "topic": "MyBatis Basics",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "Which notation is used to pass dynamic property values inside an \"sql\" fragment?",
+    "options": [
+      {
+        "key": "A",
+        "text": "#{alias}"
+      },
+      {
+        "key": "B",
+        "text": "${alias}"
+      },
+      {
+        "key": "C",
+        "text": "@{alias}"
+      },
+      {
+        "key": "D",
+        "text": "!{alias}"
+      }
+    ],
+    "answer": "B",
+    "explanation": "通过<include>标签引入sql 复用片段时，动态传参只能使用${变量}；#{}是 预编译占位符，无法用于sql 片段传参；C、D 均不属于MyBatis 合法语法。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "MyBatis .pdf"
+    ],
+    "tags": [
+      "mybatis",
+      "MyBatis Basics",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "MB-MCPT-PDF-002",
+    "courseKey": "mybatis",
+    "course": "MyBatis",
+    "topic": "Mapper XML/SQL Mapping",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "Which statementType must be set to call a stored procedure in MyBatis?",
+    "options": [
+      {
+        "key": "A",
+        "text": "PREPARED"
+      },
+      {
+        "key": "B",
+        "text": "STATEMENT"
+      },
+      {
+        "key": "C",
+        "text": "CALLABLE"
+      },
+      {
+        "key": "D",
+        "text": "PROCEDURE"
+      }
+    ],
+    "answer": "C",
+    "explanation": "调用存储过程必须指定statementType=\"CALLABLE\"；PREPARED 是普 通CRUD 语句默认值；PROCEDURE 不是MyBatis 内置合法枚举值。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "MyBatis .pdf"
+    ],
+    "tags": [
+      "mybatis",
+      "Mapper XML/SQL Mapping",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "MB-MCPT-PDF-003",
+    "courseKey": "mybatis",
+    "course": "MyBatis",
+    "topic": "Mapper XML/SQL Mapping",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "Which child element of \"resultMap\" is used to map the primary key column?",
+    "options": [
+      {
+        "key": "A",
+        "text": "result"
+      },
+      {
+        "key": "B",
+        "text": "key"
+      },
+      {
+        "key": "C",
+        "text": "id"
+      },
+      {
+        "key": "D",
+        "text": "pk"
+      }
+    ],
+    "answer": "C",
+    "explanation": "resultMap 中<id>标签专门映射数据库主键字段，MyBatis 会针对主键做缓 存优化和关联查询匹配；<result>仅映射普通非主键字段，B、D 无对应原生标签。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "MyBatis .pdf"
+    ],
+    "tags": [
+      "mybatis",
+      "Mapper XML/SQL Mapping",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "MB-MCPT-PDF-004",
+    "courseKey": "mybatis",
+    "course": "MyBatis",
+    "topic": "Configuration",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "What is the correct JDBC driver class name for MySQL 8.x in MyBatis configuration?",
+    "options": [
+      {
+        "key": "A",
+        "text": "com.mysql.jdbc.Driver"
+      },
+      {
+        "key": "B",
+        "text": "org.mysql.jdbc.Driver"
+      },
+      {
+        "key": "C",
+        "text": "com.mysql.cj.jdbc.Driver"
+      },
+      {
+        "key": "D",
+        "text": "mysql.jdbc.Driver"
+      }
+    ],
+    "answer": "C",
+    "explanation": "MySQL8 及以上版本驱动包，标准驱动类为com.mysql.cj.jdbc.Driver；A 是MySQL5.x 旧版驱动类，目前已彻底废弃。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "MyBatis .pdf"
+    ],
+    "tags": [
+      "mybatis",
+      "Configuration",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "MB-MCPT-PDF-005",
+    "courseKey": "mybatis",
+    "course": "MyBatis",
+    "topic": "MyBatis Basics",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "Which syntax is used to reference a property value inside mybatis- config.xml?",
+    "options": [
+      {
+        "key": "A",
+        "text": "@{propertyName}"
+      },
+      {
+        "key": "B",
+        "text": "#{propertyName}"
+      },
+      {
+        "key": "C",
+        "text": "${propertyName}"
+      },
+      {
+        "key": "D",
+        "text": "%{propertyName}"
+      }
+    ],
+    "answer": "C",
+    "explanation": "mybatis-config.xml 全局配置文件中，读取配置变量统一使用${变量名}；#{} 仅用于Mapper 映射文件SQL 预编译占位符，不可用于全局配置。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "MyBatis .pdf"
+    ],
+    "tags": [
+      "mybatis",
+      "MyBatis Basics",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "MB-MCPT-PDF-006",
+    "courseKey": "mybatis",
+    "course": "MyBatis",
+    "topic": "MyBatis Basics",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "What is the HIGHEST priority source for property resolution in MyBatis?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Inline element body"
+      },
+      {
+        "key": "B",
+        "text": "External .properties file"
+      },
+      {
+        "key": "C",
+        "text": "Programmatically passed properties"
+      },
+      {
+        "key": "D",
+        "text": "Environment variables"
+      }
+    ],
+    "answer": "C",
+    "explanation": "MyBatis 配置属性加载优先级（从高到低）：代码手动传入属性>外部 properties 配置文件>标签内联属性>系统环境变量。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "MyBatis .pdf"
+    ],
+    "tags": [
+      "mybatis",
+      "MyBatis Basics",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "MB-MCPT-PDF-007",
+    "courseKey": "mybatis",
+    "course": "MyBatis",
+    "topic": "Configuration",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "Which attribute of<properties>is used to load an external properties file from the classpath?",
+    "options": [
+      {
+        "key": "A",
+        "text": "file"
+      },
+      {
+        "key": "B",
+        "text": "path"
+      },
+      {
+        "key": "C",
+        "text": "resource"
+      },
+      {
+        "key": "D",
+        "text": "src"
+      }
+    ],
+    "answer": "C",
+    "explanation": "<properties>标签中，resource 属性用于读取类路径下的配置文件；file 属 性读取本地磁盘绝对路径文件；path、src 不属于该标签合法属性。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "MyBatis .pdf"
+    ],
+    "tags": [
+      "mybatis",
+      "Configuration",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "MB-MCPT-PDF-008",
+    "courseKey": "mybatis",
+    "course": "MyBatis",
+    "topic": "MyBatis Basics",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "If 'username' is defined in both the inline body and in an external file, which value does MyBatis use?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Inline value"
+      },
+      {
+        "key": "B",
+        "text": "External file value"
+      },
+      {
+        "key": "C",
+        "text": "Random value"
+      },
+      {
+        "key": "D",
+        "text": "Throws an exception"
+      }
+    ],
+    "answer": "B",
+    "explanation": "外部properties 配置文件优先级高于<properties>标签内联定义的属性，同 名配置key 会直接覆盖内联配置。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "MyBatis .pdf"
+    ],
+    "tags": [
+      "mybatis",
+      "MyBatis Basics",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "MB-MCPT-PDF-009",
+    "courseKey": "mybatis",
+    "course": "MyBatis",
+    "topic": "Mapper XML/SQL Mapping",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "Which notation prevents SQL injection in Mapper XML files?",
+    "options": [
+      {
+        "key": "A",
+        "text": "${}"
+      },
+      {
+        "key": "B",
+        "text": "#{}"
+      },
+      {
+        "key": "C",
+        "text": "@{}"
+      },
+      {
+        "key": "D",
+        "text": "&{}"
+      }
+    ],
+    "answer": "B",
+    "explanation": "#{}底层生成预编译PreparedStatement，参数占位符可彻底防范SQL 注 入；${}直接字符串拼接SQL，存在严重SQL 注入风险。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "MyBatis .pdf"
+    ],
+    "tags": [
+      "mybatis",
+      "Mapper XML/SQL Mapping",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "MB-MCPT-PDF-010",
+    "courseKey": "mybatis",
+    "course": "MyBatis",
+    "topic": "Mapper XML/SQL Mapping",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "What is the default statementType value for select/update/insert/delete tags?",
+    "options": [
+      {
+        "key": "A",
+        "text": "CALLABLE"
+      },
+      {
+        "key": "B",
+        "text": "STATEMENT"
+      },
+      {
+        "key": "C",
+        "text": "PREPARED"
+      },
+      {
+        "key": "D",
+        "text": "RAW"
+      }
+    ],
+    "answer": "C",
+    "explanation": "MyBatis 所有CRUD 标签，statementType 默认值均为PREPARED，默认 使用预编译语句执行SQL。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "MyBatis .pdf"
+    ],
+    "tags": [
+      "mybatis",
+      "Mapper XML/SQL Mapping",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "MB-MCPT-PDF-011",
+    "courseKey": "mybatis",
+    "course": "MyBatis",
+    "topic": "Mapper XML/SQL Mapping",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "Which tag is used to define reusable common SQL fragments in Mapper files?",
+    "options": [
+      {
+        "key": "A",
+        "text": "<sql>"
+      },
+      {
+        "key": "B",
+        "text": "<include>"
+      },
+      {
+        "key": "C",
+        "text": "<fragment>"
+      },
+      {
+        "key": "D",
+        "text": "<reuse>"
+      }
+    ],
+    "answer": "A",
+    "explanation": "<sql>标签用于定义可复用公共SQL 片段；<include>标签用于引用已经定 义好的sql 片段。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "MyBatis .pdf"
+    ],
+    "tags": [
+      "mybatis",
+      "Mapper XML/SQL Mapping",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "MB-MCPT-PDF-012",
+    "courseKey": "mybatis",
+    "course": "MyBatis",
+    "topic": "Mapper XML/SQL Mapping",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "Which sub-element of<include>passes dynamic parameters to sql fragment?",
+    "options": [
+      {
+        "key": "A",
+        "text": "value"
+      },
+      {
+        "key": "B",
+        "text": "bind"
+      },
+      {
+        "key": "C",
+        "text": "property"
+      },
+      {
+        "key": "D",
+        "text": "param"
+      }
+    ],
+    "answer": "C",
+    "explanation": "在<include>标签内部，通过子标签<property>向复用的sql 片段传递动态 参数，其余属性无传参功能。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "MyBatis .pdf"
+    ],
+    "tags": [
+      "mybatis",
+      "Mapper XML/SQL Mapping",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "MB-MCPT-PDF-013",
+    "courseKey": "mybatis",
+    "course": "MyBatis",
+    "topic": "Mapper XML/SQL Mapping",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "What is the main function of ResultMap?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Execute SQL"
+      },
+      {
+        "key": "B",
+        "text": "Map database columns to entity fields"
+      },
+      {
+        "key": "C",
+        "text": "Parse dynamic SQL"
+      },
+      {
+        "key": "D",
+        "text": "Manage transactions"
+      }
+    ],
+    "answer": "B",
+    "explanation": "resultMap 核心作用是实现数据库表字段与Java 实体类属性的自定义映 射，解决字段名和属性名不一致、复杂关联映射问题。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "MyBatis .pdf"
+    ],
+    "tags": [
+      "mybatis",
+      "Mapper XML/SQL Mapping",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "MB-MCPT-PDF-014",
+    "courseKey": "mybatis",
+    "course": "MyBatis",
+    "topic": "Mapper XML/SQL Mapping",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "Which tag handles one-to-many association mapping in resultMap?",
+    "options": [
+      {
+        "key": "A",
+        "text": "<association>"
+      },
+      {
+        "key": "B",
+        "text": "<collection>"
+      },
+      {
+        "key": "C",
+        "text": "<join>"
+      },
+      {
+        "key": "D",
+        "text": "<relation>"
+      }
+    ],
+    "answer": "B",
+    "explanation": "resultMap 中<collection>标签处理一对多关联映射；<association>标签处 理一对一关联映射。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "MyBatis .pdf"
+    ],
+    "tags": [
+      "mybatis",
+      "Mapper XML/SQL Mapping",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "MB-MCPT-PDF-015",
+    "courseKey": "mybatis",
+    "course": "MyBatis",
+    "topic": "Mapper XML/SQL Mapping",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "Which tag handles one-to-one association mapping in resultMap?",
+    "options": [
+      {
+        "key": "A",
+        "text": "<association>"
+      },
+      {
+        "key": "B",
+        "text": "<collection>"
+      },
+      {
+        "key": "C",
+        "text": "<one>"
+      },
+      {
+        "key": "D",
+        "text": "<single>"
+      }
+    ],
+    "answer": "A",
+    "explanation": "<association>专门实现一对一关联查询映射；<collection>用于一对多集合 映射，C、D 非原生标签。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "MyBatis .pdf"
+    ],
+    "tags": [
+      "mybatis",
+      "Mapper XML/SQL Mapping",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "MB-MCPT-PDF-016",
+    "courseKey": "mybatis",
+    "course": "MyBatis",
+    "topic": "Mapper XML/SQL Mapping",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "What object encapsulates each SQL statement parsed from Mapper XML?",
+    "options": [
+      {
+        "key": "A",
+        "text": "SqlSession"
+      },
+      {
+        "key": "B",
+        "text": "MappedStatement"
+      },
+      {
+        "key": "C",
+        "text": "Configuration"
+      },
+      {
+        "key": "D",
+        "text": "Executor"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Mapper 文件中每一条SQL 语句，解析后都会被封装为MappedStatement 对象，统一存入全局Configuration 配置容器。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "MyBatis .pdf"
+    ],
+    "tags": [
+      "mybatis",
+      "Mapper XML/SQL Mapping",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "MB-MCPT-PDF-017",
+    "courseKey": "mybatis",
+    "course": "MyBatis",
+    "topic": "Mapper XML/SQL Mapping",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "What is the unique identifier of a MappedStatement?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Table name"
+      },
+      {
+        "key": "B",
+        "text": "Statement ID (namespace + method id)"
+      },
+      {
+        "key": "C",
+        "text": "Entity class name"
+      },
+      {
+        "key": "D",
+        "text": "Database name"
+      }
+    ],
+    "answer": "B",
+    "explanation": "命名空间+方法id 拼接而成的Statement ID，是MappedStatement 全局唯 一标识。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "MyBatis .pdf"
+    ],
+    "tags": [
+      "mybatis",
+      "Mapper XML/SQL Mapping",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "MB-MCPT-PDF-018",
+    "courseKey": "mybatis",
+    "course": "MyBatis",
+    "topic": "MyBatis Basics",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "Which component is the core entry point for executing SQL in MyBatis?",
+    "options": [
+      {
+        "key": "A",
+        "text": "SqlSession"
+      },
+      {
+        "key": "B",
+        "text": "SqlSessionFactory"
+      },
+      {
+        "key": "C",
+        "text": "Configuration"
+      },
+      {
+        "key": "D",
+        "text": "MapperProxy"
+      }
+    ],
+    "answer": "A",
+    "explanation": "SqlSession 是MyBatis 执行CRUD 操作、获取Mapper 代理对象的核心入 口。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "MyBatis .pdf"
+    ],
+    "tags": [
+      "mybatis",
+      "MyBatis Basics",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "MB-MCPT-PDF-019",
+    "courseKey": "mybatis",
+    "course": "MyBatis",
+    "topic": "SqlSession",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "Which class creates SqlSession instances?",
+    "options": [
+      {
+        "key": "A",
+        "text": "SqlSessionBuilder"
+      },
+      {
+        "key": "B",
+        "text": "SqlSessionFactory"
+      },
+      {
+        "key": "C",
+        "text": "Configuration"
+      },
+      {
+        "key": "D",
+        "text": "DataSource"
+      }
+    ],
+    "answer": "B",
+    "explanation": "SqlSessionFactory 是会话工厂，通过openSession()方法生产SqlSession 会话实例。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "MyBatis .pdf"
+    ],
+    "tags": [
+      "mybatis",
+      "SqlSession",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "MB-MCPT-PDF-020",
+    "courseKey": "mybatis",
+    "course": "MyBatis",
+    "topic": "Transactions",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "What are the two built-in transaction factory types in MyBatis?",
+    "options": [
+      {
+        "key": "A",
+        "text": "JdbcTransactionFactory & ManagedTransactionFactory"
+      },
+      {
+        "key": "B",
+        "text": "SpringTransactionFactory & JdbcTransactionFactory"
+      },
+      {
+        "key": "C",
+        "text": "FileTransactionFactory & JdbcTransactionFactory"
+      },
+      {
+        "key": "D",
+        "text": "DefaultTransactionFactory & CustomTransactionFactory"
+      }
+    ],
+    "answer": "A",
+    "explanation": "MyBatis 内置两大事务工厂：JdbcTransactionFactory（原生JDBC 事 务）、ManagedTransactionFactory（外部托管事务）。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "MyBatis .pdf"
+    ],
+    "tags": [
+      "mybatis",
+      "Transactions",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "MB-MCPT-PDF-021",
+    "courseKey": "mybatis",
+    "course": "MyBatis",
+    "topic": "Transactions",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "Which transaction factory lets MyBatis manage commit/rollback manually?",
+    "options": [
+      {
+        "key": "A",
+        "text": "JdbcTransactionFactory"
+      },
+      {
+        "key": "B",
+        "text": "ManagedTransactionFactory"
+      },
+      {
+        "key": "C",
+        "text": "SpringManagedTransactionFactory"
+      },
+      {
+        "key": "D",
+        "text": "BaseTransactionFactory"
+      }
+    ],
+    "answer": "A",
+    "explanation": "JdbcTransactionFactory 事务由MyBatis 自行控制，开发者可手动提交、 回滚事务。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "MyBatis .pdf"
+    ],
+    "tags": [
+      "mybatis",
+      "Transactions",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "MB-MCPT-PDF-022",
+    "courseKey": "mybatis",
+    "course": "MyBatis",
+    "topic": "Transactions",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "Which transaction factory delegates transaction control to external containers like Spring?",
+    "options": [
+      {
+        "key": "A",
+        "text": "JdbcTransactionFactory"
+      },
+      {
+        "key": "B",
+        "text": "ManagedTransactionFactory"
+      },
+      {
+        "key": "C",
+        "text": "DefaultTransactionFactory"
+      },
+      {
+        "key": "D",
+        "text": "LocalTransactionFactory"
+      }
+    ],
+    "answer": "B",
+    "explanation": "ManagedTransactionFactory 将事务控制权交给Spring 等外部容器， MyBatis 不再手动管理事务。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "MyBatis .pdf"
+    ],
+    "tags": [
+      "mybatis",
+      "Transactions",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "NS-MCPT-REDIS-001",
+    "courseKey": "nosql",
+    "course": "NoSQL / MongoDB / Redis",
+    "topic": "Redis",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "Which command deletes one field from a Redis hash without deleting the whole key",
+    "options": [
+      {
+        "key": "A",
+        "text": "DEL"
+      },
+      {
+        "key": "B",
+        "text": "FLUSHALL"
+      },
+      {
+        "key": "C",
+        "text": "LPOP"
+      },
+      {
+        "key": "D",
+        "text": "HDEL"
+      }
+    ],
+    "answer": "D",
+    "explanation": "HDEL 用于删除哈希（Hash）中的单个/多个字段，不会删除整个哈希键；DEL 删除完整键；FLUSHALL 清空全部数据库所有键；LPOP 弹出列表左侧元素。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Redis题库.pdf"
+    ],
+    "tags": [
+      "nosql",
+      "Redis",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "NS-MCPT-REDIS-002",
+    "courseKey": "nosql",
+    "course": "NoSQL / MongoDB / Redis",
+    "topic": "Redis",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "Which address usually represents the local computer in Redis practice",
+    "options": [
+      {
+        "key": "A",
+        "text": "0.0.0.0"
+      },
+      {
+        "key": "B",
+        "text": "127.0.0.1"
+      },
+      {
+        "key": "C",
+        "text": "255.255.255.255"
+      },
+      {
+        "key": "D",
+        "text": "192.0.0.0"
+      }
+    ],
+    "answer": "B",
+    "explanation": "127.0.0.1 是本地回环地址，仅本机可访问，Redis 本地调试默认使用该地 址；0.0.0.0 代表监听所有网卡；255 段是广播地址；192 段为内网网段。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Redis题库.pdf"
+    ],
+    "tags": [
+      "nosql",
+      "Redis",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "NS-MCPT-REDIS-003",
+    "courseKey": "nosql",
+    "course": "NoSQL / MongoDB / Redis",
+    "topic": "Redis",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "Which command checks whether a Redis key is available",
+    "options": [
+      {
+        "key": "A",
+        "text": "APPEND"
+      },
+      {
+        "key": "B",
+        "text": "EXISTS"
+      },
+      {
+        "key": "C",
+        "text": "ZINCRBY"
+      },
+      {
+        "key": "D",
+        "text": "GEOADD"
+      }
+    ],
+    "answer": "B",
+    "explanation": "EXISTS key 判断键是否存在，存在返回1，不存在返回0；APPEND 追加字符 串；ZINCRBY 有序集合分值自增；GEOADD 添加地理位置数据。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Redis题库.pdf"
+    ],
+    "tags": [
+      "nosql",
+      "Redis",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "NS-MCPT-REDIS-004",
+    "courseKey": "nosql",
+    "course": "NoSQL / MongoDB / Redis",
+    "topic": "NoSQL / MongoDB",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "Which command can reduce a numeric key by a given amount",
+    "options": [
+      {
+        "key": "A",
+        "text": "DECRBY"
+      },
+      {
+        "key": "B",
+        "text": "STRLEN"
+      },
+      {
+        "key": "C",
+        "text": "SMEMBERS"
+      },
+      {
+        "key": "D",
+        "text": "BGSAVE"
+      }
+    ],
+    "answer": "A",
+    "explanation": "DECRBY key num 对数字类型键减去指定数值；STRLEN 获取字符串长度； SMEMBERS 获取集合全部元素；BGSAVE 后台生成RDB 快照。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Redis题库.pdf"
+    ],
+    "tags": [
+      "nosql",
+      "NoSQL / MongoDB",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "NS-MCPT-REDIS-005",
+    "courseKey": "nosql",
+    "course": "NoSQL / MongoDB / Redis",
+    "topic": "Redis",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "Which port number is commonly used by Redis by default",
+    "options": [
+      {
+        "key": "A",
+        "text": "3306"
+      },
+      {
+        "key": "B",
+        "text": "8080"
+      },
+      {
+        "key": "C",
+        "text": "6379"
+      },
+      {
+        "key": "D",
+        "text": "27017"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Redis 默认服务端口为6379；3306 是MySQL 端口；8080 是Java Web 服务 常用端口；27017 是MongoDB 默认端口。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Redis题库.pdf"
+    ],
+    "tags": [
+      "nosql",
+      "Redis",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "NS-MCPT-REDIS-006",
+    "courseKey": "nosql",
+    "course": "NoSQL / MongoDB / Redis",
+    "topic": "Redis",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "Which command can set expiry time for an already existing key",
+    "options": [
+      {
+        "key": "A",
+        "text": "HDEL"
+      },
+      {
+        "key": "B",
+        "text": "SADD"
+      },
+      {
+        "key": "C",
+        "text": "SELECT"
+      },
+      {
+        "key": "D",
+        "text": "EXPIRE"
+      }
+    ],
+    "answer": "D",
+    "explanation": "EXPIRE key seconds 为已存在的键设置秒级过期时间；HDEL 删除哈希字段； SADD 添加集合元素；SELECT 切换数据库编号。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Redis题库.pdf"
+    ],
+    "tags": [
+      "nosql",
+      "Redis",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "NS-MCPT-REDIS-007",
+    "courseKey": "nosql",
+    "course": "NoSQL / MongoDB / Redis",
+    "topic": "Redis",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "Which command reads the value stored at a simple Redis string key",
+    "options": [
+      {
+        "key": "A",
+        "text": "GET"
+      },
+      {
+        "key": "B",
+        "text": "HGETALL"
+      },
+      {
+        "key": "C",
+        "text": "LRANGE"
+      },
+      {
+        "key": "D",
+        "text": "ZADD"
+      }
+    ],
+    "answer": "A",
+    "explanation": "GET key 读取字符串类型键对应的值；HGETALL 获取哈希全部字段值；LRANGE 查询列表范围元素；ZADD 向有序集合添加成员。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Redis题库.pdf"
+    ],
+    "tags": [
+      "nosql",
+      "Redis",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "NS-MCPT-REDIS-008",
+    "courseKey": "nosql",
+    "course": "NoSQL / MongoDB / Redis",
+    "topic": "Redis",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "Which reply normally shows that a simple Redis connection test is successful",
+    "options": [
+      {
+        "key": "A",
+        "text": "PONG"
+      },
+      {
+        "key": "B",
+        "text": "READY"
+      },
+      {
+        "key": "C",
+        "text": "CONNECTED"
+      },
+      {
+        "key": "D",
+        "text": "DONE"
+      }
+    ],
+    "answer": "A",
+    "explanation": "执行PING 命令测试连通性，服务正常会返回PONG，代表连接正常；其余均非 Redis 标准PING 响应。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Redis题库.pdf"
+    ],
+    "tags": [
+      "nosql",
+      "Redis",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "NS-MCPT-REDIS-009",
+    "courseKey": "nosql",
+    "course": "NoSQL / MongoDB / Redis",
+    "topic": "Redis",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "Which command shows the Redis data type stored at a key",
+    "options": [
+      {
+        "key": "A",
+        "text": "KEYS"
+      },
+      {
+        "key": "B",
+        "text": "PING"
+      },
+      {
+        "key": "C",
+        "text": "TYPE"
+      },
+      {
+        "key": "D",
+        "text": "SAVE"
+      }
+    ],
+    "answer": "C",
+    "explanation": "TYPE key 查看指定键对应的数据类型（string/hash/list 等）；KEYS 匹配查询 所有键；PING 连通测试；SAVE 同步生成RDB 快照。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Redis题库.pdf"
+    ],
+    "tags": [
+      "nosql",
+      "Redis",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "NS-MCPT-REDIS-010",
+    "courseKey": "nosql",
+    "course": "NoSQL / MongoDB / Redis",
+    "topic": "Redis",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "What does TTL value -1 usually mean",
+    "options": [
+      {
+        "key": "A",
+        "text": "The key is deleted permanently"
+      },
+      {
+        "key": "B",
+        "text": "The key exists but has no expiry"
+      },
+      {
+        "key": "C",
+        "text": "The key is a MongoDB document"
+      },
+      {
+        "key": "D",
+        "text": "The server is stopped"
+      }
+    ],
+    "answer": "B",
+    "explanation": "执行TTL key 返回-1 代表该键存在，但从未设置过期时间，永久有效；返回-2 代表键不存在。A 对应返回-2；C、D 和TTL 返回值含义无关。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Redis题库.pdf"
+    ],
+    "tags": [
+      "nosql",
+      "Redis",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "NS-MCPT-REDIS-011",
+    "courseKey": "nosql",
+    "course": "NoSQL / MongoDB / Redis",
+    "topic": "NoSQL / MongoDB",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "Which command is suitable for increasing a numeric counter by one",
+    "options": [
+      {
+        "key": "A",
+        "text": "DECRBY"
+      },
+      {
+        "key": "B",
+        "text": "APPEND"
+      },
+      {
+        "key": "C",
+        "text": "INCR"
+      },
+      {
+        "key": "D",
+        "text": "HKEYS"
+      }
+    ],
+    "answer": "C",
+    "explanation": "INCR key 专门用于将数字键自增1，适合点赞、访问量等计数器场景； DECRBY 是指定数值递减；APPEND 是字符串追加；HKEYS 获取哈希所有字段名。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Redis题库.pdf"
+    ],
+    "tags": [
+      "nosql",
+      "NoSQL / MongoDB",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "NS-MCPT-REDIS-012",
+    "courseKey": "nosql",
+    "course": "NoSQL / MongoDB / Redis",
+    "topic": "NoSQL / MongoDB",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "Which command can increase a numeric key by a specific amount",
+    "options": [
+      {
+        "key": "A",
+        "text": "GETRANGE"
+      },
+      {
+        "key": "B",
+        "text": "SREM"
+      },
+      {
+        "key": "C",
+        "text": "LASTSAVE"
+      },
+      {
+        "key": "D",
+        "text": "INCRBY"
+      }
+    ],
+    "answer": "D",
+    "explanation": "INCRBY key num 可以自定义数值，给数字键增加指定大小的值；GETRANGE 截取字符串；SREM 删除集合元素；LASTSAVE 查看最近RDB 持久化时间戳。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Redis题库.pdf"
+    ],
+    "tags": [
+      "nosql",
+      "NoSQL / MongoDB",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "NS-MCPT-REDIS-013",
+    "courseKey": "nosql",
+    "course": "NoSQL / MongoDB / Redis",
+    "topic": "Redis",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "Which Redis component should normally be running before using redis-cli",
+    "options": [
+      {
+        "key": "A",
+        "text": "redis-server"
+      },
+      {
+        "key": "B",
+        "text": "redis-doc"
+      },
+      {
+        "key": "C",
+        "text": "redis-sheet"
+      },
+      {
+        "key": "D",
+        "text": "redis-index"
+      }
+    ],
+    "answer": "A",
+    "explanation": "redis-server 是Redis 服务端程序，必须先启动服务端，redis-cli 客户端 才能建立连接访问数据；redis-doc 是文档文件，B/C/D 均不存在官方组件。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Redis题库.pdf"
+    ],
+    "tags": [
+      "nosql",
+      "Redis",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "NS-MCPT-REDIS-014",
+    "courseKey": "nosql",
+    "course": "NoSQL / MongoDB / Redis",
+    "topic": "Redis",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "What does TTL value -2 usually mean",
+    "options": [
+      {
+        "key": "A",
+        "text": "The key stores two values"
+      },
+      {
+        "key": "B",
+        "text": "The key has two seconds left"
+      },
+      {
+        "key": "C",
+        "text": "The key does not exist"
+      },
+      {
+        "key": "D",
+        "text": "The key is protected by password"
+      }
+    ],
+    "answer": "C",
+    "explanation": "TTL 命令返回-2 代表查询的键在Redis 中不存在；返回-1 代表键存在但无过期 时间；正数代表剩余存活秒数，和存储数量、密码保护无关。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Redis题库.pdf"
+    ],
+    "tags": [
+      "nosql",
+      "Redis",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "NS-MCPT-REDIS-015",
+    "courseKey": "nosql",
+    "course": "NoSQL / MongoDB / Redis",
+    "topic": "NoSQL / MongoDB",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "Why should FLUSHALL be used carefully",
+    "options": [
+      {
+        "key": "A",
+        "text": "It can remove all keys from Redis"
+      },
+      {
+        "key": "B",
+        "text": "It only prints one field"
+      },
+      {
+        "key": "C",
+        "text": "It starts the Redis server"
+      },
+      {
+        "key": "D",
+        "text": "It creates a MongoDB collection"
+      }
+    ],
+    "answer": "A",
+    "explanation": "FLUSHALL 命令会清空Redis 所有数据库内全部键数据，数据一旦删除无法恢 复，生产环境严禁随意执行；其余选项均和该命令功能无关。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Redis题库.pdf"
+    ],
+    "tags": [
+      "nosql",
+      "NoSQL / MongoDB",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "NS-MCPT-REDIS-016",
+    "courseKey": "nosql",
+    "course": "NoSQL / MongoDB / Redis",
+    "topic": "Redis",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "Which example is best suited for a short-lived Redis key",
+    "options": [
+      {
+        "key": "A",
+        "text": "A permanent textbook chapter"
+      },
+      {
+        "key": "B",
+        "text": "A printed certificate"
+      },
+      {
+        "key": "C",
+        "text": "A one-time verification code"
+      },
+      {
+        "key": "D",
+        "text": "A database driver file"
+      }
+    ],
+    "answer": "C",
+    "explanation": "一次性验证码（短信/登录验证码）属于短期有效数据，非常适合给Redis 键设 置过期时间自动销毁；A、B、D 均为长期永久存储数据，不需要短期过期。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Redis题库.pdf"
+    ],
+    "tags": [
+      "nosql",
+      "Redis",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "NS-MCPT-REDIS-017",
+    "courseKey": "nosql",
+    "course": "NoSQL / MongoDB / Redis",
+    "topic": "Redis",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "Which command reads only one field from a Redis hash",
+    "options": [
+      {
+        "key": "A",
+        "text": "KEYS"
+      },
+      {
+        "key": "B",
+        "text": "HGET"
+      },
+      {
+        "key": "C",
+        "text": "SETEX"
+      },
+      {
+        "key": "D",
+        "text": "PING"
+      }
+    ],
+    "answer": "B",
+    "explanation": "HGET hash 字段名仅读取哈希中单个指定字段的值；KEYS 批量匹配键； SETEX 设置带过期的字符串；PING 连通性测试。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Redis题库.pdf"
+    ],
+    "tags": [
+      "nosql",
+      "Redis",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "NS-MCPT-REDIS-018",
+    "courseKey": "nosql",
+    "course": "NoSQL / MongoDB / Redis",
+    "topic": "Redis",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "What does a positive TTL value represent",
+    "options": [
+      {
+        "key": "A",
+        "text": "The key has remaining lifetime in seconds"
+      },
+      {
+        "key": "B",
+        "text": "The key is a hash only"
+      },
+      {
+        "key": "C",
+        "text": "The key is a sorted set"
+      },
+      {
+        "key": "D",
+        "text": "The database has no keys"
+      }
+    ],
+    "answer": "A",
+    "explanation": "TTL 命令返回正数，代表该键剩余的有效存活秒数；返回0 及以下代表即将过 期/无过期/已删除，和数据类型、库内键总数无关。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Redis题库.pdf"
+    ],
+    "tags": [
+      "nosql",
+      "Redis",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "NS-MCPT-REDIS-019",
+    "courseKey": "nosql",
+    "course": "NoSQL / MongoDB / Redis",
+    "topic": "Redis",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "Why is Redis commonly used for frequently accessed data",
+    "options": [
+      {
+        "key": "A",
+        "text": "It stores only images"
+      },
+      {
+        "key": "B",
+        "text": "It keeps active data mainly in memory"
+      },
+      {
+        "key": "C",
+        "text": "It requires fixed SQL tables"
+      },
+      {
+        "key": "D",
+        "text": "It cannot use keys"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Redis 核心特性是数据主要存储在内存中，读写速度极快，适合热点高频访问 数据做缓存；A 只能存图片错误；C 无SQL 表结构；D 所有数据都基于key 存储。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Redis题库.pdf"
+    ],
+    "tags": [
+      "nosql",
+      "Redis",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "NS-MCPT-REDIS-020",
+    "courseKey": "nosql",
+    "course": "NoSQL / MongoDB / Redis",
+    "topic": "Redis",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "What is the main role of redis-cli",
+    "options": [
+      {
+        "key": "A",
+        "text": "To draw database diagrams"
+      },
+      {
+        "key": "B",
+        "text": "To compile Java programs"
+      },
+      {
+        "key": "C",
+        "text": "To create Word documents"
+      },
+      {
+        "key": "D",
+        "text": "To open a Redis command-line client"
+      }
+    ],
+    "answer": "D",
+    "explanation": "redis-cli 是Redis 官方提供的命令行客户端工具，核心作用是连接Redis 服 务端，支持交互式执行命令、数据调试与实例管理。其余选项均与该工具功能无关。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Redis题库.pdf"
+    ],
+    "tags": [
+      "nosql",
+      "Redis",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "NS-MCPT-REDIS-021",
+    "courseKey": "nosql",
+    "course": "NoSQL / MongoDB / Redis",
+    "topic": "Redis",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "Which command returns a selected part of a Redis string",
+    "options": [
+      {
+        "key": "A",
+        "text": "SMEMBERS"
+      },
+      {
+        "key": "B",
+        "text": "GEODIST"
+      },
+      {
+        "key": "C",
+        "text": "SAVE"
+      },
+      {
+        "key": "D",
+        "text": "GETRANGE"
+      }
+    ],
+    "answer": "D",
+    "explanation": "GETRANGE 是字符串类型专属命令，用于截取并返回字符串值中指定索引范围内 的子串。SMEMBERS 用于返回集合所有成员；GEODIST 用于计算两个地理位置的距 离；SAVE 用于同步执行RDB 持久化。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Redis题库.pdf"
+    ],
+    "tags": [
+      "nosql",
+      "Redis",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "NS-MCPT-REDIS-022",
+    "courseKey": "nosql",
+    "course": "NoSQL / MongoDB / Redis",
+    "topic": "NoSQL / MongoDB",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "Which command shows remaining lifetime in milliseconds",
+    "options": [
+      {
+        "key": "A",
+        "text": "PTTL"
+      },
+      {
+        "key": "B",
+        "text": "TTL"
+      },
+      {
+        "key": "C",
+        "text": "TYPE"
+      },
+      {
+        "key": "D",
+        "text": "HGET"
+      }
+    ],
+    "answer": "A",
+    "explanation": "PTTL 命令以毫秒为单位返回指定键的剩余过期时间。TTL 以秒为单位返回剩余 过期时间；TYPE 用于查看键的数据类型；HGET 用于读取哈希表单个字段的值。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Redis题库.pdf"
+    ],
+    "tags": [
+      "nosql",
+      "NoSQL / MongoDB",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "NS-MCPT-REDIS-023",
+    "courseKey": "nosql",
+    "course": "NoSQL / MongoDB / Redis",
+    "topic": "Redis",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "Which command returns the length of a Redis string value",
+    "options": [
+      {
+        "key": "A",
+        "text": "LLEN"
+      },
+      {
+        "key": "B",
+        "text": "HLEN"
+      },
+      {
+        "key": "C",
+        "text": "STRLEN"
+      },
+      {
+        "key": "D",
+        "text": "SCARD"
+      }
+    ],
+    "answer": "C",
+    "explanation": "STRLEN 命令用于返回字符串类型键对应值的字节长度。LLEN 返回列表的元素 个数；HLEN 返回哈希表的字段数量；SCARD 返回集合的元素总数。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Redis题库.pdf"
+    ],
+    "tags": [
+      "nosql",
+      "Redis",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "NS-MCPT-REDIS-024",
+    "courseKey": "nosql",
+    "course": "NoSQL / MongoDB / Redis",
+    "topic": "Redis",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "Which command removes the leftmost element from a Redis list",
+    "options": [
+      {
+        "key": "A",
+        "text": "RPOP"
+      },
+      {
+        "key": "B",
+        "text": "LPOP"
+      },
+      {
+        "key": "C",
+        "text": "HKEYS"
+      },
+      {
+        "key": "D",
+        "text": "AUTH"
+      }
+    ],
+    "answer": "B",
+    "explanation": "LPOP 命令用于移除并返回列表最左侧（表头）的第一个元素。RPOP 移除并返 回列表最右侧的元素；HKEYS 用于获取哈希表的所有字段名；AUTH 用于密码身份认 证。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Redis题库.pdf"
+    ],
+    "tags": [
+      "nosql",
+      "Redis",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "NS-MCPT-REDIS-025",
+    "courseKey": "nosql",
+    "course": "NoSQL / MongoDB / Redis",
+    "topic": "Redis",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "Which command changes the name of a Redis key",
+    "options": [
+      {
+        "key": "A",
+        "text": "MOVE"
+      },
+      {
+        "key": "B",
+        "text": "RENAME"
+      },
+      {
+        "key": "C",
+        "text": "SELECT"
+      },
+      {
+        "key": "D",
+        "text": "DUMP"
+      }
+    ],
+    "answer": "B",
+    "explanation": "RENAME 命令用于对Redis 中的键进行重命名，将旧键名修改为新键名。MOVE 用于将键移动到另一个数据库；SELECT 用于切换数据库编号；DUMP 用于序列化键的 值。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Redis题库.pdf"
+    ],
+    "tags": [
+      "nosql",
+      "Redis",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "NS-MCPT-REDIS-026",
+    "courseKey": "nosql",
+    "course": "NoSQL / MongoDB / Redis",
+    "topic": "Redis",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "Which Redis data type is most suitable for storing a profile with fields such as name and course",
+    "options": [
+      {
+        "key": "A",
+        "text": "Hash"
+      },
+      {
+        "key": "B",
+        "text": "String only"
+      },
+      {
+        "key": "C",
+        "text": "List only"
+      },
+      {
+        "key": "D",
+        "text": "Benchmark"
+      }
+    ],
+    "answer": "A",
+    "explanation": "哈希（Hash）类型最适合存储包含多个字段的对象类数据（如个人档案、用户 信息），支持独立读写单个字段，结构灵活且内存开销低。纯字符串需要序列化整个 对象，列表不适合键值对形式的字段存储；Benchmark 是性能测试工具，并非数据类 型。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Redis题库.pdf"
+    ],
+    "tags": [
+      "nosql",
+      "Redis",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "NS-MCPT-REDIS-027",
+    "courseKey": "nosql",
+    "course": "NoSQL / MongoDB / Redis",
+    "topic": "Redis",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "Which command displays a range of elements from a Redis list",
+    "options": [
+      {
+        "key": "A",
+        "text": "LRANGE"
+      },
+      {
+        "key": "B",
+        "text": "GET"
+      },
+      {
+        "key": "C",
+        "text": "SCARD"
+      },
+      {
+        "key": "D",
+        "text": "CONFIG GET"
+      }
+    ],
+    "answer": "A",
+    "explanation": "LRANGE 是列表类型命令，用于获取列表中指定索引范围内的所有元素，支持正 向、反向索引。GET 用于读取字符串值；SCARD 返回集合元素数量；CONFIG GET 用于 读取Redis 配置参数。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Redis题库.pdf"
+    ],
+    "tags": [
+      "nosql",
+      "Redis",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "NS-MCPT-REDIS-028",
+    "courseKey": "nosql",
+    "course": "NoSQL / MongoDB / Redis",
+    "topic": "Redis",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "Which set command finds the common values between sets",
+    "options": [
+      {
+        "key": "A",
+        "text": "SUNION"
+      },
+      {
+        "key": "B",
+        "text": "SDIFF"
+      },
+      {
+        "key": "C",
+        "text": "SINTER"
+      },
+      {
+        "key": "D",
+        "text": "SREM"
+      }
+    ],
+    "answer": "C",
+    "explanation": "SINTER 用于求多个集合的交集，返回集合之间共同存在的元素。SUNION 用于 求集合并集；SDIFF 用于求集合差集；SREM 用于删除集合内的指定元素。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Redis题库.pdf"
+    ],
+    "tags": [
+      "nosql",
+      "Redis",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "NS-MCPT-REDIS-029",
+    "courseKey": "nosql",
+    "course": "NoSQL / MongoDB / Redis",
+    "topic": "Redis",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "Which Redis architecture uses multiple masters to share data across nodes",
+    "options": [
+      {
+        "key": "A",
+        "text": "Cluster"
+      },
+      {
+        "key": "B",
+        "text": "Standalone"
+      },
+      {
+        "key": "C",
+        "text": "Sentinel"
+      },
+      {
+        "key": "D",
+        "text": "Single client mode"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Redis Cluster（集群）采用多个主节点分片存储数据，数据分散在不同节点实 现横向扩容与高可用。Standalone 是单机单节点模式；Sentinel（哨兵）模式为一主 多从，仅实现高可用，不具备多主分片能力。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Redis题库.pdf"
+    ],
+    "tags": [
+      "nosql",
+      "Redis",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "NS-MCPT-REDIS-030",
+    "courseKey": "nosql",
+    "course": "NoSQL / MongoDB / Redis",
+    "topic": "Redis",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "Which command sets a value with expiry in one step",
+    "options": [
+      {
+        "key": "A",
+        "text": "ZINCRBY"
+      },
+      {
+        "key": "B",
+        "text": "SETEX"
+      },
+      {
+        "key": "C",
+        "text": "SINTER"
+      },
+      {
+        "key": "D",
+        "text": "MOVE"
+      }
+    ],
+    "answer": "B",
+    "explanation": "SETEX key seconds value 可以原子性地一步完成「设置键值+ 设置秒级过 期时间」的操作。ZINCRBY 用于有序集合分值自增；SINTER 用于求集合交集；MOVE 用于迁移键到其他数据库。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Redis题库.pdf"
+    ],
+    "tags": [
+      "nosql",
+      "Redis",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "NS-MCPT-REDIS-031",
+    "courseKey": "nosql",
+    "course": "NoSQL / MongoDB / Redis",
+    "topic": "Redis",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "Which command can show sorted set members from highest score first",
+    "options": [
+      {
+        "key": "A",
+        "text": "ZRANGE"
+      },
+      {
+        "key": "B",
+        "text": "LRANGE"
+      },
+      {
+        "key": "C",
+        "text": "SMEMBERS"
+      },
+      {
+        "key": "D",
+        "text": "ZREVRANGE"
+      }
+    ],
+    "answer": "D",
+    "explanation": "ZREVRANGE 按分值**从高到低（倒序）**返回有序集合成员。ZRANGE 按分值升 序（低→高）返回；LRANGE 用于列表范围查询；SMEMBERS 用于返回普通集合的全部 元素。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Redis题库.pdf"
+    ],
+    "tags": [
+      "nosql",
+      "Redis",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "NS-MCPT-REDIS-032",
+    "courseKey": "nosql",
+    "course": "NoSQL / MongoDB / Redis",
+    "topic": "Redis",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "Which command can count the number of items in a Redis list",
+    "options": [
+      {
+        "key": "A",
+        "text": "SCARD"
+      },
+      {
+        "key": "B",
+        "text": "HLEN"
+      },
+      {
+        "key": "C",
+        "text": "LLEN"
+      },
+      {
+        "key": "D",
+        "text": "STRLEN"
+      }
+    ],
+    "answer": "C",
+    "explanation": "LLEN key 用于统计列表（List）的元素总个数。SCARD 统计集合元素数量； HLEN 统计哈希字段数量；STRLEN 统计字符串的字节长度。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Redis题库.pdf"
+    ],
+    "tags": [
+      "nosql",
+      "Redis",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "NS-MCPT-REDIS-033",
+    "courseKey": "nosql",
+    "course": "NoSQL / MongoDB / Redis",
+    "topic": "Redis",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "Which Redis data type stores members together with scores",
+    "options": [
+      {
+        "key": "A",
+        "text": "List"
+      },
+      {
+        "key": "B",
+        "text": "Set"
+      },
+      {
+        "key": "C",
+        "text": "Hash"
+      },
+      {
+        "key": "D",
+        "text": "Sorted Set"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Sorted Set（有序集合/ZSet）的每个成员都绑定一个score 分值，依靠分值实 现自动排序。List 有序但无分值概念；Set 元素唯一无序、无分值；Hash 存储field- value 字段，不支持分值。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Redis题库.pdf"
+    ],
+    "tags": [
+      "nosql",
+      "Redis",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "NS-MCPT-REDIS-034",
+    "courseKey": "nosql",
+    "course": "NoSQL / MongoDB / Redis",
+    "topic": "Redis",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "Which Redis data type keeps elements in insertion order and can work like a queue",
+    "options": [
+      {
+        "key": "A",
+        "text": "Hash"
+      },
+      {
+        "key": "B",
+        "text": "List"
+      },
+      {
+        "key": "C",
+        "text": "Set"
+      },
+      {
+        "key": "D",
+        "text": "RDB"
+      }
+    ],
+    "answer": "B",
+    "explanation": "列表（List）严格保留元素的插入顺序，支持两端推拉操作，通过RPUSH + LPOP 或LPUSH + RPOP 即可模拟队列（先进先出）的效果。Hash 用于存储字段-值映 射，不具备队列特性；Set 元素无序；RDB 是持久化机制，不属于数据类型。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Redis题库.pdf"
+    ],
+    "tags": [
+      "nosql",
+      "Redis",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "NS-MCPT-REDIS-035",
+    "courseKey": "nosql",
+    "course": "NoSQL / MongoDB / Redis",
+    "topic": "NoSQL / MongoDB",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "Which command adds extra text to the end of an existing string value",
+    "options": [
+      {
+        "key": "A",
+        "text": "SADD"
+      },
+      {
+        "key": "B",
+        "text": "APPEND"
+      },
+      {
+        "key": "C",
+        "text": "ZADD"
+      },
+      {
+        "key": "D",
+        "text": "BGSAVE"
+      }
+    ],
+    "answer": "B",
+    "explanation": "APPEND 是字符串类型命令，作用是在已有字符串值的末尾追加新文本，并返回 追加后的总长度。SADD 用于向集合添加成员；ZADD 用于向有序集合添加成员； BGSAVE 用于后台异步执行RDB 持久化。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Redis题库.pdf"
+    ],
+    "tags": [
+      "nosql",
+      "NoSQL / MongoDB",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "NS-MCPT-REDIS-036",
+    "courseKey": "nosql",
+    "course": "NoSQL / MongoDB / Redis",
+    "topic": "Redis",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "Which command inserts a value at the right side of a Redis list",
+    "options": [
+      {
+        "key": "A",
+        "text": "LPOP"
+      },
+      {
+        "key": "B",
+        "text": "HDEL"
+      },
+      {
+        "key": "C",
+        "text": "ZREM"
+      },
+      {
+        "key": "D",
+        "text": "RPUSH"
+      }
+    ],
+    "answer": "D",
+    "explanation": "RPUSH（Right Push）用于在列表的**右侧（尾部）**插入一个或多个元素。 LPOP 是从列表左侧弹出元素；HDEL 用于删除哈希字段；ZREM 用于移除有序集合的成 员。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Redis题库.pdf"
+    ],
+    "tags": [
+      "nosql",
+      "Redis",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "NS-MCPT-REDIS-037",
+    "courseKey": "nosql",
+    "course": "NoSQL / MongoDB / Redis",
+    "topic": "Redis",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "Which Redis data type is most suitable when one key stores one simple text value",
+    "options": [
+      {
+        "key": "A",
+        "text": "String"
+      },
+      {
+        "key": "B",
+        "text": "Set"
+      },
+      {
+        "key": "C",
+        "text": "Sorted Set"
+      },
+      {
+        "key": "D",
+        "text": "Geospatial"
+      }
+    ],
+    "answer": "A",
+    "explanation": "字符串（String）是Redis 最基础的数据类型，一个键对应一个简单的值，最适 合存储单个文本、数字等简单数据。Set、Sorted Set、Geospatial 均为多元素/结构化 类型，不适合单值简单文本场景。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Redis题库.pdf"
+    ],
+    "tags": [
+      "nosql",
+      "Redis",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "NS-MCPT-REDIS-038",
+    "courseKey": "nosql",
+    "course": "NoSQL / MongoDB / Redis",
+    "topic": "NoSQL / MongoDB",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "Which command returns the old string value while replacing it with a new one",
+    "options": [
+      {
+        "key": "A",
+        "text": "GETSET"
+      },
+      {
+        "key": "B",
+        "text": "HGETALL"
+      },
+      {
+        "key": "C",
+        "text": "LRANGE"
+      },
+      {
+        "key": "D",
+        "text": "PTTL"
+      }
+    ],
+    "answer": "A",
+    "explanation": "GETSET 命令会将键的值设置为新值，同时原子性地返回该键的旧值，常用于需 要获取旧值并同步更新的场景。HGETALL 用于获取哈希表所有字段与值；LRANGE 用于 获取列表指定范围元素；PTTL 用于查询键的毫秒级剩余过期时间。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Redis题库.pdf"
+    ],
+    "tags": [
+      "nosql",
+      "NoSQL / MongoDB",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "NS-MCPT-REDIS-039",
+    "courseKey": "nosql",
+    "course": "NoSQL / MongoDB / Redis",
+    "topic": "Redis",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "Which command checks whether a value is a member of a Redis set",
+    "options": [
+      {
+        "key": "A",
+        "text": "HEXISTS"
+      },
+      {
+        "key": "B",
+        "text": "SISMEMBER"
+      },
+      {
+        "key": "C",
+        "text": "EXISTS"
+      },
+      {
+        "key": "D",
+        "text": "TYPE"
+      }
+    ],
+    "answer": "B",
+    "explanation": "SISMEMBER 是集合类型命令，用于判断指定值是否为集合的成员，存在返回 1，不存在返回0。HEXISTS 用于判断哈希表中是否存在指定字段；EXISTS 用于判断 键本身是否存在；TYPE 用于查看键的数据类型。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Redis题库.pdf"
+    ],
+    "tags": [
+      "nosql",
+      "Redis",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "NS-MCPT-REDIS-040",
+    "courseKey": "nosql",
+    "course": "NoSQL / MongoDB / Redis",
+    "topic": "Redis",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "Which command adds members with scores to a sorted set",
+    "options": [
+      {
+        "key": "A",
+        "text": "SADD"
+      },
+      {
+        "key": "B",
+        "text": "HSET"
+      },
+      {
+        "key": "C",
+        "text": "ZADD"
+      },
+      {
+        "key": "D",
+        "text": "RPUSH"
+      }
+    ],
+    "answer": "C",
+    "explanation": "ZADD 是有序集合（Sorted Set）的核心写入命令，用于向有序集合中添加成员 及其对应的分值（score）。SADD 用于普通集合添加成员；HSET 用于哈希表设置字段 值；RPUSH 用于列表右侧插入元素。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Redis题库.pdf"
+    ],
+    "tags": [
+      "nosql",
+      "Redis",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "NS-MCPT-REDIS-041",
+    "courseKey": "nosql",
+    "course": "NoSQL / MongoDB / Redis",
+    "topic": "Redis",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "Which error appears when authentication is needed before running commands",
+    "options": [
+      {
+        "key": "A",
+        "text": "NODATA"
+      },
+      {
+        "key": "B",
+        "text": "NOKEY"
+      },
+      {
+        "key": "C",
+        "text": "NOINDEX"
+      },
+      {
+        "key": "D",
+        "text": "NOAUTH"
+      }
+    ],
+    "answer": "D",
+    "explanation": "当Redis 设置了密码，但客户端未执行认证就直接执行命令时，会返回NOAUTH 错误，提示需要先完成身份验证。其余选项均不是Redis 认证相关的标准错误标识。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Redis题库.pdf"
+    ],
+    "tags": [
+      "nosql",
+      "Redis",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "NS-MCPT-REDIS-042",
+    "courseKey": "nosql",
+    "course": "NoSQL / MongoDB / Redis",
+    "topic": "Redis",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "Why does Redis need persistence even though it is mainly in-memory",
+    "options": [
+      {
+        "key": "A",
+        "text": "To save data to disk for recovery"
+      },
+      {
+        "key": "B",
+        "text": "To remove all keys automatically"
+      },
+      {
+        "key": "C",
+        "text": "To disable all writes"
+      },
+      {
+        "key": "D",
+        "text": "To convert keys into tables"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Redis 是内存数据库，进程退出或服务器宕机时内存数据会全部丢失；持久化 的核心作用是将数据落盘保存，用于故障后的数据恢复。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Redis题库.pdf"
+    ],
+    "tags": [
+      "nosql",
+      "Redis",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "NS-MCPT-REDIS-043",
+    "courseKey": "nosql",
+    "course": "NoSQL / MongoDB / Redis",
+    "topic": "Redis",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "Which persistence method is based on point-in-time snapshots",
+    "options": [
+      {
+        "key": "A",
+        "text": "AOF"
+      },
+      {
+        "key": "B",
+        "text": "RDB"
+      },
+      {
+        "key": "C",
+        "text": "AUTH"
+      },
+      {
+        "key": "D",
+        "text": "PING"
+      }
+    ],
+    "answer": "B",
+    "explanation": "RDB 是基于时间点快照的持久化方式，会在指定时刻生成全量数据的二进制快 照文件写入磁盘。AOF 是基于写命令日志的持久化；AUTH 是认证命令；PING 是心跳 检测命令，均不属于持久化方法。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Redis题库.pdf"
+    ],
+    "tags": [
+      "nosql",
+      "Redis",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "NS-MCPT-REDIS-044",
+    "courseKey": "nosql",
+    "course": "NoSQL / MongoDB / Redis",
+    "topic": "Redis",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "Which statement best compares RDB and AOF",
+    "options": [
+      {
+        "key": "A",
+        "text": "RDB is only for passwords and AOF is only for lists"
+      },
+      {
+        "key": "B",
+        "text": "Both are MongoDB index types"
+      },
+      {
+        "key": "C",
+        "text": "Both remove all data from memory"
+      },
+      {
+        "key": "D",
+        "text": "RDB is snapshot-based and AOF is write-log-based"
+      }
+    ],
+    "answer": "D",
+    "explanation": "RDB 通过生成数据快照实现持久化，AOF 通过记录所有写操作命令的日志实现 持久化，这是二者最核心的本质区别。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Redis题库.pdf"
+    ],
+    "tags": [
+      "nosql",
+      "Redis",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "NS-MCPT-REDIS-045",
+    "courseKey": "nosql",
+    "course": "NoSQL / MongoDB / Redis",
+    "topic": "Redis",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "In redis-benchmark, what does the option -n commonly represent",
+    "options": [
+      {
+        "key": "A",
+        "text": "Name of the password"
+      },
+      {
+        "key": "B",
+        "text": "Network address only"
+      },
+      {
+        "key": "C",
+        "text": "Number of databases to delete"
+      },
+      {
+        "key": "D",
+        "text": "Number of requests"
+      }
+    ],
+    "answer": "D",
+    "explanation": "redis-benchmark 性能测试工具中，-n 参数用于指定压测的总请求数量，是 控制压测规模的核心参数。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Redis题库.pdf"
+    ],
+    "tags": [
+      "nosql",
+      "Redis",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "NS-MCPT-REDIS-046",
+    "courseKey": "nosql",
+    "course": "NoSQL / MongoDB / Redis",
+    "topic": "NoSQL / MongoDB",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "Which command starts saving a snapshot in the background",
+    "options": [
+      {
+        "key": "A",
+        "text": "SAVE"
+      },
+      {
+        "key": "B",
+        "text": "GET"
+      },
+      {
+        "key": "C",
+        "text": "BGSAVE"
+      },
+      {
+        "key": "D",
+        "text": "SET"
+      }
+    ],
+    "answer": "C",
+    "explanation": "BGSAVE 命令会在后台异步执行RDB 快照持久化，通过fork 子进程完成落盘， 全程不阻塞Redis 主进程处理正常请求。SAVE 是同步执行快照，会阻塞主进程； GET、SET 是字符串读写命令，与持久化无关。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Redis题库.pdf"
+    ],
+    "tags": [
+      "nosql",
+      "NoSQL / MongoDB",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "NS-MCPT-REDIS-047",
+    "courseKey": "nosql",
+    "course": "NoSQL / MongoDB / Redis",
+    "topic": "Redis",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "What is the purpose of protected mode",
+    "options": [
+      {
+        "key": "A",
+        "text": "To help reduce unsafe remote access"
+      },
+      {
+        "key": "B",
+        "text": "To increase string length"
+      },
+      {
+        "key": "C",
+        "text": "To create sorted sets"
+      },
+      {
+        "key": "D",
+        "text": "To delete all lists"
+      }
+    ],
+    "answer": "A",
+    "explanation": "保护模式（protected mode）是Redis 的默认安全机制，用于限制未配置密 码、未绑定指定地址的Redis 实例被外部网络非法访问，降低不安全远程访问的风 险。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Redis题库.pdf"
+    ],
+    "tags": [
+      "nosql",
+      "Redis",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "NS-MCPT-REDIS-048",
+    "courseKey": "nosql",
+    "course": "NoSQL / MongoDB / Redis",
+    "topic": "Redis",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "Which benchmark option is used to test only selected command types such as set or get",
+    "options": [
+      {
+        "key": "A",
+        "text": "-p"
+      },
+      {
+        "key": "B",
+        "text": "-t"
+      },
+      {
+        "key": "C",
+        "text": "-d"
+      },
+      {
+        "key": "D",
+        "text": "-x"
+      }
+    ],
+    "answer": "B",
+    "explanation": "redis-benchmark 性能测试工具中，-t 参数用于指定仅测试特定的命令类 型，例如-t set,get 只测试SET 和GET 命令的性能。-p 指定端口；-d 指定测试 数据的字节大小。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Redis题库.pdf"
+    ],
+    "tags": [
+      "nosql",
+      "Redis",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "NS-MCPT-REDIS-049",
+    "courseKey": "nosql",
+    "course": "NoSQL / MongoDB / Redis",
+    "topic": "Redis",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "Which Redis setting can require users to provide a password",
+    "options": [
+      {
+        "key": "A",
+        "text": "protected-mode only"
+      },
+      {
+        "key": "B",
+        "text": "requirepass"
+      },
+      {
+        "key": "C",
+        "text": "appendonly"
+      },
+      {
+        "key": "D",
+        "text": "maxmemory-policy"
+      }
+    ],
+    "answer": "B",
+    "explanation": "requirepass 是Redis 配置文件中的核心参数，用于设置连接密码，开启后客 户端必须通过AUTH 命令验证密码才能执行操作。protected-mode 是保护模式，不等 于强制密码认证；appendonly 控制AOF 持久化开关；maxmemory-policy 配置内存 淘汰策略。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Redis题库.pdf"
+    ],
+    "tags": [
+      "nosql",
+      "Redis",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "NS-MCPT-REDIS-050",
+    "courseKey": "nosql",
+    "course": "NoSQL / MongoDB / Redis",
+    "topic": "Redis",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "What is one advantage of RDB persistence",
+    "options": [
+      {
+        "key": "A",
+        "text": "It always stores every command instantly"
+      },
+      {
+        "key": "B",
+        "text": "It cannot lose recent data"
+      },
+      {
+        "key": "C",
+        "text": "It is only used for passwords"
+      },
+      {
+        "key": "D",
+        "text": "It can restart fast with a smaller file"
+      }
+    ],
+    "answer": "D",
+    "explanation": "RDB 是紧凑的二进制快照文件，体积更小，服务重启时加载恢复数据的速度远 快于AOF，这是RDB 持久化的核心优势之一。实时记录每条命令是AOF 的特点； RDB 存在快照间隔期数据丢失的风险。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Redis题库.pdf"
+    ],
+    "tags": [
+      "nosql",
+      "Redis",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "SP-MCPT-PDF-001",
+    "courseKey": "springmvc",
+    "course": "Spring MVC / Spring",
+    "topic": "Spring Security",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "Which of the following is not a function of Spring Security?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Database connection pool"
+      },
+      {
+        "key": "B",
+        "text": "Single Sign-On (SSO)"
+      },
+      {
+        "key": "C",
+        "text": "Remember me"
+      },
+      {
+        "key": "D",
+        "text": "CSRF protection"
+      }
+    ],
+    "answer": "A",
+    "explanation": "数据库连接池属于数据源组件功能，并非Spring Security 的能力。单点登录、 记住我、CSRF 防护都是Spring Security 内置安全功能。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Spring综合测试题(1).pdf"
+    ],
+    "tags": [
+      "springmvc",
+      "Spring Security",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "SP-MCPT-PDF-002",
+    "courseKey": "springmvc",
+    "course": "Spring MVC / Spring",
+    "topic": "Spring Security",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "Which annotation is used to enable Spring Web Security?",
+    "options": [
+      {
+        "key": "A",
+        "text": "@Configuration"
+      },
+      {
+        "key": "B",
+        "text": "@EnableWebSecurity"
+      },
+      {
+        "key": "C",
+        "text": "@ComponentScan"
+      },
+      {
+        "key": "D",
+        "text": "@Controller"
+      }
+    ],
+    "answer": "B",
+    "explanation": "@EnableWebSecurity 是开启Spring Web 安全功能的核心注解；其余注解分 别用于配置类标记、组件扫描、控制器标记，不具备开启安全框架的作用。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Spring综合测试题(1).pdf"
+    ],
+    "tags": [
+      "springmvc",
+      "Spring Security",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "SP-MCPT-PDF-003",
+    "courseKey": "springmvc",
+    "course": "Spring MVC / Spring",
+    "topic": "Spring Security",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "About Spring Security built-in login form, which statement is correct?",
+    "options": [
+      {
+        "key": "A",
+        "text": "It has default style, no need to write login page manually"
+      },
+      {
+        "key": "B",
+        "text": "Developers have full control over the style"
+      },
+      {
+        "key": "C",
+        "text": "Must write CSS file"
+      },
+      {
+        "key": "D",
+        "text": "Must write JSP page"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Spring Security 内置登录表单自带默认样式，无需手动编写页面、CSS 或 JSP；完全掌控样式是自定义登录页的特点。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Spring综合测试题(1).pdf"
+    ],
+    "tags": [
+      "springmvc",
+      "Spring Security",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "SP-MCPT-PDF-004",
+    "courseKey": "springmvc",
+    "course": "Spring MVC / Spring",
+    "topic": "Spring Security",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "After logout in Spring Security, the default operation is?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Close browser"
+      },
+      {
+        "key": "B",
+        "text": "Delete database data"
+      },
+      {
+        "key": "C",
+        "text": "Stop server"
+      },
+      {
+        "key": "D",
+        "text": "Invalidate session and redirect to login page"
+      }
+    ],
+    "answer": "D",
+    "explanation": "执行登出操作后，框架会使会话失效，并默认重定向到登录页面，是标准的 Web 安全登出逻辑。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Spring综合测试题(1).pdf"
+    ],
+    "tags": [
+      "springmvc",
+      "Spring Security",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "SP-MCPT-PDF-005",
+    "courseKey": "springmvc",
+    "course": "Spring MVC / Spring",
+    "topic": "Spring Security",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "When an unlogged-in user accesses protected resources, Spring Security will?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Report 500 error"
+      },
+      {
+        "key": "B",
+        "text": "Redirect to login page"
+      },
+      {
+        "key": "C",
+        "text": "Report 404 error"
+      },
+      {
+        "key": "D",
+        "text": "Directly access resources"
+      }
+    ],
+    "answer": "B",
+    "explanation": "未登录用户访问受保护资源时，框架会拦截请求，自动重定向至登录页面，要 求用户完成身份认证。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Spring综合测试题(1).pdf"
+    ],
+    "tags": [
+      "springmvc",
+      "Spring Security",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "SP-MCPT-PDF-006",
+    "courseKey": "springmvc",
+    "course": "Spring MVC / Spring",
+    "topic": "Spring Security",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "Which module is the core of Spring Security and must be introduced?",
+    "options": [
+      {
+        "key": "A",
+        "text": "spring-security-web"
+      },
+      {
+        "key": "B",
+        "text": "spring-security-core"
+      },
+      {
+        "key": "C",
+        "text": "spring-security-ldap"
+      },
+      {
+        "key": "D",
+        "text": "spring-security-config"
+      }
+    ],
+    "answer": "B",
+    "explanation": "spring-security-core 是Spring Security 核心基础模块，包含认证、授权核 心API，所有应用都必须引入；其余为扩展模块。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Spring综合测试题(1).pdf"
+    ],
+    "tags": [
+      "springmvc",
+      "Spring Security",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "SP-MCPT-PDF-007",
+    "courseKey": "springmvc",
+    "course": "Spring MVC / Spring",
+    "topic": "Spring Security",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "The \"Remember me\" function in Spring Security mainly relies on?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Session"
+      },
+      {
+        "key": "B",
+        "text": "Cookie"
+      },
+      {
+        "key": "C",
+        "text": "URL parameter"
+      },
+      {
+        "key": "D",
+        "text": "Request header"
+      }
+    ],
+    "answer": "B",
+    "explanation": "记住我功能依靠浏览器持久化Cookie 实现，会话过期后仍可自动识别用户身 份，免去重复登录。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Spring综合测试题(1).pdf"
+    ],
+    "tags": [
+      "springmvc",
+      "Spring Security",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "SP-MCPT-PDF-008",
+    "courseKey": "springmvc",
+    "course": "Spring MVC / Spring",
+    "topic": "Spring Security",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "Which description about Spring Security is wrong?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Support SSO"
+      },
+      {
+        "key": "B",
+        "text": "Integrate well with Spring MVC"
+      },
+      {
+        "key": "C",
+        "text": "No built-in CSRF protection"
+      },
+      {
+        "key": "D",
+        "text": "Support Java configuration and XML configuration"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Spring Security 默认内置CSRF 跨站请求伪造防护；框架支持单点登录、与 Spring MVC 无缝整合，同时兼容Java 代码配置与XML 配置。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Spring综合测试题(1).pdf"
+    ],
+    "tags": [
+      "springmvc",
+      "Spring Security",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "SP-MCPT-PDF-009",
+    "courseKey": "springmvc",
+    "course": "Spring MVC / Spring",
+    "topic": "Spring Security",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "Authentication mainly solves which problem?",
+    "options": [
+      {
+        "key": "A",
+        "text": "What can you do?"
+      },
+      {
+        "key": "B",
+        "text": "Who are you?"
+      },
+      {
+        "key": "C",
+        "text": "What resources can be accessed?"
+      },
+      {
+        "key": "D",
+        "text": "What permissions do you have?"
+      }
+    ],
+    "answer": "B",
+    "explanation": "认证（Authentication）核心是校验用户身份，回答“你是谁”；权限、可访问资 源属于授权范畴。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Spring综合测试题(1).pdf"
+    ],
+    "tags": [
+      "springmvc",
+      "Spring Security",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "SP-MCPT-PDF-010",
+    "courseKey": "springmvc",
+    "course": "Spring MVC / Spring",
+    "topic": "Spring Security",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "Authorization mainly solves which problem?",
+    "options": [
+      {
+        "key": "A",
+        "text": "What can you do?"
+      },
+      {
+        "key": "B",
+        "text": "Who are you?"
+      },
+      {
+        "key": "C",
+        "text": "Verify user identity"
+      },
+      {
+        "key": "D",
+        "text": "Record login log"
+      }
+    ],
+    "answer": "A",
+    "explanation": "授权（Authorization）是在身份认证通过后，控制用户权限与可执行操作，回 答“你能做什么”。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Spring综合测试题(1).pdf"
+    ],
+    "tags": [
+      "springmvc",
+      "Spring Security",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "SP-MCPT-PDF-011",
+    "courseKey": "springmvc",
+    "course": "Spring MVC / Spring",
+    "topic": "Spring Security",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "What is the core function of Spring Security?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Database management"
+      },
+      {
+        "key": "B",
+        "text": "Authentication, authorization and attack protection"
+      },
+      {
+        "key": "C",
+        "text": "REST API development"
+      },
+      {
+        "key": "D",
+        "text": "Log monitoring"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Spring Security 是安全框架，核心职责为身份认证、权限授权以及CSRF、会 话攻击等网络安全防护。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Spring综合测试题(1).pdf"
+    ],
+    "tags": [
+      "springmvc",
+      "Spring Security",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "SP-MCPT-PDF-012",
+    "courseKey": "springmvc",
+    "course": "Spring MVC / Spring",
+    "topic": "Spring Security",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "The predecessor of Spring Security is Acegi Security, who developed it?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Ben Alex"
+      },
+      {
+        "key": "B",
+        "text": "Juergen Hoeller"
+      },
+      {
+        "key": "C",
+        "text": "Rod Johnson"
+      },
+      {
+        "key": "D",
+        "text": "Craig Walls"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Spring Security 前身Acegi Security 由Ben Alex 开发；Rod Johnson 是 Spring 创始人，Juergen Hoeller 是Spring 核心开发者。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Spring综合测试题(1).pdf"
+    ],
+    "tags": [
+      "springmvc",
+      "Spring Security",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "SP-MCPT-PDF-013",
+    "courseKey": "springmvc",
+    "course": "Spring MVC / Spring",
+    "topic": "Spring Security",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "When was Acegi Security first released?",
+    "options": [
+      {
+        "key": "A",
+        "text": "2006"
+      },
+      {
+        "key": "B",
+        "text": "2007"
+      },
+      {
+        "key": "C",
+        "text": "March 2004"
+      },
+      {
+        "key": "D",
+        "text": "2005"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Acegi Security 首个公开版本发布于2004 年3 月，2007 年正式更名为Spring Security。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Spring综合测试题(1).pdf"
+    ],
+    "tags": [
+      "springmvc",
+      "Spring Security",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "SP-MCPT-PDF-014",
+    "courseKey": "springmvc",
+    "course": "Spring MVC / Spring",
+    "topic": "REST / JSON / HTTP",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "Which component is used to call external REST API in Spring?",
+    "options": [
+      {
+        "key": "A",
+        "text": "@RestController"
+      },
+      {
+        "key": "B",
+        "text": "DispatcherServlet"
+      },
+      {
+        "key": "C",
+        "text": "Jackson Converter"
+      },
+      {
+        "key": "D",
+        "text": "RestTemplate"
+      }
+    ],
+    "answer": "D",
+    "explanation": "RestTemplate 是Spring 提供的HTTP 客户端，用于调用第三方REST 接口； 其余组件均为服务端Web 基础组件。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Spring综合测试题(1).pdf"
+    ],
+    "tags": [
+      "springmvc",
+      "REST / JSON / HTTP",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "SP-MCPT-PDF-015",
+    "courseKey": "springmvc",
+    "course": "Spring MVC / Spring",
+    "topic": "REST / JSON / HTTP",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "Which component implements conversion between Java object and JSON in Spring MVC?",
+    "options": [
+      {
+        "key": "A",
+        "text": "RestTemplate"
+      },
+      {
+        "key": "B",
+        "text": "Jackson Converter"
+      },
+      {
+        "key": "C",
+        "text": "DispatcherServlet"
+      },
+      {
+        "key": "D",
+        "text": "@Service"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Jackson 消息转换器是Spring MVC 默认组件，负责Java 对象与JSON 数据 的序列化、反序列化。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Spring综合测试题(1).pdf"
+    ],
+    "tags": [
+      "springmvc",
+      "REST / JSON / HTTP",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "SP-MCPT-PDF-016",
+    "courseKey": "springmvc",
+    "course": "Spring MVC / Spring",
+    "topic": "REST / JSON / HTTP",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "Which annotation can return data directly to response body as JSON?",
+    "options": [
+      {
+        "key": "A",
+        "text": "@ResponseBody"
+      },
+      {
+        "key": "B",
+        "text": "@RequestBody"
+      },
+      {
+        "key": "C",
+        "text": "@Controller"
+      },
+      {
+        "key": "D",
+        "text": "@Service"
+      }
+    ],
+    "answer": "A",
+    "explanation": "@ResponseBody 将方法返回值写入响应体，跳过视图解析，自动转为JSON 格 式；@RequestBody 用于接收请求体数据。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Spring综合测试题(1).pdf"
+    ],
+    "tags": [
+      "springmvc",
+      "REST / JSON / HTTP",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "SP-MCPT-PDF-017",
+    "courseKey": "springmvc",
+    "course": "Spring MVC / Spring",
+    "topic": "REST / JSON / HTTP",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "The default response data type of Spring MVC REST service is?",
+    "options": [
+      {
+        "key": "A",
+        "text": "HTML"
+      },
+      {
+        "key": "B",
+        "text": "XML"
+      },
+      {
+        "key": "C",
+        "text": "JSON"
+      },
+      {
+        "key": "D",
+        "text": "Text"
+      }
+    ],
+    "answer": "C",
+    "explanation": "REST 风格接口默认响应格式为JSON，也是目前前后端交互的主流数据格 式。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Spring综合测试题(1).pdf"
+    ],
+    "tags": [
+      "springmvc",
+      "REST / JSON / HTTP",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "SP-MCPT-PDF-018",
+    "courseKey": "springmvc",
+    "course": "Spring MVC / Spring",
+    "topic": "REST / JSON / HTTP",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "favorParameter(true) in content negotiation means?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Use request header to specify format"
+      },
+      {
+        "key": "B",
+        "text": "Use URL parameter to specify response format"
+      },
+      {
+        "key": "C",
+        "text": "Fixed return JSON"
+      },
+      {
+        "key": "D",
+        "text": "Fixed return XML"
+      }
+    ],
+    "answer": "B",
+    "explanation": "开启favorParameter(true)后，可通过URL 请求参数（如？format=json） 指定服务端响应的数据格式。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Spring综合测试题(1).pdf"
+    ],
+    "tags": [
+      "springmvc",
+      "REST / JSON / HTTP",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "SP-MCPT-PDF-019",
+    "courseKey": "springmvc",
+    "course": "Spring MVC / Spring",
+    "topic": "SSM / ORM",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "The correct execution flow of a GET request in SSM is?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Controller →MyBatis →Database →Entity →JSON →Client"
+      },
+      {
+        "key": "B",
+        "text": "Database →Controller →Entity →JSON"
+      },
+      {
+        "key": "C",
+        "text": "MyBatis →Controller →Database"
+      },
+      {
+        "key": "D",
+        "text": "Controller →JSON →Database"
+      }
+    ],
+    "answer": "A",
+    "explanation": "标准流程：控制器接收请求→MyBatis 操作数据库→数据封装为实体类→转 为JSON →返回客户端。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Spring综合测试题(1).pdf"
+    ],
+    "tags": [
+      "springmvc",
+      "SSM / ORM",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "SP-MCPT-PDF-020",
+    "courseKey": "springmvc",
+    "course": "Spring MVC / Spring",
+    "topic": "REST / JSON / HTTP",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "Which is the advantage of RESTful service?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Cross-platform and cross-language"
+      },
+      {
+        "key": "B",
+        "text": "Must use XML"
+      },
+      {
+        "key": "C",
+        "text": "Lower performance than SOAP"
+      },
+      {
+        "key": "D",
+        "text": "Cannot be reused"
+      }
+    ],
+    "answer": "A",
+    "explanation": "REST 服务基于标准HTTP 协议，具备跨平台、跨语言、轻量、可复用的特 点，支持JSON、XML 等多种格式。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Spring综合测试题(1).pdf"
+    ],
+    "tags": [
+      "springmvc",
+      "REST / JSON / HTTP",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "SP-MCPT-PDF-021",
+    "courseKey": "springmvc",
+    "course": "Spring MVC / Spring",
+    "topic": "REST / JSON / HTTP",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "Which HTTP header tells server what content type client can accept?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Accept"
+      },
+      {
+        "key": "B",
+        "text": "Content-Type"
+      },
+      {
+        "key": "C",
+        "text": "Cache-Control"
+      },
+      {
+        "key": "D",
+        "text": "Authorization"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Accept 请求头用于客户端声明可接收的响应数据类型；Content-Type 声明请 求体数据格式。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Spring综合测试题(1).pdf"
+    ],
+    "tags": [
+      "springmvc",
+      "REST / JSON / HTTP",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "SP-MCPT-PDF-022",
+    "courseKey": "springmvc",
+    "course": "Spring MVC / Spring",
+    "topic": "REST / JSON / HTTP",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "HTTP status code 4xx represents?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Client error"
+      },
+      {
+        "key": "B",
+        "text": "Server error"
+      },
+      {
+        "key": "C",
+        "text": "Redirection"
+      },
+      {
+        "key": "D",
+        "text": "Success"
+      }
+    ],
+    "answer": "A",
+    "explanation": "HTTP 状态码规则：2XX 请求成功、3XX 重定向、4XX 客户端错误、5XX 服务 端错误。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Spring综合测试题(1).pdf"
+    ],
+    "tags": [
+      "springmvc",
+      "REST / JSON / HTTP",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "SP-MCPT-PDF-023",
+    "courseKey": "springmvc",
+    "course": "Spring MVC / Spring",
+    "topic": "REST / JSON / HTTP",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "In REST style, PUT method is used for?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Create resource"
+      },
+      {
+        "key": "B",
+        "text": "Full update resource"
+      },
+      {
+        "key": "C",
+        "text": "Query resource"
+      },
+      {
+        "key": "D",
+        "text": "Delete resource"
+      }
+    ],
+    "answer": "B",
+    "explanation": "REST 规范：GET 查询、POST 创建、PUT 全量更新资源、DELETE 删除资 源。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Spring综合测试题(1).pdf"
+    ],
+    "tags": [
+      "springmvc",
+      "REST / JSON / HTTP",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "SP-MCPT-PDF-024",
+    "courseKey": "springmvc",
+    "course": "Spring MVC / Spring",
+    "topic": "REST / JSON / HTTP",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "Which is one of the core constraints of REST?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Cacheable"
+      },
+      {
+        "key": "B",
+        "text": "Client-Server"
+      },
+      {
+        "key": "C",
+        "text": "Layered system"
+      },
+      {
+        "key": "D",
+        "text": "Stateless"
+      }
+    ],
+    "answer": "D",
+    "explanation": "无状态（Stateless）是REST 核心约束，服务器不保存客户端会话，每次请 求需携带完整信息。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Spring综合测试题(1).pdf"
+    ],
+    "tags": [
+      "springmvc",
+      "REST / JSON / HTTP",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "SP-MCPT-PDF-025",
+    "courseKey": "springmvc",
+    "course": "Spring MVC / Spring",
+    "topic": "REST / JSON / HTTP",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "The full name of REST is?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Represent State Transfer"
+      },
+      {
+        "key": "B",
+        "text": "Remote State Transfer"
+      },
+      {
+        "key": "C",
+        "text": "Representational State Transfer"
+      },
+      {
+        "key": "D",
+        "text": "Resource State Transfer"
+      }
+    ],
+    "answer": "C",
+    "explanation": "REST 全称Representational State Transfer，中文译为表述性状态转移。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Spring综合测试题(1).pdf"
+    ],
+    "tags": [
+      "springmvc",
+      "REST / JSON / HTTP",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "SP-MCPT-PDF-026",
+    "courseKey": "springmvc",
+    "course": "Spring MVC / Spring",
+    "topic": "SSM / ORM",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "One advantage of ORM framework is?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Complicated operation"
+      },
+      {
+        "key": "B",
+        "text": "Must write complex SQL"
+      },
+      {
+        "key": "C",
+        "text": "Database independent"
+      },
+      {
+        "key": "D",
+        "text": "Low development efficiency"
+      }
+    ],
+    "answer": "C",
+    "explanation": "ORM 框架可屏蔽不同数据库语法差异，实现一套代码适配多种数据库，具备数 据库无关性。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Spring综合测试题(1).pdf"
+    ],
+    "tags": [
+      "springmvc",
+      "SSM / ORM",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "SP-MCPT-PDF-027",
+    "courseKey": "springmvc",
+    "course": "Spring MVC / Spring",
+    "topic": "SSM / ORM",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "Which is a disadvantage of ORM framework?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Improve development efficiency"
+      },
+      {
+        "key": "B",
+        "text": "Database independent"
+      },
+      {
+        "key": "C",
+        "text": "Performance loss"
+      },
+      {
+        "key": "D",
+        "text": "Automatic mapping"
+      }
+    ],
+    "answer": "C",
+    "explanation": "ORM 自动生成SQL、完成对象映射，会产生一定额外开销，在复杂场景下存 在性能损耗。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Spring综合测试题(1).pdf"
+    ],
+    "tags": [
+      "springmvc",
+      "SSM / ORM",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "SP-MCPT-PDF-028",
+    "courseKey": "springmvc",
+    "course": "Spring MVC / Spring",
+    "topic": "Spring MVC / Spring Basics",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "In Spring MVC Java-based configuration, which class replaces web.xml?",
+    "options": [
+      {
+        "key": "A",
+        "text": "ApplicationConfig"
+      },
+      {
+        "key": "B",
+        "text": "WebInit (extends AbstractAnnotationConfigDispatcherServletInitializer)"
+      },
+      {
+        "key": "C",
+        "text": "ServletConfig"
+      },
+      {
+        "key": "D",
+        "text": "SecurityConfig"
+      }
+    ],
+    "answer": "B",
+    "explanation": "纯Java 配置模式下，继承 AbstractAnnotationConfigDispatcherServletInitializer 的初始化类，替代 传统web.xml 配置。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Spring综合测试题(1).pdf"
+    ],
+    "tags": [
+      "springmvc",
+      "Spring MVC / Spring Basics",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "SP-MCPT-PDF-029",
+    "courseKey": "springmvc",
+    "course": "Spring MVC / Spring",
+    "topic": "SSM / ORM",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "In MyBatis, #{} can prevent?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Slow query"
+      },
+      {
+        "key": "B",
+        "text": "SQL injection"
+      },
+      {
+        "key": "C",
+        "text": "Data loss"
+      },
+      {
+        "key": "D",
+        "text": "Connection timeout"
+      }
+    ],
+    "answer": "B",
+    "explanation": "MyBatis 中#{}为预编译占位符，底层使用JDBC 预编译语句，可有效防止 SQL 注入攻击。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Spring综合测试题(1).pdf"
+    ],
+    "tags": [
+      "springmvc",
+      "SSM / ORM",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "SP-MCPT-PDF-030",
+    "courseKey": "springmvc",
+    "course": "Spring MVC / Spring",
+    "topic": "SSM / ORM",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "In SSM, which framework is responsible for ORM mapping?",
+    "options": [
+      {
+        "key": "A",
+        "text": "JSP"
+      },
+      {
+        "key": "B",
+        "text": "Spring MVC"
+      },
+      {
+        "key": "C",
+        "text": "Controller"
+      },
+      {
+        "key": "D",
+        "text": "MyBatis"
+      }
+    ],
+    "answer": "D",
+    "explanation": "SSM 架构中，MyBatis 是持久层框架，负责数据库记录与Java 实体对象之间 的映射。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Spring综合测试题(1).pdf"
+    ],
+    "tags": [
+      "springmvc",
+      "SSM / ORM",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "SP-MCPT-PDF-031",
+    "courseKey": "springmvc",
+    "course": "Spring MVC / Spring",
+    "topic": "SSM / ORM",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "The correct call chain of SSM is?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Mapper →Service →Controller"
+      },
+      {
+        "key": "B",
+        "text": "Controller →Service →Mapper →Database"
+      },
+      {
+        "key": "C",
+        "text": "Service →Controller →Mapper"
+      },
+      {
+        "key": "D",
+        "text": "Database →Controller →Service"
+      }
+    ],
+    "answer": "B",
+    "explanation": "SSM 标准调用流程：控制器接收请求→调用业务层Service →调用持久层 Mapper →操作数据库。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Spring综合测试题(1).pdf"
+    ],
+    "tags": [
+      "springmvc",
+      "SSM / ORM",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "SP-MCPT-PDF-032",
+    "courseKey": "springmvc",
+    "course": "Spring MVC / Spring",
+    "topic": "SSM / ORM",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "The core interface to execute SQL in MyBatis is?",
+    "options": [
+      {
+        "key": "A",
+        "text": "SqlSessionFactoryBuilder"
+      },
+      {
+        "key": "B",
+        "text": "SqlSessionFactory"
+      },
+      {
+        "key": "C",
+        "text": "Connection"
+      },
+      {
+        "key": "D",
+        "text": "SqlSession"
+      }
+    ],
+    "answer": "D",
+    "explanation": "SqlSession 是MyBatis 核心接口，负责执行SQL、结果映射与事务控制；工 厂类用于创建SqlSession。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Spring综合测试题(1).pdf"
+    ],
+    "tags": [
+      "springmvc",
+      "SSM / ORM",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "SP-MCPT-PDF-033",
+    "courseKey": "springmvc",
+    "course": "Spring MVC / Spring",
+    "topic": "SSM / ORM",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "MyBatis belongs to?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Full ORM framework"
+      },
+      {
+        "key": "B",
+        "text": "SQL mapping framework"
+      },
+      {
+        "key": "C",
+        "text": "Connection pool framework"
+      },
+      {
+        "key": "D",
+        "text": "Transaction framework"
+      }
+    ],
+    "answer": "B",
+    "explanation": "MyBatis 属于SQL 映射框架，需要开发者手动编写SQL 语句，框架仅完成参 数与结果映射。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Spring综合测试题(1).pdf"
+    ],
+    "tags": [
+      "springmvc",
+      "SSM / ORM",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "SP-MCPT-PDF-034",
+    "courseKey": "springmvc",
+    "course": "Spring MVC / Spring",
+    "topic": "SSM / ORM",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "In ORM mapping, one entity class corresponds to one?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Database"
+      },
+      {
+        "key": "B",
+        "text": "Table"
+      },
+      {
+        "key": "C",
+        "text": "Column"
+      },
+      {
+        "key": "D",
+        "text": "Record"
+      }
+    ],
+    "answer": "B",
+    "explanation": "ORM 基础映射规则：实体类对应数据库表，类属性对应表字段，对象对应表中 一行数据。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Spring综合测试题(1).pdf"
+    ],
+    "tags": [
+      "springmvc",
+      "SSM / ORM",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "SP-MCPT-PDF-035",
+    "courseKey": "springmvc",
+    "course": "Spring MVC / Spring",
+    "topic": "SSM / ORM",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "ORM solves the mismatch of OOP and relational database, including?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Inheritance mismatch"
+      },
+      {
+        "key": "B",
+        "text": "Encryption mismatch"
+      },
+      {
+        "key": "C",
+        "text": "Network mismatch"
+      },
+      {
+        "key": "D",
+        "text": "File mismatch"
+      }
+    ],
+    "answer": "A",
+    "explanation": "关系型数据库不支持面向对象继承，ORM 通过专门映射策略解决继承、关联等 对象- 关系阻抗不匹配问题。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Spring综合测试题(1).pdf"
+    ],
+    "tags": [
+      "springmvc",
+      "SSM / ORM",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "SP-MCPT-PDF-036",
+    "courseKey": "springmvc",
+    "course": "Spring MVC / Spring",
+    "topic": "Spring MVC / Spring Basics",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "Which does not belong to object-relational impedance mismatch?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Inheritance"
+      },
+      {
+        "key": "B",
+        "text": "Association"
+      },
+      {
+        "key": "C",
+        "text": "Granularity"
+      },
+      {
+        "key": "D",
+        "text": "Encryption"
+      }
+    ],
+    "answer": "D",
+    "explanation": "对象- 关系阻抗不匹配包含继承、粒度、关联、标识等问题；数据加密不属于 该范畴。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Spring综合测试题(1).pdf"
+    ],
+    "tags": [
+      "springmvc",
+      "Spring MVC / Spring Basics",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "SP-MCPT-PDF-037",
+    "courseKey": "springmvc",
+    "course": "Spring MVC / Spring",
+    "topic": "Spring JDBC",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "Compared with ORM, native JDBC?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Higher development efficiency"
+      },
+      {
+        "key": "B",
+        "text": "Need to manage connection and result set manually"
+      },
+      {
+        "key": "C",
+        "text": "No need to write SQL"
+      },
+      {
+        "key": "D",
+        "text": "Automatic mapping"
+      }
+    ],
+    "answer": "B",
+    "explanation": "原生JDBC 需要开发者手动管理数据库连接、处理结果集、编写SQL，开发效 率偏低。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Spring综合测试题(1).pdf"
+    ],
+    "tags": [
+      "springmvc",
+      "Spring JDBC",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "SP-MCPT-PDF-038",
+    "courseKey": "springmvc",
+    "course": "Spring MVC / Spring",
+    "topic": "Spring JDBC",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "Which is not the feature of native JDBC?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Automatically map object without writing SQL"
+      },
+      {
+        "key": "B",
+        "text": "Fully control SQL"
+      },
+      {
+        "key": "C",
+        "text": "Fine performance tuning"
+      },
+      {
+        "key": "D",
+        "text": "Flexible operation"
+      }
+    ],
+    "answer": "A",
+    "explanation": "无需编写SQL、自动对象映射是ORM 特性；JDBC 需要手动写SQL，优势是 完全可控、便于性能调优。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Spring综合测试题(1).pdf"
+    ],
+    "tags": [
+      "springmvc",
+      "Spring JDBC",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "SP-MCPT-PDF-039",
+    "courseKey": "springmvc",
+    "course": "Spring MVC / Spring",
+    "topic": "Spring Transactions",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "Which is not a Spring transaction attribute?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Cache mode"
+      },
+      {
+        "key": "B",
+        "text": "Propagation behavior"
+      },
+      {
+        "key": "C",
+        "text": "Isolation level"
+      },
+      {
+        "key": "D",
+        "text": "Rollback rule"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Spring 事务属性包含传播行为、隔离级别、超时时间、回滚规则、只读等；缓 存模式不属于事务属性。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Spring综合测试题(1).pdf"
+    ],
+    "tags": [
+      "springmvc",
+      "Spring Transactions",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "SP-MCPT-PDF-040",
+    "courseKey": "springmvc",
+    "course": "Spring MVC / Spring",
+    "topic": "Spring MVC / Spring Basics",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "Business logic is encapsulated in which layer in layered architecture?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Controller"
+      },
+      {
+        "key": "B",
+        "text": "View"
+      },
+      {
+        "key": "C",
+        "text": "Service"
+      },
+      {
+        "key": "D",
+        "text": "Model"
+      }
+    ],
+    "answer": "C",
+    "explanation": "分层架构中，Service 业务层专门封装业务逻辑，承接控制层与持久层。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Spring综合测试题(1).pdf"
+    ],
+    "tags": [
+      "springmvc",
+      "Spring MVC / Spring Basics",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "SP-MCPT-PDF-041",
+    "courseKey": "springmvc",
+    "course": "Spring MVC / Spring",
+    "topic": "Spring Transactions",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "When a @Transactional method executes normally without exception, Spring will?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Rollback transaction"
+      },
+      {
+        "key": "B",
+        "text": "Commit transaction"
+      },
+      {
+        "key": "C",
+        "text": "Suspend transaction"
+      },
+      {
+        "key": "D",
+        "text": "Create new transaction"
+      }
+    ],
+    "answer": "B",
+    "explanation": "声明式事务规则：方法正常执行无异常则提交事务；抛出运行时异常时触发事 务回滚。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Spring综合测试题(1).pdf"
+    ],
+    "tags": [
+      "springmvc",
+      "Spring Transactions",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "SP-MCPT-PDF-042",
+    "courseKey": "springmvc",
+    "course": "Spring MVC / Spring",
+    "topic": "Spring Transactions",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "The commonly used transaction manager for Spring JDBC is?",
+    "options": [
+      {
+        "key": "A",
+        "text": "JtaTransactionManager"
+      },
+      {
+        "key": "B",
+        "text": "DataSourceTransactionManager"
+      },
+      {
+        "key": "C",
+        "text": "HibernateTransactionManager"
+      },
+      {
+        "key": "D",
+        "text": "WebTransactionManager"
+      }
+    ],
+    "answer": "B",
+    "explanation": "单数据源JDBC 场景下，DataSourceTransactionManager 是Spring 最常用 的事务管理器。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Spring综合测试题(1).pdf"
+    ],
+    "tags": [
+      "springmvc",
+      "Spring Transactions",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "SP-MCPT-PDF-043",
+    "courseKey": "springmvc",
+    "course": "Spring MVC / Spring",
+    "topic": "Spring Transactions",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "The method to obtain transaction in PlatformTransactionManager is?",
+    "options": [
+      {
+        "key": "A",
+        "text": "getTransaction()"
+      },
+      {
+        "key": "B",
+        "text": "commit()"
+      },
+      {
+        "key": "C",
+        "text": "rollback()"
+      },
+      {
+        "key": "D",
+        "text": "close()"
+      }
+    ],
+    "answer": "A",
+    "explanation": "getTransaction() 获取事务；commit()提交事务；rollback() 回滚事务。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Spring综合测试题(1).pdf"
+    ],
+    "tags": [
+      "springmvc",
+      "Spring Transactions",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "SP-MCPT-PDF-044",
+    "courseKey": "springmvc",
+    "course": "Spring MVC / Spring",
+    "topic": "Spring Transactions",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "Reading the same data twice in one transaction and getting different results is called?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Dirty read"
+      },
+      {
+        "key": "B",
+        "text": "Non-repeatable read"
+      },
+      {
+        "key": "C",
+        "text": "Phantom read"
+      },
+      {
+        "key": "D",
+        "text": "Lock"
+      }
+    ],
+    "answer": "B",
+    "explanation": "不可重复读：同一事务内多次查询同一数据，结果不一致；脏读是读取未提交 数据，幻读是数据行数变化。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Spring综合测试题(1).pdf"
+    ],
+    "tags": [
+      "springmvc",
+      "Spring Transactions",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "SP-MCPT-PDF-045",
+    "courseKey": "springmvc",
+    "course": "Spring MVC / Spring",
+    "topic": "Spring Transactions",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "Which ACID feature ensures transactions run independently?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Atomicity"
+      },
+      {
+        "key": "B",
+        "text": "Isolation"
+      },
+      {
+        "key": "C",
+        "text": "Consistency"
+      },
+      {
+        "key": "D",
+        "text": "Durability"
+      }
+    ],
+    "answer": "B",
+    "explanation": "隔离性（Isolation）保证多个并发事务相互独立执行，避免脏读、不可重复读等 并发问题。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Spring综合测试题(1).pdf"
+    ],
+    "tags": [
+      "springmvc",
+      "Spring Transactions",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "SP-MCPT-PDF-046",
+    "courseKey": "springmvc",
+    "course": "Spring MVC / Spring",
+    "topic": "Spring Transactions",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "Once a transaction is committed, data will not be lost, this is?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Durability"
+      },
+      {
+        "key": "B",
+        "text": "Atomicity"
+      },
+      {
+        "key": "C",
+        "text": "Isolation"
+      },
+      {
+        "key": "D",
+        "text": "Consistency"
+      }
+    ],
+    "answer": "A",
+    "explanation": "持久性（Durability）：事务提交后，数据修改永久生效，系统故障也不会丢失 数据。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Spring综合测试题(1).pdf"
+    ],
+    "tags": [
+      "springmvc",
+      "Spring Transactions",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "SP-MCPT-PDF-047",
+    "courseKey": "springmvc",
+    "course": "Spring MVC / Spring",
+    "topic": "Spring Transactions",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "Which one is not part of ACID?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Atomicity"
+      },
+      {
+        "key": "B",
+        "text": "Consistency"
+      },
+      {
+        "key": "C",
+        "text": "Isolation"
+      },
+      {
+        "key": "D",
+        "text": "Availability"
+      }
+    ],
+    "answer": "D",
+    "explanation": "ACID 分别为原子性、一致性、隔离性、持久性；可用性是分布式CAP 理论概 念。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Spring综合测试题(1).pdf"
+    ],
+    "tags": [
+      "springmvc",
+      "Spring Transactions",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "SP-MCPT-PDF-048",
+    "courseKey": "springmvc",
+    "course": "Spring MVC / Spring",
+    "topic": "Spring JDBC",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "NamedParameterJdbcTemplate supports?",
+    "options": [
+      {
+        "key": "A",
+        "text": "? placeholder"
+      },
+      {
+        "key": "B",
+        "text": ":paramName named parameter"
+      },
+      {
+        "key": "C",
+        "text": "No parameter"
+      },
+      {
+        "key": "D",
+        "text": "Only integer parameter"
+      }
+    ],
+    "answer": "B",
+    "explanation": "NamedParameterJdbcTemplate 支持:参数名命名占位符，无需关注参数顺 序，简化SQL 编写。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Spring综合测试题(1).pdf"
+    ],
+    "tags": [
+      "springmvc",
+      "Spring JDBC",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "SP-MCPT-PDF-049",
+    "courseKey": "springmvc",
+    "course": "Spring MVC / Spring",
+    "topic": "Spring JDBC",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "DriverManagerDataSource is used to configure?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Server port"
+      },
+      {
+        "key": "B",
+        "text": "Web path"
+      },
+      {
+        "key": "C",
+        "text": "Database connection information"
+      },
+      {
+        "key": "D",
+        "text": "Log level"
+      }
+    ],
+    "answer": "C",
+    "explanation": "DriverManagerDataSource 是Spring 基础数据源，用于配置数据库驱动、 URL、账号、密码等连接信息。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Spring综合测试题(1).pdf"
+    ],
+    "tags": [
+      "springmvc",
+      "Spring JDBC",
+      "mcpt"
+    ]
+  },
+  {
+    "id": "SP-MCPT-PDF-050",
+    "courseKey": "springmvc",
+    "course": "Spring MVC / Spring",
+    "topic": "Spring MVC / Spring Basics",
+    "sourceGroup": "mcpt",
+    "sourceLabel": "MCPT / 月考题",
+    "difficulty": "medium",
+    "question": "Which class is deprecated after Spring 3.1?",
+    "options": [
+      {
+        "key": "A",
+        "text": "JdbcTemplate"
+      },
+      {
+        "key": "B",
+        "text": "NamedParameterJdbcTemplate"
+      },
+      {
+        "key": "C",
+        "text": "DataSource"
+      },
+      {
+        "key": "D",
+        "text": "SimpleJdbcTemplate"
+      }
+    ],
+    "answer": "D",
+    "explanation": "SimpleJdbcTemplate 在Spring 3.1 版本后被弃用，功能合并至 JdbcTemplate 与NamedParameterJdbcTemplate 中。",
+    "noteQuote": "",
+    "sourceFiles": [
+      "Spring综合测试题(1).pdf"
+    ],
+    "tags": [
+      "springmvc",
+      "Spring MVC / Spring Basics",
+      "mcpt"
+    ]
   }
 ];
